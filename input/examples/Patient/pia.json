@@ -1,0 +1,23 @@
+{
+  "resourceType": "Patient",
+  "id": "pia",
+    "meta": 
+    {
+      "profile": [
+		"https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+	  ]
+    },
+  "name": [
+	{
+      "use" : "official",
+      "family" : "Peters",
+	  "given": [
+		"Pia"
+	  ]
+	}
+  ],
+	"gender": "female"
+}
+
+
+

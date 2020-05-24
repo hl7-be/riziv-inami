@@ -1,0 +1,178 @@
+<!-- trial trial -->
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="be-model-patientwill" />
+  <url value="https://www.hl7belgium.org/fhir/StructureDefinition/be-model-patientwill" />
+  <name value="BEPatientWill" />
+  <status value="draft" />
+  <description value="This is the logical model of the patient will for a patient - in fact, each entry of the patient's will assertions. The patient will consists of several entries as modeled here. Initially based on the input of the NIHDI.&#xD;&#xA;The Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This might in the future be also used to record agreement to participate in clinical trials etc. Any use case around informed consent or data sharing is out of scope for this logical model." />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="BEPatientWill" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Resource" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="BEPatientWill">
+      <path value="BEPatientWill" />
+      <short value="A patient will (a single entry in the patient will) - an individual statement of permission or refusal for care-related activities such as live organ donation, resuscitation, etc." />
+      <definition value="A patient will (a single entry in the patient will) - an individual statement of permission or refusal for care-related activities such as live organ donation, resuscitation, etc." />
+      <min value="0" />
+      <max value="*" />
+    </element>
+    <element id="BEPatientWill.identifier">
+      <path value="BEPatientWill.identifier" />
+      <short value="The business identifier(s) for the Patient will assertion" />
+      <definition value="The business identifier(s) for the patient will entry - This is an optional attribute, used for example to track an entry throughout its lifecycle, or across vaults." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+      </type>
+    </element>
+    <element id="BEPatientWill.status">
+      <path value="BEPatientWill.status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/valueset-consent-state-codes" />
+      </binding>
+    </element>
+    <element id="BEPatientWill.dateTime">
+      <path value="BEPatientWill.dateTime" />
+      <short value="The dateTime when the patient will has been declared" />
+      <definition value="The date and/or time when the patient will has been declared - for example if this captures a physical document that was sgined by a patient on a given date, this element would correspond with that date" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="BEPatientWill.reporter">
+      <path value="BEPatientWill.reporter" />
+      <short value="The professional that registered the patient will" />
+      <definition value="The healthcare professional who takes responsibility for collecting content." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+      </type>
+    </element>
+    <element id="BEPatientWill.patient">
+      <path value="BEPatientWill.patient" />
+      <short value="The subject of the patient will." />
+      <definition value="The subject of the patient will." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+
+      </type>
+    </element>
+
+    <element id="BEPatientWill.source">
+      <path value="BEPatientWill.source" />
+      <short value="The evidence used to support the patient will." />
+      <definition value="Supporting evidence for the patient will (e.g. a paper signed by the patient to refuse a specific treatment)" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Attachment" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Attachment" />
+      </type>
+    </element>
+
+    <element id="BEPatientWill.directive">
+      <path value="BEPatientWill.directive" />
+      <short value="The actual directive in the will" />
+      <definition value="The patient will directive" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+
+    <element id="BEPatientWill.directive.action">
+      <path value="BEPatientWill.directive.action" />
+      <short value="The actual directive in the will" />
+      <definition value="The detailed patient will directive (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+
+    <element id="BEPatientWill.directive.type">
+      <path value="BEPatientWill.directive.type" />
+      <short value="permit | deny" />
+      <definition value="Whether the patient will action is explicitly permitted or explicitly denied" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+
+    <element id="BEPatientWill.directive.category">
+      <path value="BEPatientWill.directive.category" />
+      <short value="The category or the patient will directive" />
+      <definition value="The main types of patient will" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/valueset-consent-category.html" />
+      </binding>
+    </element>
+
+    <element id="BEPatientWill.directive.effectiveTime">
+      <path value="BEPatientWill.directive.effectiveTime" />
+      <short value="The period of validity for the patient will directive" />
+      <definition value="The period of validity for the patient will directive" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+	
+    <element id="BEPatientWill.directive.effectiveTime.period">
+      <path value="BEPatientWill.directive.effectiveTime.period" />
+      <short value="The time period of validity for the patient will directive" />
+      <definition value="The time period of validity for the patient will directive" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Period" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Period" />
+      </type>
+    </element>
+    <element id="BEPatientWill.directive.effectiveTime.time">
+      <path value="BEPatientWill.directive.effectiveTime.time" />
+      <short value="A free-text indication of the period of validity for the patient will directive - e.g. until recovery, 5 years after death.." />
+      <definition value="A free-text indication of the period of validity for the patient will directive" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Period" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Period" />
+      </type>
+    </element>	
+	
+  </differential>
+</StructureDefinition>

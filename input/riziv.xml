@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
+  <id value="be.fhir.be.riziv"/>
+  <url value="http://hl7belgium.org/fhir/efro-1302"/>
+  <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
+  <version value="0.2.0"/>
+  <name value="EFRO1302"/>
+  <title value="RIZIV-INAMI Patient Record"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="IMEC"/>
+  <contact>
+    <telecom>
+      <!-- Or whatever URL and/or email address(es) are appropriate -->
+      <system value="url"/>
+      <value value="http://somewhere.org"/>
+    </telecom>
+  </contact>
+  <description value="RIZIV-INAMI - Patient Summary Record Implementation Guide"/>
+  <jurisdiction>
+    <!-- This will drive SNOMED release used -->
+    <coding>
+      <!-- This is the code for universal -->
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <!-- Change to this if the IG is country-specific
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      -->
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.be.fhir.riziv.summary"/>
+  <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
+  <license value="CC0-1.0"/>
+  <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
+  <fhirVersion value="4.0.1"/>
+
+  <dependsOn id="fedbecore">
+    <uri value="https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/fed-be-core"/> 
+    <packageId value="fed.be.core"/>
+    <version value="dev"/>
+  </dependsOn> 
+
+  <definition>
+    <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
+      inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
+    <grouping id="allergyintolerance">
+      <name value="Allergy Intolerance"/>
+      <description value="These are the artefacts focused on Allergy / Intolerance"/>
+    </grouping>
+
+    <grouping id="patientwill">
+      <name value="Patient Will"/>
+      <description value="Patient Will"/>
+    </grouping>
+
+    <grouping id="addiction">
+      <name value="Addiction"/>
+      <description value="Addiction"/>
+    </grouping>
+
+    <grouping id="immunization">
+      <name value="Immunization"/>
+      <description value="Immunization"/>
+    </grouping>
+
+
+<!-- Addiction -->
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-model-addiction"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Addiction"/>
+      <description value="Addiction record logical model"/>
+      <groupingId value="addiction"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-addiction"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Addiction BE profile"/>
+      <description value="Belgian Profile to capture Addictions (on substances or others)"/>
+      <groupingId value="addiction"/>
+    </resource>
+<!-- -->
+
+<!-- Patient Will-->
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-model-patientwill"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Patient Will"/>
+      <description value="Patient Will logical model"/>
+      <groupingId value="patientwill"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-patientwill"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Patient Will core BE profile"/>
+      <description value="The Core BE profile for Patient Will"/>
+      <groupingId value="patientwill"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Consent/patientwill-example"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Patient Will"/>
+      <description value="Patient Will"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BePatientWill" />
+      <groupingId value="patientwill"/>
+    </resource>
+<!-- -->
+
+<!-- Immunization -->
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-model-immunization"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Immunization"/>
+      <description value="Immunization logical model"/>
+      <groupingId value="immunization"/>
+    </resource>	
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-immunization"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Immunization core BE profile"/>
+      <description value="The Core BE profile for Immunization (event)"/>
+      <groupingId value="immunization"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/basedOn"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Order that Immunization is based on"/>
+      <description value="Order that Immunization is based on"/>
+      <groupingId value="immunization"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/be-cs-care-location"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - Care location"/>
+      <description value="The location of the care event"/>
+      <groupingId value="immunization"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="CodeSystem/be-cs-immunization-confirmation-status"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - immunization confirmation status"/>
+      <description value="The list of immunization confirmation status"/>
+      <groupingId value="immunization"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-vs-care-location"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="ValueSet - Care location"/>
+      <description value="The list of Care locations"/>
+      <groupingId value="immunization"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-vs-immunization-confirmation-status"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="ValueSet - immunization confirmation status"/>
+      <description value="The list of immunization confirmation status"/>
+      <groupingId value="immunization"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-administeredProduct"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Administered Product"/>
+      <description value="Administered Product"/>
+      <groupingId value="immunization"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-immunizationLocation"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Immunization location"/>
+      <description value="Immunization location"/>
+      <groupingId value="immunization"/>
+    </resource>	
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-verificationStatus"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Immunization verification status"/>
+      <description value="Immunization verification status"/>
+      <groupingId value="immunization"/>
+    </resource>	
+    <resource>
+      <reference>
+         <reference value="Immunization/example-hpv"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="HPVImmunization"/>
+      <description value="HPV Immunization"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
+      <groupingId value="immunization"/>
+    </resource>
+<!-- -->
+
+<!-- AllergyIntolerance -->
+<!--
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-allergyIntolerance"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="AllergyIntolerance"/>
+      <description value="Allergy Intolerance profile"/>
+      <groupingId value="allergyintolerance"/>
+    </resource>	
+-->
+    <resource>
+      <reference>
+         <reference value="Practitioner/durant"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Dr Durant (GP)"/>
+      <description value="Dr. Paul Durant (GP)"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="allergyintolerance"/>
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="Practitioner/lenoir"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Dr Lenoir"/>
+      <description value="Lr François Lenoir"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="allergyintolerance"/>
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="Patient/noel"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Patient Noel Joyeux"/>
+      <description value="Patient Noel Joyeux"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="allergyintolerance"/>
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="AllergyIntolerance/noel-allergy.v0"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Suspected Allergy"/>
+      <description value="Suspected Allergy to Penicillin"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
+      <groupingId value="allergyintolerance"/>
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="AllergyIntolerance/noel-allergy.v1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Refuted Allergy"/>
+      <description value="Allergy has been refuted - confirmed as non-existent"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
+      <groupingId value="allergyintolerance"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="AllergyIntolerance/allergyintolerance1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Allergy1"/>
+      <description value="Allergy to peanut"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
+      <groupingId value="allergyintolerance"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="AllergyIntolerance/allergyintolerance2"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Allergy2"/>
+      <description value="Allergy to pollen"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
+      <groupingId value="allergyintolerance"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ExampleScenario/scenario-allergy"/>
+      </reference>
+      <name value="Example Scenario - Allergy / Intolerance"/>
+      <description value="Overriding description because we can"/>
+    </resource>
+
+<!-- -->
+
+
+
+
+
+
+
+    <page>
+      <!-- The root will always be toc.html - the template will force it if you don't do it -->
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="MyIG Home Page"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="background.html"/>
+        <title value="Background"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="spec.html"/>
+        <title value="Detailed Specification"/>
+        <generation value="markdown"/>
+      </page>
+
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Useful Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="IG Change History"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <!-- copyright year is a mandatory parameter -->
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2019+"/>
+    </parameter>
+    <!-- releaselabel should be the ballot status for HL7-published IGs. -->
+    <parameter>
+      <code value="releaselabel"/>
+      <value value="CI Build"/>
+    </parameter>
+    <parameter>
+      <code value="find-other-resources"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="path-binary"/>
+      <value value="input\cql"/>
+    </parameter>
+
+<!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
+    <parameter>
+      <code value="logging"/>
+      <value value="generate"/>
+    </parameter>
+    <parameter>
+      <code value="logging"/>
+      <value value="progress"/>
+    </parameter>
+
+    <parameter>
+      <code value="excludexml"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludejson"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludettl"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludemap"/>
+      <value value="true"/>
+    </parameter>-->
+  </definition>
+</ImplementationGuide>

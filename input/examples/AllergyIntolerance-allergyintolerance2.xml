@@ -1,0 +1,105 @@
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="allergyintolerance2" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2019-07-01T13:30:55.864+00:00" />
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance" />
+  </meta>
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b>Generated Narrative with Details</b>
+      </p>
+      <p>
+        <b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p>
+      <p>
+        <b>verificationStatus</b>: Confirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed', given as 'Confirmed'})</span></p>
+      <p>
+        <b>type</b>: allergy</p>
+      <p>
+        <b>category</b>: environment</p>
+      <p>
+        <b>criticality</b>: high</p>
+      <p>
+        <b>code</b>: Pollen <span>(Details : {SNOMED CT code '256259004' = 'Pollen', given as 'Pollen'})</span></p>
+      <b>Mild cough reaction to Douglas fir</b>
+      <b>Severe cough reaction to Silver birch</b>
+    </div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" />
+      <code value="active" />
+      <display value="Active" />
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" />
+      <code value="confirmed" />
+    </coding>
+  </verificationStatus>
+  <type value="allergy" />
+  <category value="environment" />
+  <criticality value="high" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="256259004" />
+      <display value="Pollen" />
+    </coding>
+    <text value="Allergic to pollen" />
+  </code>
+  <patient>
+    <reference value="Patient/example" />
+  </patient>
+  <onsetDateTime value="2004" />
+  <recordedDate value="2014-10-09T14:58:00+11:00" />
+  <recorder>
+    <reference value="Practitioner/example" />
+  </recorder>
+  <asserter>
+    <reference value="Patient/example" />
+  </asserter>
+  <lastOccurrence value="2012-06" />
+  <note>
+    <text value="Some extra information can be given here." />
+  </note>
+  <reaction>
+    <substance>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="256262001" />
+        <display value="Silver Birch pollen" />
+      </coding>
+    </substance>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="49727002" />
+        <display value="Cough" />
+      </coding>
+    </manifestation>
+    <onset value="2012-06-12" />
+    <severity value="severe" />
+  </reaction>
+  <reaction>
+    <substance>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="710732007" />
+        <display value="Douglas fir pollen" />
+      </coding>
+    </substance>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="49727002" />
+        <display value="Cough" />
+      </coding>
+    </manifestation>
+    <onset value="2012-06-12" />
+    <severity value="mild" />
+  </reaction>
+</AllergyIntolerance>

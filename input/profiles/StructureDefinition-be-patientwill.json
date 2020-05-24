@@ -1,0 +1,148 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "be-patientwill",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BePatientWill",
+  "version": "0.1.0",
+  "name": "BePatientWill",
+  "title": "BePatientWill",
+  "status": "active",
+  "description": "****!DRAFT!DRAFT!DRAFT! VALUESETS STILL TO BE DELIVERED FOR THIS PROFILE BY THE NIHDI **** Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This profile will in the future be also used to record agreement to participate in clinical trials etc. Any usecase around informed consent is out of scope for this profile.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Consent",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Consent",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Consent",
+        "path": "Consent",
+        "short": "An entry expressing a patient's allowance or refusal for care.",
+        "definition": "An entry in the patient's will - one directive that expresses a patient's allowance or refusal for care."
+      },
+      {
+        "id": "Consent.identifier",
+        "path": "Consent.identifier",
+        "comment": "SHALL be given and a consumer SHALL NOT ignore this.",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.status",
+        "path": "Consent.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.scope",
+        "path": "Consent.scope",
+        "short": "The actual directive in the will",
+        "definition": "The detailed patient will directive (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.category",
+        "path": "Consent.category",
+        "short": "The category or the patient will directive",
+        "definition": "The types or classification of patient will. This element supports indexing and retrieval of Patient Will statements.&#xD;&#xA;The actual detail of the patient will (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)",
+        "comment": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.&#xD;&#xA;SHALL be given and a consumer SHALL NOT ignore this.",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.patient",
+        "path": "Consent.patient",
+        "short": "The subject of the patient will.",
+        "definition": "The subject of the patient will.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.dateTime",
+        "path": "Consent.dateTime",
+        "short": "The dateTime when the patient will has been recorded",
+        "definition": "The date and/or time when the patient will has been recorded",
+        "comment": "This is not the time the patient expressed their will, but the time that this patient was recorded.&#xD;&#xA;SHALL be given and a consumer SHALL NOT ignore this.",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.performer",
+        "path": "Consent.performer",
+        "comment": "Commonly, the patient will is expressed by the patient, but for some cases it may be some other person.&#xD;&#xA;SHALL be given and a consumer SHALL NOT ignore this.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization",
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient",
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner",
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.source[x]",
+        "path": "Consent.source[x]",
+        "short": "The evidence used to support the patient will.",
+        "definition": "Supporting evidence for the patient will (e.g. a paper signed by the patient to refuse a specific treatment)",
+        "comment": "The source can be contained inline (Attachment), referenced directly (Consent), referenced in a consent repository (DocumentReference), or simply by an identifier (Identifier), e.g. a CDA document id.&#xD;&#xA;It is at the discretion of the practitioner whether to include this when available. A consumer SHALL NOT ignore it when available.",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.policyRule",
+        "path": "Consent.policyRule",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.policyRule.text",
+        "path": "Consent.policyRule.text",
+        "comment": "This field is added as a fixed value because in FHIR 4.0.1 this is technically required. It has no functional purpose in Belgium.",
+        "fixedString": "Belgian policy",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.type",
+        "path": "Consent.provision.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.period",
+        "path": "Consent.provision.period",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.securityLabel",
+        "path": "Consent.provision.securityLabel",
+        "max": "0"
+      },
+      {
+        "id": "Consent.provision.purpose",
+        "path": "Consent.provision.purpose",
+        "max": "0"
+      },
+      {
+        "id": "Consent.provision.class",
+        "path": "Consent.provision.class",
+        "max": "0"
+      },
+      {
+        "id": "Consent.provision.data",
+        "path": "Consent.provision.data",
+        "max": "0"
+      }
+    ]
+  }
+}
