@@ -1,0 +1,113 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head><p>This is a list of use cases supported by this project. These use cases are implemented in the scenarios section.</p>
+<p> </p>
+
+<a name="allergies-and-intolerance-reporting"> </a>
+<h3 id="allergies-and-intolerance-reporting">Allergies and intolerance reporting</h3>
+
+<a name="use-case-1"> </a>
+<h4 id="use-case-1">Use Case 1</h4>
+
+<a name="summary"> </a>
+<h5 id="summary">Summary</h5>
+<p>This the basic use case where an allergy record is created, shared and updated.</p>
+<ul>
+<li><p>Patient reports an allergy to Penicillin</p></li>
+<li><p>GP records a suspected allergy to Penicillin</p></li>
+<li><p>Specialist performs tests and sees that the suspected reaction is na expectable adverse reaction to Penicillin and updates the allergy record to Refuted</p></li>
+<li><p>GP consults the allergy and sees it is updated</p></li>
+</ul>
+
+<a name="section"> </a>
+<h5 id="section"></h5>
+
+<a name="validation-scenario"> </a>
+<h5 id="validation-scenario">Validation Scenario</h5>
+<p>This use case is implemented in the <a href="ExampleScenario-scenario-allergy.html">Allergy scenario</a>.</p>
+<p> </p>
+
+<a name="use-case-2"> </a>
+<h4 id="use-case-2">Use Case 2</h4>
+
+<a name="summary-1"> </a>
+<h5 id="summary-1">Summary</h5>
+<p>This use case shows that the allergy agent should be coded but that may not always be the case – sometimes it is possible to have only text.</p>
+<ul>
+<li><p>Patient goes to GP and says they are allergic to “Coquilles St. Jacques”.</p></li>
+<li><p>The GP searches for “Coquilles St. Jacques” in the list of allergens. Since this is not found in the terminology server, the GP enters only the text.</p></li>
+<li><p>The admission secretary searches the terminology server for concepts and finds that the nearest expression is “pétoncle” and encodes that information.</p></li>
+</ul>
+<p> </p>
+
+<a name="use-case-3"> </a>
+<h4 id="use-case-3">Use Case 3</h4>
+
+<a name="summary-2"> </a>
+<h5 id="summary-2">Summary</h5>
+<p>This use case shows that the allergy record is no longer static but a live record, so there is a risk of outdated information.</p>
+<ul>
+<li><p>Patient has a record of a suspected allergy.</p></li>
+<li><p>Patient goes to hospital before going to specialist to confirm the allergy. The ER physician tries to access allergy and since it is not yet marked as refuted, the ER physician assumes that the allergy reaction is active and updates the allergy record.</p></li>
+<li><p>Meanwhile the specialist wants to update the record but now the allergy record is already different, with more reactions.</p></li>
+</ul>
+<p> </p>
+
+<a name="use-case-4"> </a>
+<h4 id="use-case-4">Use Case 4</h4>
+
+<a name="summary-3"> </a>
+<h5 id="summary-3">Summary</h5>
+<p>This use case shows what happens with the data custody: Who is responsible for the record after the record is updated.</p>
+<ul>
+<li><p>The patient visits the GP after the emergency and after seeign the specialist.</p></li>
+<li><p>The GP consults the allergies (after the ER physician updating the allergy information with a new reaction, and the specialist updating the allergy to “refuted”).</p></li>
+<li><p>The GP must assess if the allergy is really refuted or the reaction that took the patient to the ER is actually an allergy to another substance.</p></li>
+<li><p>The GP must then update the records accordingly.</p></li>
+</ul>
+<p></p>
+<p></p>
+
+<a name="immunization"> </a>
+<h3 id="immunization">Immunization</h3>
+
+<a name="use-case-1-1"> </a>
+<h4 id="use-case-1-1">Use Case 1</h4>
+
+<a name="summary-4"> </a>
+<h5 id="summary-4">Summary</h5>
+<p>This the basic use case where na immunization record is created, shared and updated.</p>
+<p>(TBD)</p>
+
+<a name="section-1"> </a>
+<h5 id="section-1"></h5>
+
+<a name="validation-scenario-1"> </a>
+<h5 id="validation-scenario-1">Validation Scenario</h5>
+<p></p>
+<p> </p>
+
+<a name="use-case-2-1"> </a>
+<h4 id="use-case-2-1">Use Case 2</h4>
+
+<a name="summary-5"> </a>
+<h5 id="summary-5">Summary</h5>
+<p>This use case shows a series of immunisations not done for several reasons.</p>
+<p>(WIP)</p>
+
+<a name="validation-scenario-2"> </a>
+<h5 id="validation-scenario-2">Validation Scenario</h5>
+<p> </p>
+
+<a name="use-case-3-1"> </a>
+<h4 id="use-case-3-1">Use Case 3</h4>
+
+<a name="summary-6"> </a>
+<h5 id="summary-6">Summary</h5>
+<p>This use case shows the reporting of historic immunisations with different sources and different degrees of certitude.</p>
+<p>(WIP)</p>
+
+<a name="validation-scenario-3"> </a>
+<h5 id="validation-scenario-3">Validation Scenario</h5>
+<p></p>
+<p></p>
+<p></p>
+</div>

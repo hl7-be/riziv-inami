@@ -1,0 +1,44 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head>
+<a name="current-sumehr"> </a>
+<h3 id="current-sumehr">Current SUMEHR</h3>
+<p>The SUMEHR (SUMmarized Electronic Heath Record) is a summary of the patient’s file at a specific time in structured and coded form (KMEHR) produced by the general practitioner for emergency services, physician posts and physician specialists. The information present in the SUMEHR are accessible only to physician having a therapeutic relationship with the patient who has given his consent for the sharing of his data.</p>
+<p></p>
+<p>The purpose of the SUMEHR is to guarantee the continuity of care during unplanned care. It provides a summary containing data from the patient’s file from the general practitioner like allergy/intolerance, risk’s factors, patient will, vaccination, administrative information, …</p>
+<p></p>
+<p>Actually, only one author who is responsible for the quality, completeness and updating of its content and therefore, it is necessary that the other healthcare providers provide all the information necessary to ensure the quality of the SUMEHR.</p>
+<p>Sharing information about patient’s data is important for the continuity of care. This project is part of Cluster 4.1 of the roadmap eHealth 3.0 “sharing of multidisciplinary electronic data”.</p>
+<p>Many of healthcare providers must be informed about the information included in the SUMEHR.</p>
+
+<a name="section"> </a>
+<h3 id="section"></h3>
+
+<a name="opportunity"> </a>
+<h3 id="opportunity">Opportunity</h3>
+<p>Patient's information is not known by all healthcare providers while essential for the continuity of care.</p>
+<p>Currently, there is only one active SUMEHR (the last) in a document format housed in a safe visible to the healthcare provider who consults it. Also the SUMEHR is a picture of the patient medical information at a specific time with no historic.</p>
+<p>Healthcare providers would like a modular approach of the SUMEHR: thus, that the SUMEHR should be composed in a modular way (Care Sets) with information from different sources and be accessible in a modular way according to the profile of the healthcare provider.</p>
+<p></p>
+<p>The healthcare providers want:</p>
+<ul>
+<li><p>more information than specified in the current SUMEHR</p></li>
+<li><p>separate sets of information to share with authorized healthcare providers</p></li>
+<li><p>a historic of the information of the patient</p></li>
+</ul>
+<p></p>
+<p><img src="project-image1.png" style="width:4.8375in;height:2.80278in" /></p>
+<p>The goal of this project is to define the different Care Sets which represent the equivalent to the SUMEHR. Without the medication scheme who is out of scope because it will be used in the VIDIS Project.</p>
+<ul>
+<li><p><strong>Vaccine</strong> Care Set provides a list of administrated patient's vaccine. The Vaccine Care Set is intended to given all recording of current and historical administration of vaccines to patients across all healthcare disciplines authorized.</p></li>
+<li><p><strong>Allergy</strong> Care Set provides a list of a patient's allergies and/or intolerances as well as the probable manifestations in contact with the allergenic substance.</p></li>
+<li><p><strong>Addiction</strong> Care Set provides a list of patient’s addictions. In the first time, the goal is to provide addiction’s information to a product (e.g. drug, alcohol, tobacco, …). Possibly, in the future, we will extend the use to behavior (game, purchase, sport, political or religious ideals, sex, …).</p></li>
+<li><p><strong>PatientWill</strong> provides a list of patient’s will essentially on the directives concerning the medical treatments (resuscitation, hospitalization, …). in the future, the patient’s consents (patient’s consent to share information concerning medical research, patient's consent to participate to a research or new medical protocol, organ donation, …) can be also integrated.</p></li>
+<li><p><strong>Problem</strong> records information about a particular medical aspect of a patient. It can be</p>
+<ul>
+<li><p>Information on a disease diagnose</p></li>
+<li><p>Information of problems that the healthcare provider considers potentially harmful and which can be the subject of further investigation or treatment problem</p></li>
+<li><p>Information about problems already solved medical antecedent (out of scope : family medical history)</p></li>
+</ul></li>
+</ul>
+<p></p>
+<p></p>
+</div>

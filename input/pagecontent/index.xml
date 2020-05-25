@@ -1,30 +1,35 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-  <!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
-  <a name="intro"> </a>
-  <h3>Introduction</h3>
-	<p>
-    What is this IG about (in patient/non-expert friendly terms).
-  </p>
-	<a name="technical"> </a>
-	<h3>Technical Overview</h3>
-	<p>
-    Additional detail/context setting for those who have significant background in the domain.  (Try to make as understandable as you can, but
-    set important context).
-  </p>
-  <a name="walkthrough"> </a>
-  <p>
-    The main sections of this IG are:
-  </p>
-  <ul>
-    <li>
-      <a href="background.html">Background</a> - provides business context for the implementation guide and information that implementers should be
-      familiar with before reading the remainder of the IG.  There could be multiple pages for this.
-    </li>
-    <li>
-      <a href="spec.html">Detailed Specification</a> - The actual stuff implementers are expected to do.  (Could be multiple pages for this.)
-    </li>
-    <li>
-      <a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information
-    </li>
-  </ul>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+<head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head>
+	<blockquote class="stu-note">
+	<strong>This documentation and set of artefacts are still undergoing development.</strong>
+	Different interested parties are working on this specification and this publication is a development version that has not yet been validated by HL7 nor by the users and implementers.
+	</blockquote>
+<p><br/></p>
+<p><br/></p>
+
+<p>This publication contains the FHIR specifications for RIZIV - INAMI. This is a web-based documentation system that contains the information about the project, namely:</p>
+<ul>
+<li><p>Functional overview (Use Cases and Logical Data Models / Care Sets)</p></li>
+<li><p>Technical Specification:</p>
+<ul>
+<li><p>Profiles, extensions</p></li>
+<li><p>Terminology (Code Systems, Value Sets, Naming Systems)</p></li>
+</ul></li>
+<li><p>Testing artefacts – examples, test scripts</p></li>
+</ul>
+<p></p>
+<p>This specification contains the artefacts produced for the RIZIV projects. It inherits the <a href="http://hl7.org/fhir">official FHIR specifications (version 4.0.1)</a> and the <a href="https://ehealthplatformstandards.github.io/">Federal FHIR constraints specified by eHealth Belgium</a>.</p>
+<p>The conformance artefacts in this publication are also scheduled for official publication by HL7 Belgium.</p>
+<p>This specification contains all the necessary conformance artefacts as well as project-specific support resources like examples and test scripts, and thus provides, in one single package, the relevant functional overview, and the technical specification and cookbook, to allow implementers to develop and test their systems.</p>
+<p></p>
+
+<a name="navigation"> </a>
+<h3 id="navigation">Navigation</h3>
+<p>This implementation guide uses the FHIR web-based publication. This allows easy navigation between the Belgium-specific portion of the implementation guide and the resources, data types, value sets and other specification components leveraged from the FHIR core specification. This approach also allows implementers to easily navigate to the information needed to perform a task.</p>
+<p>The top menu allows quick navigation to the different sections, and a <a href="file:///C:\ImplementationGuides\be-core\output\toc.html">Table of Contents</a>  is provided with the entire content of this Implementation Guide. (Be aware that some pages have multiple tabs).</p>
+<p></p>
+
+<a name="intellectual-property-considerations"> </a>
+<h3 id="intellectual-property-considerations">Intellectual Property Considerations </h3>
+<p>While this implementation guide and the underlying FHIR are licensed as public domain, this guide includes examples making use of terminologies such as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases, licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.</p>
 </div>

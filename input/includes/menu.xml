@@ -1,15 +1,19 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="project" class="dropdown-toggle">Project<b class="caret">
-      </b>
-    </a>
+  <li>
+    <a href="project.html" class="dropdown-toggle">Project</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="analysis" class="dropdown-toggle">Analysis<b class="caret">
-      </b>
-    </a>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Analysis<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="usecases.html">Use Cases</a>
+      </li>
+      <li>
+        <a href="#">Logical Models</a>
+      </li>
+    </ul>
   </li>
   <li><a href="artifacts.html">Artifact Index</a></li>
   <li class="dropdown">

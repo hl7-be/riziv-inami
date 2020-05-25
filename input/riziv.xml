@@ -309,13 +309,6 @@
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
       <groupingId value="allergyintolerance"/>
     </resource>
-    <resource>
-      <reference>
-        <reference value="ExampleScenario/scenario-allergy"/>
-      </reference>
-      <name value="Example Scenario - Allergy / Intolerance"/>
-      <description value="Overriding description because we can"/>
-    </resource>
 
 <!-- -->
 
@@ -336,14 +329,14 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="background.html"/>
-        <title value="Background"/>
+        <nameUrl value="project.html"/>
+        <title value="Project Description"/>
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="spec.html"/>
-        <title value="Detailed Specification"/>
-        <generation value="markdown"/>
+        <nameUrl value="usecases.html"/>
+        <title value="Use Cases"/>
+        <generation value="html"/>
       </page>
 
       <page>
