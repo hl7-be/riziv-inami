@@ -110,7 +110,7 @@
          <reference value="Consent/patientwill-example"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Patient Will"/>
+      <name value="Example - Patient Will"/>
       <description value="Patient Will"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BePatientWill" />
       <groupingId value="patientwill"/>
@@ -216,7 +216,7 @@
          <reference value="Immunization/example-hpv"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="HPV Immunization"/>
+      <name value="Example - HPV Immunization"/>
       <description value="Immunization Example - HPV Vaccination"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
@@ -226,7 +226,7 @@
          <reference value="Immunization/immunization-example-childhood-measles"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Childhood measles vaccination (reported)"/>
+      <name value="Example - Childhood measles vaccination (reported)"/>
       <description value="Immunization Example - Reported vaccination for measles as child "/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
@@ -236,7 +236,7 @@
          <reference value="Immunization/immunization-example-tetanus-cautious-reinforcement"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Tetanus reinforcement (precaution)"/>
+      <name value="Example - Tetanus reinforcement (precaution)"/>
       <description value="Immunization Example - Tetanus reinforcement (precaution)"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
@@ -246,7 +246,7 @@
          <reference value="Immunization/immunization-example-not-given-stock"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Not given - out of stock"/>
+      <name value="Example - Not given - out of stock"/>
       <description value="Immunization Example - Not given (Out of stock)"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
@@ -256,7 +256,7 @@
          <reference value="Immunization/immunization-example-not-given-contraindication"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Not given - contraindication"/>
+      <name value="Example - Not given - contraindication"/>
       <description value="Immunization Example - Not given (contraindication)"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
@@ -266,7 +266,7 @@
          <reference value="Immunization/immunization-example-not-given-refusal"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Not given - refusal"/>
+      <name value="Example - Not given - refusal"/>
       <description value="Immunization Example - Not given (Refusal)"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
@@ -291,7 +291,7 @@
          <reference value="Practitioner/durant"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Dr Durant (GP)"/>
+      <name value="Example Practitioner - Dr Durant (GP)"/>
       <description value="Dr. Paul Durant (GP)"/>
       <exampleBoolean value="true"/>
       <groupingId value="allergyintolerance"/>
@@ -302,7 +302,7 @@
          <reference value="Practitioner/lenoir"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Dr Lenoir"/>
+      <name value="Example practitioner - Dr Lenoir"/>
       <description value="Lr François Lenoir"/>
       <exampleBoolean value="true"/>
       <groupingId value="allergyintolerance"/>
@@ -313,7 +313,7 @@
          <reference value="Patient/noel"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Patient Noel Joyeux"/>
+      <name value="Example Patient - Noel Joyeux"/>
       <description value="Patient Noel Joyeux"/>
       <exampleBoolean value="true"/>
       <groupingId value="allergyintolerance"/>
@@ -324,7 +324,7 @@
          <reference value="AllergyIntolerance/noel-allergy.v0"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Suspected Allergy"/>
+      <name value="Example - Suspected Allergy"/>
       <description value="Suspected Allergy to Penicillin"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
       <groupingId value="allergyintolerance"/>
@@ -335,7 +335,7 @@
          <reference value="AllergyIntolerance/noel-allergy.v1"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Refuted Allergy"/>
+      <name value="Example - Refuted Allergy"/>
       <description value="Allergy has been refuted - confirmed as non-existent"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
       <groupingId value="allergyintolerance"/>
@@ -345,7 +345,7 @@
          <reference value="AllergyIntolerance/allergyintolerance1"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Allergy1"/>
+      <name value="Example - Allergy 1 - peanut allergy"/>
       <description value="Allergy to peanut"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
       <groupingId value="allergyintolerance"/>
@@ -355,7 +355,7 @@
          <reference value="AllergyIntolerance/allergyintolerance2"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Allergy2"/>
+      <name value="Example - Allergy 2 - Pollen allergy"/>
       <description value="Allergy to pollen"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
       <groupingId value="allergyintolerance"/>
