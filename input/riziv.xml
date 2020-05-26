@@ -216,7 +216,7 @@
          <reference value="Immunization/example-hpv"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="HPVImmunization"/>
+      <name value="HPV Immunization"/>
       <description value="Immunization Example - HPV Vaccination"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
@@ -226,7 +226,7 @@
          <reference value="Immunization/immunization-example-childhood-measles"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="HPVImmunization"/>
+      <name value="Childhood measles vaccination (reported)"/>
       <description value="Immunization Example - Reported vaccination for measles as child "/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
@@ -236,7 +236,7 @@
          <reference value="Immunization/immunization-example-tetanus-cautious-reinforcement"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="HPVImmunization"/>
+      <name value="Tetanus reinforcement (precaution)"/>
       <description value="Immunization Example - Tetanus reinforcement (precaution)"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
@@ -246,7 +246,7 @@
          <reference value="Immunization/immunization-example-not-given-stock"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="HPVImmunization"/>
+      <name value="Not given - out of stock"/>
       <description value="Immunization Example - Not given (Out of stock)"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
@@ -256,7 +256,7 @@
          <reference value="Immunization/immunization-example-not-given-contraindication"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="HPVImmunization"/>
+      <name value="Not given - contraindication"/>
       <description value="Immunization Example - Not given (contraindication)"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
@@ -266,7 +266,7 @@
          <reference value="Immunization/immunization-example-not-given-refusal"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="HPVImmunization"/>
+      <name value="Not given - refusal"/>
       <description value="Immunization Example - Not given (Refusal)"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
