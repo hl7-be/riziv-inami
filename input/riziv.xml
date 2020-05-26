@@ -8,7 +8,7 @@
   <title value="RIZIV-INAMI Patient Record"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <publisher value="IMEC"/>
+  <publisher value="RIZIV-INAMI"/>
   <contact>
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
