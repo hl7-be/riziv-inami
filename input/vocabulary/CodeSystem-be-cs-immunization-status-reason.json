@@ -10,14 +10,6 @@
   "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-immunization-status-reason",
   "concept": [
     {
-      "code": "unconfirmed",
-      "display": "unconfirmed"
-    },
-    {
-      "code": "confirmed",
-      "display": "confirmed"
-    },
-    {
       "code": "other",
       "display": "other"
     },

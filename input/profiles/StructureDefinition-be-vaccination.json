@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "be-immunization",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization",
+  "id": "be-vaccination",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination",
   "version": "0.1.0",
-  "name": "BEImmunization",
-  "title": "BEImmunization",
+  "name": "BeVaccination",
+  "title": "BEVaccination",
   "status": "active",
   "description": "Defines constraints and extensions on the immunization resource to represent an immunization event i.e. the administration of a vaccine.",
   "fhirVersion": "4.0.1",
@@ -43,6 +43,10 @@
   "differential": {
     "element": [
       {
+        "id": "Immunization",
+        "path": "Immunization"
+      },
+      {
         "id": "Immunization.extension",
         "path": "Immunization.extension",
         "slicing": {
@@ -60,6 +64,7 @@
         "id": "Immunization.extension:immunization-originalorder",
         "path": "Immunization.extension",
         "sliceName": "immunization-originalorder",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -74,6 +79,7 @@
         "id": "Immunization.extension:administeredProduct",
         "path": "Immunization.extension",
         "sliceName": "administeredProduct",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -88,6 +94,7 @@
         "id": "Immunization.extension:immunizationLocation",
         "path": "Immunization.extension",
         "sliceName": "immunizationLocation",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -102,6 +109,7 @@
         "id": "Immunization.extension:verificationstatus",
         "path": "Immunization.extension",
         "sliceName": "verificationstatus",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -113,10 +121,24 @@
         ]
       },
       {
+        "id": "Immunization.extension:recorder",
+        "path": "Immunization.extension",
+        "sliceName": "recorder",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-recorder"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Immunization.identifier",
         "path": "Immunization.identifier",
-        "short": "The clinical status of the immunization - whether it is active, resolved...",
-        "min": 1,
+        "short": "A unique business identifier for an immunization entry",
         "mustSupport": true
       },
       {
@@ -140,16 +162,12 @@
       {
         "id": "Immunization.statusReason",
         "path": "Immunization.statusReason",
-        "mustSupport": true,
-        "binding": {"strength":"required",
-        "description": "Belgium codes to describe reasons considered for status of immunization actions, e.g. reasons for not administering vaccine ",
-        "valueSet":"https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-immunization-status-reason"
-        }
+        "mustSupport": true
       },
       {
         "id": "Immunization.vaccineCode",
         "path": "Immunization.vaccineCode",
-        "short": "The target of the immunization - the disease that the immunization action is protecting against - e.g. Polio, Tetanus, HPV",
+        "short": "The vaccine code - a type of vaccine, typically identified by the diseas(s) it covers. For example MMR, HPV, Tetanus, DTPa",
         "mustSupport": true
       },
       {
@@ -169,6 +187,7 @@
         "id": "Immunization.occurrenceDateTime",
         "path": "Immunization.occurrenceDateTime",
         "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "dateTime"
@@ -180,6 +199,7 @@
         "id": "Immunization.occurrenceString",
         "path": "Immunization.occurrenceString",
         "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -238,6 +258,18 @@
         ]
       },
       {
+        "id": "Immunization.reasonCode",
+        "path": "Immunization.reasonCode",
+        "short": "Why immunization has occurred or not (code or text)",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.reasonReference",
+        "path": "Immunization.reasonReference",
+        "short": "Why immunization has occurred or not (reference to a finding)",
+        "mustSupport": true
+      },
+      {
         "id": "Immunization.reaction",
         "path": "Immunization.reaction",
         "mustSupport": true
@@ -252,6 +284,7 @@
         "path": "Immunization.protocolApplied.doseNumberString",
         "short": "Whether this is a first immunization or a reinforcement",
         "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -263,6 +296,7 @@
         "path": "Immunization.protocolApplied.doseNumberPositiveInt",
         "short": "The numeric/sequential number of the dose, when adequate",
         "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "positiveInt"
