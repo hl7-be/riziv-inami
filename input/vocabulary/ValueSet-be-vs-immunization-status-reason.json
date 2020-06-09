@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "BeVSImmunizationStatusReason",
+  "id": "be-vs-immunization-status-reason",
+  "title": "Immunization status Value Set",
+  "description": "Immunization status Value Set",
+  "version": "0.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-immunization-status-reason",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-immunization-status-reason"
+      }
+    ]
+  }
+}

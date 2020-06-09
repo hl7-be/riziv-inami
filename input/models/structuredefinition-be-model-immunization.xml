@@ -40,14 +40,19 @@
     </element>
     <element id="BEImmunization.statusReason">
       <path value="BEImmunization.statusReason" />
-      <short value="The reason for the status e.g. entered in error because ..." />
-      <definition value="Supporting reason for status information....." />
+      <short value="The reason for the status e.g. 'not completed because...'" />
+      <definition value="Supporting reason for status information." />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <description value="Belgium codes to describe reasons considered for status of immunization actions, e.g. reasons for not administering vaccine " />
+        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-immunization-status-reason" />
+      </binding>
     </element>
 
 

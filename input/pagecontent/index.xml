@@ -26,7 +26,7 @@
 <a name="navigation"> </a>
 <h3 id="navigation">Navigation</h3>
 <p>This implementation guide uses the FHIR web-based publication. This allows easy navigation between the Belgium-specific portion of the implementation guide and the resources, data types, value sets and other specification components leveraged from the FHIR core specification. This approach also allows implementers to easily navigate to the information needed to perform a task.</p>
-<p>The top menu allows quick navigation to the different sections, and a <a href="file:///C:\ImplementationGuides\be-core\output\toc.html">Table of Contents</a>  is provided with the entire content of this Implementation Guide. (Be aware that some pages have multiple tabs).</p>
+<p>The top menu allows quick navigation to the different sections, and a <a href="toc.html">Table of Contents</a>  is provided with the entire content of this Implementation Guide. (Be aware that some pages have multiple tabs).</p>
 <p></p>
 
 <a name="intellectual-property-considerations"> </a>

@@ -3,8 +3,8 @@
   <id value="be.fhir.be.riziv"/>
   <url value="http://hl7belgium.org/fhir/efro-1302"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="0.2.0"/>
-  <name value="EFRO1302"/>
+  <version value="0.1.0"/>
+  <name value="RIZIV-INAMI"/>
   <title value="RIZIV-INAMI Patient Record"/>
   <status value="draft"/>
   <experimental value="false"/>
@@ -60,8 +60,8 @@
     </grouping>
 
     <grouping id="immunization">
-      <name value="Immunization"/>
-      <description value="Immunization"/>
+      <name value="Vaccination"/>
+      <description value="Vaccination resources"/>
     </grouping>
 
 
@@ -124,7 +124,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Immunization"/>
-      <description value="Immunization logical model"/>
+      <description value="Vaccination logical model"/>
       <groupingId value="immunization"/>
     </resource>	
     <resource>
@@ -136,7 +136,7 @@
       <description value="The Core BE profile for Immunization (event)"/>
       <groupingId value="immunization"/>
     </resource>
-    <resource>
+<!--
       <reference>
         <reference value="StructureDefinition/basedOn"/>
       </reference>
@@ -145,6 +145,7 @@
       <description value="Order that Immunization is based on"/>
       <groupingId value="immunization"/>
     </resource>
+-->
     <resource>
       <reference>
         <reference value="CodeSystem/be-cs-care-location"/>
@@ -162,6 +163,15 @@
       <fhirVersion value="4.0.1"/>
       <name value="CodeSystem - immunization confirmation status"/>
       <description value="The list of immunization confirmation status"/>
+      <groupingId value="immunization"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/be-cs-immunization-status-reason"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - immunization status-reason"/>
+      <description value="The list of immunization status-reason"/>
       <groupingId value="immunization"/>
     </resource>
 
@@ -186,10 +196,19 @@
     </resource>
     <resource>
       <reference>
+        <reference value="ValueSet/be-vs-immunization-status-reason"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="ValueSet - vaccination status reason"/>
+      <description value="The list of vaccination status reason"/>
+      <groupingId value="immunization"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/be-administeredProduct"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Administered Product"/>
+      <name value="Extension - Administered Product"/>
       <description value="Administered Product"/>
       <groupingId value="immunization"/>
     </resource>
@@ -198,7 +217,7 @@
         <reference value="StructureDefinition/be-immunizationLocation"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Immunization location"/>
+      <name value="Extension - Vaccination location"/>
       <description value="Immunization location"/>
       <groupingId value="immunization"/>
     </resource>	
@@ -207,7 +226,7 @@
         <reference value="StructureDefinition/be-verificationStatus"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Immunization verification status"/>
+      <name value="Extension - Vaccination verification status"/>
       <description value="Immunization verification status"/>
       <groupingId value="immunization"/>
     </resource>	
@@ -217,7 +236,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Example - HPV Immunization"/>
-      <description value="Immunization Example - HPV Vaccination"/>
+      <description value="Vaccination Example - HPV Vaccination"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
     </resource>
@@ -227,7 +246,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Example - Childhood measles vaccination (reported)"/>
-      <description value="Immunization Example - Reported vaccination for measles as child "/>
+      <description value="Vaccination Example - Reported vaccination for measles as child "/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
     </resource>
@@ -237,7 +256,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Example - Tetanus reinforcement (precaution)"/>
-      <description value="Immunization Example - Tetanus reinforcement (precaution)"/>
+      <description value="Vaccination Example - Tetanus reinforcement (precaution)"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
     </resource>
@@ -247,7 +266,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Example - Not given - out of stock"/>
-      <description value="Immunization Example - Not given (Out of stock)"/>
+      <description value="Vaccination Example - Not given (Out of stock)"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
     </resource>
@@ -257,7 +276,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Example - Not given - contraindication"/>
-      <description value="Immunization Example - Not given (contraindication)"/>
+      <description value="Vaccination Example - Not given (contraindication)"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
     </resource>
@@ -267,7 +286,27 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Example - Not given - refusal"/>
-      <description value="Immunization Example - Not given (Refusal)"/>
+      <description value="Vaccination Example - Not given (Refusal)"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
+      <groupingId value="immunization"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Immunization/immunization-example-mistaken-entry"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Example - Mistaken Entry"/>
+      <description value="Vaccination Example - Mistaken entry (wrong vaccine code)"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
+      <groupingId value="immunization"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Immunization/immunization-example-mistaken-entry-update"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Example - Update mistaken entry"/>
+      <description value="Vaccination Example - Update mistaken entry to correct vaccine code"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"/>
       <groupingId value="immunization"/>
     </resource>

@@ -140,7 +140,11 @@
       {
         "id": "Immunization.statusReason",
         "path": "Immunization.statusReason",
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {"strength":"required",
+        "description": "Belgium codes to describe reasons considered for status of immunization actions, e.g. reasons for not administering vaccine ",
+        "valueSet":"https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-immunization-status-reason"
+        }
       },
       {
         "id": "Immunization.vaccineCode",

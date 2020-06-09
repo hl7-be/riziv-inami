@@ -1,0 +1,41 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "BeCSStatusReason",
+  "id": "be-cs-immunization-status-reason",
+  "title": "Immunization status reason Code System.",
+  "description": "Immunization reason status Code System.",
+  "version": "0.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-immunization-status-reason",
+  "concept": [
+    {
+      "code": "unconfirmed",
+      "display": "unconfirmed"
+    },
+    {
+      "code": "confirmed",
+      "display": "confirmed"
+    },
+    {
+      "code": "other",
+      "display": "other"
+    },
+    {
+      "code": "IMMUNE",
+      "display": "immunity"
+    },
+    {
+      "code": "MEDPREC",
+      "display": "medical precaution"
+    },
+    {
+      "code": "OSTOCK",
+      "display": "product out of stock"
+    },
+    {
+      "code": "PATOBJ",
+      "display": "patient objection"
+    }
+  ]
+}
