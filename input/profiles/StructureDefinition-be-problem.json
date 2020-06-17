@@ -1,0 +1,178 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "be-problem",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-problem",
+  "version": "0.1.0",
+  "name": "BeProblem",
+  "title": "BEVaccination",
+  "status": "active",
+  "description": "Defines a patient's known problem, a diagnostic or antecedent that deserves attention.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition",
+        "path": "Condition"
+      },
+      {
+        "id": "Condition.identifier",
+        "path": "Condition.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.verificationStatus",
+        "path": "Condition.verificationStatus",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.category",
+        "path": "Condition.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "coding.code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.category:ProblemType",
+        "path": "Condition.category",
+        "sliceName": "ProblemType",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Condition.category:ProblemType.coding",
+        "path": "Condition.category.coding"
+      },
+      {
+        "id": "Condition.category:ProblemType.coding.system",
+        "path": "Condition.category.coding.system",
+        "patternUri": "BeVSProblemCategory"
+      },
+      {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.bodySite",
+        "path": "Condition.bodySite",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.bodySite.extension:laterality",
+        "path": "Condition.bodySite.extension",
+        "sliceName": "laterality",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-laterality"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.onset[x]",
+        "path": "Condition.onset[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.abatement[x]",
+        "path": "Condition.abatement[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.recordedDate",
+        "path": "Condition.recordedDate",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.recorder",
+        "path": "Condition.recorder",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner",
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole",
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.note",
+        "path": "Condition.note",
+        "mustSupport": true
+      }
+    ]
+  }
+}

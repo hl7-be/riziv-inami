@@ -65,6 +65,12 @@
     </grouping>
 
 
+    <grouping id="problem">
+      <name value="Problem"/>
+      <description value="Problem resources"/>
+    </grouping>
+
+
 <!-- Addiction -->
     <resource>
       <reference>
@@ -312,6 +318,55 @@
     </resource>
 <!-- -->
 
+<!-- Problem -->
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-model-problem"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Problem"/>
+      <description value="Problem logical model"/>
+      <groupingId value="problem"/>
+    </resource>	
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-problem"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Problem core BE profile"/>
+      <description value="The Core BE profile for Problem"/>
+      <groupingId value="problem"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-ext-laterality"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Laterality extension"/>
+      <description value="Laterality"/>
+      <groupingId value="problem"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/be-cs-problem-category"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Code System Problem Category"/>
+      <description value="Code System Problem Category"/>
+      <groupingId value="problem"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-vs-problem-category"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Value Set Problem Category"/>
+      <description value="Value Set Problem Category"/>
+      <groupingId value="problem"/>
+    </resource>
+
 
 <!-- AllergyIntolerance -->
 <!--
@@ -401,12 +456,6 @@
     </resource>
 
 <!-- -->
-
-
-
-
-
-
 
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->

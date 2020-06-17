@@ -1,0 +1,46 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "BeCSProblemCategory",
+  "id": "be-cs-problem-category",
+  "title": "Problem category Code System",
+  "description": "Problem category Code System",
+  "version": "0.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-problem-category",
+  "concept": [
+    {
+      "code": "diagnostic",
+      "display": "Diagnostic",
+      "definition": "Information about a disease, identified after clinical reasoning from physiological and pathological realizations"
+    },
+    {
+      "code": "problem",
+      "display": "Problem",
+      "definition": "A finding that the practitioner considers noteworthy, potentially harmful or deserving further study or treatment"
+    },
+    {
+      "code": "risk",
+      "display": "Risk",
+      "definition": "Problem or health situation that may call for surveillance or continuous attention"
+    },
+    {
+      "code": "antecedent",
+      "display": "Antecedent",
+      "definition": "Information about a problem considered resolved (not family history)"
+    },
+    {
+      "code": "congenital-problem",
+      "display": "A condition present at birth regardless of its cause - may result in disabilities that may be physical, intellectual, or developmental."
+    },
+    {
+      "code": "anamnesis",
+      "display": "Anamnesis",
+      "definition": "conclusion from an anamnesis from another practitioner other than a physician"
+    },
+    {
+      "code": "other",
+      "display": "Other"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="be-model-problem" />
+  <url value="https://www.hl7belgium.org/fhir/StructureDefinition/be-model-problem" />
+  <name value="BeProblem" />
+  <status value="draft" />
+  <description value="This is the logical model of the patient's problem entries in a record. " />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="BeProblem" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Resource" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="BeProblem">
+      <path value="BeProblem" />
+      <short value="A record of a problem" />
+      <min value="0" />
+      <max value="*" />
+    </element>
+    <element id="BeProblem.identifier">
+      <path value="BeProblem.identifier" />
+      <short value="The business identifier(s) for the problem entry" />
+      <definition value="The business identifier(s) for the problem entry - This is an optional attribute, used for example to track an entry throughout its lifecycle, or across vaults." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+      </type>
+    </element>
+    <element id="BeProblem.dateTime">
+      <path value="BeProblem.dateTime" />
+      <short value="The dateTime when the problem has been recorded" />
+      <definition value="The date and/or time when the problem has been recorded in any system." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="BeProblem.reporter">
+      <path value="BeProblem.reporter" />
+      <short value="The professional that recorded the problem" />
+      <definition value="The professional that recorded the problem." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+      </type>
+    </element>
+    <element id="BeProblem.clinicalStatus">
+      <path value="BeProblem.clinicalStatus" />
+      <short value="The clinical status of the problem - whether it is active, resolved..." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+    <element id="BeProblem.status">
+      <path value="BeProblem.status" />
+      <short value="The status of this problem record entry" />
+      <definition value="The status of the problem record entry - whether it is active, entered in error, etc." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+    <element id="BeProblem.subject">
+      <path value="BeProblem.subject" />
+      <short value="The person that has/had the addiction" />
+      <definition value="The patient" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+      </type>
+    </element>
+    <element id="BeProblem.problemCategory">
+      <path value="BeProblem.problemCategory" />
+      <short value="The category for the problem - diagnosis, risk, etc." />
+      <definition value="Supporting reason for status information." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableReference" />
+      </type>
+    </element>
+
+    <element id="BeProblem.origin">
+      <path value="BeProblem.origin" />
+      <short value="." />
+      <definition value="" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="BeProblem.origin.problemCode">
+      <path value="BeProblem.origin.problemCode" />
+      <short value="" />
+      <definition value="" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableReference" />
+      </type>
+    </element>
+    <element id="BeProblem.origin.started">
+      <path value="BeProblem.origin.started" />
+      <short value="" />
+      <definition value="" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+    <element id="BeProblem.origin.resolved">
+      <path value="BeProblem.origin.resolved" />
+      <short value="" />
+      <definition value="" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+    <element id="BeProblem.origin.bodySite">
+      <path value="BeProblem.origin.bodySite" />
+      <short value="" />
+      <definition value="" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableReference" />
+      </type>
+    </element>
+    <element id="BeProblem.origin.bodySite.laterality">
+      <path value="BeProblem.origin.bodySite.laterality" />
+      <short value="" />
+      <definition value="" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableReference" />
+      </type>
+    </element>    
+	
+    <element id="BeProblem.note">
+      <path value="BeProblem.note" />
+      <short value="Additional notes for the problem." />
+      <definition value="Additional notes for the problem" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Attachment" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Attachment" />
+      </type>
+    </element>
+
+
+
+  </differential>
+</StructureDefinition>

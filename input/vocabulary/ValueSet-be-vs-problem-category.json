@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "BeVSProblemCategory",
+  "id": "be-vs-problem-category",
+  "title": "Problem category Value Set",
+  "description": "Problem category Value Set",
+  "version": "0.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-problem-category",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-problem-category"
+      }
+    ]
+  }
+}
