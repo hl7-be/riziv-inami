@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "be-patientwill",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BePatientWill",
+  "url": "https://www.ehealth.fgov.be/fhir/StructureDefinition/be-patientwill",
   "version": "0.1.0",
   "name": "BePatientWill",
   "title": "BePatientWill",
