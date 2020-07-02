@@ -118,7 +118,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Example - Patient Will"/>
       <description value="Patient Will"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BePatientWill" />
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patientwill" />
       <groupingId value="patientwill"/>
     </resource>
 <!-- -->
