@@ -36,7 +36,6 @@
         "id": "Consent.scope",
         "path": "Consent.scope",
         "short": "The high level category or the patient will directive",
-        "definition": "The detailed patient will directive (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)",
         "mustSupport": true
       },
       {
