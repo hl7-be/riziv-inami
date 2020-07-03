@@ -1,7 +1,7 @@
 <Consent xmlns="http://hl7.org/fhir">
   <id value="patientwill-example" />
   <meta>
-    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BePatientWill" />
+    <profile value="https://www.ehealth.fgov.be/fhir/StructureDefinition/be-patientwill" />
   </meta>
   <text>
     <status value="generated" />
