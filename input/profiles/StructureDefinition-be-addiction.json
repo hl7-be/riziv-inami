@@ -112,12 +112,32 @@
       {
         "id": "Condition.recorder",
         "path": "Condition.recorder",
-        "short": "The person that first recorded the addiction"
+        "short": "The person that first recorded the addiction",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner",
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole"
+            ]
+          }
+        ]
       },
       {
         "id": "Condition.asserter",
         "path": "Condition.asserter",
-        "short": "The person that asserted or informed about the addiction."
+        "short": "The person that asserted or informed about the addiction.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner",
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole",
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient",
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-relatedperson"
+            ]
+          }
+        ]
       }
     ]
   }

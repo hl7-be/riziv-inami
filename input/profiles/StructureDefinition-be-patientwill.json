@@ -1,13 +1,35 @@
 {
   "resourceType": "StructureDefinition",
   "id": "be-patientwill",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/BePatientWill",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patientwill",
   "version": "0.1.0",
-  "name": "BePatientWill",
-  "title": "BePatientWill",
+  "name": "BEPatientWill",
+  "title": "BEPatientWill",
   "status": "active",
   "description": "****!DRAFT!DRAFT!DRAFT! VALUESETS STILL TO BE DELIVERED FOR THIS PROFILE BY THE NIHDI **** Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This profile will in the future be also used to record agreement to participate in clinical trials etc. Any usecase around informed consent is out of scope for this profile.",
   "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
   "kind": "resource",
   "abstract": false,
   "type": "Consent",
@@ -15,12 +37,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Consent",
-        "path": "Consent",
-        "short": "An entry expressing a patient's allowance or refusal for care.",
-        "definition": "An entry in the patient's will - one directive that expresses a patient's allowance or refusal for care."
-      },
       {
         "id": "Consent.identifier",
         "path": "Consent.identifier",
@@ -35,15 +51,13 @@
       {
         "id": "Consent.scope",
         "path": "Consent.scope",
-        "short": "The actual directive in the will",
-        "definition": "The detailed patient will directive (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)",
         "mustSupport": true
       },
       {
         "id": "Consent.category",
         "path": "Consent.category",
         "short": "The category or the patient will directive",
-        "definition": "The types or classification of patient will. This element supports indexing and retrieval of Patient Will statements.&#xD;&#xA;The actual detail of the patient will (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)",
+        "definition": "The types or classification of patient will. This element supports indexing and retrieval of consent statements.&#xD;&#xA;The actual detail of the patient will (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)",
         "comment": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.&#xD;&#xA;SHALL be given and a consumer SHALL NOT ignore this.",
         "mustSupport": true
       },
@@ -137,6 +151,12 @@
         "id": "Consent.provision.class",
         "path": "Consent.provision.class",
         "max": "0"
+      },
+      {
+        "id": "Consent.provision.code",
+        "path": "Consent.provision.code",
+        "short": "The actual directive in the will",
+        "definition": "The detailed patient will directive (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)"
       },
       {
         "id": "Consent.provision.data",

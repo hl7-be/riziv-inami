@@ -48,10 +48,6 @@
   "differential": {
     "element": [
       {
-        "id": "Condition",
-        "path": "Condition"
-      },
-      {
         "id": "Condition.identifier",
         "path": "Condition.identifier",
         "mustSupport": true
@@ -87,10 +83,6 @@
         "sliceName": "ProblemType",
         "min": 0,
         "max": "1"
-      },
-      {
-        "id": "Condition.category:ProblemType.coding",
-        "path": "Condition.category.coding"
       },
       {
         "id": "Condition.category:ProblemType.coding.system",

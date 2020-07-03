@@ -43,10 +43,6 @@
   "differential": {
     "element": [
       {
-        "id": "Immunization",
-        "path": "Immunization"
-      },
-      {
         "id": "Immunization.extension",
         "path": "Immunization.extension",
         "slicing": {
