@@ -1,6 +1,6 @@
 {
   "resourceType": "Immunization",
-  "id": "immunization-example-not-given-contraindication",
+  "id": "immunization-example-perscribed-immunization",
   "meta": {
     "profile": [
       "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination"
@@ -23,11 +23,11 @@
   "language": "nl-BE",
   "identifier": [
     {
-      "value": "6021840732",
+      "value": "26877589231",
       "system": "https://www.kindengezin.be/vaccinatie/immunization-register"
     }
   ],
-  "status": "not-done",
+  "status": "completed",
   "performer": [
     {
       "actor": {
@@ -35,30 +35,17 @@
       }
     }
   ],
-  "statusReason": {
-    "coding": [
-      {
-        "code": "MEDPREC",
-        "display": "Contra-indicatie"
-      }
-    ]
-  },
-  "occurrenceDateTime": "2020-03-12",
   "vaccineCode": {
     "coding": [
       {
-        "code": "HBV",
-        "display": "Hepatitis B"
+        "code": "06",
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "display": "Rubella"
       }
     ]
   },
+  "occurrenceString": "Summer 2018",
   "patient": {
     "reference": "Patient/pia"
-  },
-  "occurrenceString": "Summer 2011",
-  "note": [
-    {
-      "text": "Patiënt heeft nu koorts, aanbevolen 1 ​​week te wachten"
-    }
-  ]
+  }
 }

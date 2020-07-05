@@ -12,35 +12,107 @@
     {
       "code": "diagnostic",
       "display": "Diagnostic",
-      "definition": "Information about a disease, identified after clinical reasoning from physiological and pathological realizations"
+      "definition": "=une maladie identifiée par l’application d’un raisonnement clinique aux constatations pathologiques et physiologiques",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Diagnostic"
+        },
+        {
+          "language": "nl-BE",
+          "value": "diagnose"
+        }
+      ]
     },
     {
       "code": "problem",
       "display": "Problem",
-      "definition": "A finding that the practitioner considers noteworthy, potentially harmful or deserving further study or treatment"
+      "definition": "=identification de problèmes que le prestataire de soins juge nuisible, potentiellement nocifs et pouvant faire l’objet d’un approfondissement ou d’un traitement",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Problème"
+        },
+        {
+          "language": "nl-BE",
+          "value": "Probleem"
+        }
+      ]
     },
     {
       "code": "risk",
       "display": "Risk",
-      "definition": "Problem or health situation that may call for surveillance or continuous attention"
+      "definition": "=identification d’un problème ou d’une situation de santé qui pourrait nécessiter une surveillance ou une gestion continue",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Risque"
+        },
+        {
+          "language": "nl-BE",
+          "value": "Risico"
+        }
+      ]
     },
     {
       "code": "antecedent",
-      "display": "Antecedent",
-      "definition": "Information about a problem considered resolved (not family history)"
+      "display": "=translate=",
+      "definition": "=informations sur un problème résolu pour de bon",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Antécédent"
+        },
+        {
+          "language": "nl-BE",
+          "value": "=translate="
+        }
+      ]
     },
     {
-      "code": "congenital-problem",
-      "display": "A condition present at birth regardless of its cause - may result in disabilities that may be physical, intellectual, or developmental."
+      "code": "congenital-condition",
+      "display": "Congenital condition",
+      "definition": "",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Maladie congénitale"
+        },
+        {
+          "language": "nl-BE",
+          "value": "=translate="
+        }
+      ]
     },
     {
       "code": "anamnesis",
       "display": "Anamnesis",
-      "definition": "conclusion from an anamnesis from another practitioner other than a physician"
+      "definition": "=informations sur la conclusion d’une anamnèse d’un prestataire de soin autre qu’un médecin",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Conclusion anamnèse"
+        },
+        {
+          "language": "nl-BE",
+          "value": "Anamnesis conclusie"
+        }
+      ]
     },
     {
       "code": "other",
-      "display": "Other"
+      "display": "Other",
+      "definition": "Other",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Autre"
+        },
+        {
+          "language": "nl-BE",
+          "value": "andere"
+        }
+      ]
     }
   ]
 }

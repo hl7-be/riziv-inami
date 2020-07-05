@@ -3,7 +3,7 @@
   "id": "immunization-example-mistaken-entry-update",
   "meta": {
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination"
     ]
   },
   "extension": [
@@ -28,6 +28,13 @@
     }
   ],
   "status": "not-done",
+  "performer": [
+    {
+      "actor": {
+        "reference": "Organization/org-kind-en-gezin"
+      }
+    }
+  ],
   "vaccineCode": {
     "coding": [
       {
@@ -40,12 +47,5 @@
   "occurrenceString": "Summer 2018",
   "patient": {
     "reference": "Patient/pia"
-  },
-  "performer": [
-    {
-      "actor": {
-        "reference": "Organization/org-kind-en-gezin"
-      }
-    }
-  ]
+  }
 }

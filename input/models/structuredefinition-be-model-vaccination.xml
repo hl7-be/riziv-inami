@@ -51,7 +51,7 @@
       <binding>
         <strength value="required" />
         <description value="Belgium codes to describe reasons considered for status of vaccination actions, e.g. reasons for not administering vaccine " />
-        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-vaccination-status-reason" />
+        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-immunization-status-reason" />
       </binding>
     </element>
 

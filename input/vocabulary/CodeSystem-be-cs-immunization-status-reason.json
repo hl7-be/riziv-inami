@@ -11,23 +11,87 @@
   "concept": [
     {
       "code": "other",
-      "display": "other"
+      "display": "Other",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "Autre"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Andere"
+        }
+      ]
     },
     {
       "code": "IMMUNE",
-      "display": "immunity"
+      "display": "Immunity",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "Immune"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Immuniteit"
+        }
+      ]
     },
     {
       "code": "MEDPREC",
-      "display": "medical precaution"
+      "display": "Medical precaution",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "Contre indication médicale"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Medische contra-indicatie"
+        }
+      ]
     },
     {
       "code": "OSTOCK",
-      "display": "product out of stock"
+      "display": "Product out of stock",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "Hors stock"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Geen voorraad"
+        }
+      ]
     },
     {
       "code": "PATOBJ",
-      "display": "patient objection"
+      "display": "Patient objection",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "Refus"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Weigering"
+        }
+      ]
+    },
+    {
+      "code": "ALLERGY",
+      "display": "Allergy to vaccine ingredient",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "Allergie"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Allergie"
+        }
+      ]
     }
   ]
 }

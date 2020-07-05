@@ -11,15 +11,45 @@
   "concept": [
     {
       "code": "unconfirmed",
-      "display": "unconfirmed"
+      "display": "unconfirmed",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "non confirmé"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "niet bevestigd"
+        }
+      ]
     },
     {
       "code": "confirmed",
-      "display": "confirmed"
+      "display": "confirmed",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "confirmé"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "bevestigd"
+        }
+      ]
     },
     {
       "code": "other",
-      "display": "other"
+      "display": "other",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "autre"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "autre"
+        }
+      ]
     }
   ]
 }

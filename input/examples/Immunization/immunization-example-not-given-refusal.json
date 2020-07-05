@@ -3,20 +3,20 @@
   "id": "immunization-example-not-given-refusal",
   "meta": {
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination"
     ]
   },
   "extension": [
     {
       "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-recorder",
       "valueReference": {
-        "reference": "Organization/org-uz-gent"
+        "reference": "Organization/org-kind-en-gezin"
       }
     },
     {
       "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunizationLocation",
       "valueReference": {
-        "reference": "Organization/org-uz-gent"
+        "reference": "Organization/org-kind-en-gezin"
       }
     }
   ],
@@ -28,6 +28,13 @@
     }
   ],
   "status": "not-done",
+  "performer": [
+    {
+      "actor": {
+        "reference": "Organization/org-kind-en-gezin"
+      }
+    }
+  ],
   "vaccineCode": {
     "coding": [
       {
@@ -39,13 +46,5 @@
   "occurrenceDateTime": "2020-03-12",
   "patient": {
     "reference": "Patient/pia"
-  },
-  "performer": [
-    {
-      "actor": {
-        "reference": "Organization/org-uz-gent"
-      }
-    }
-  ],
-  "occurrenceString": "Summer 2011"
+  }
 }

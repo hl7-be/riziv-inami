@@ -238,7 +238,7 @@
     </resource>	
     <resource>
       <reference>
-         <reference value="Immunization/example-hpv"/>
+         <reference value="Immunization/immunization-example-hpv"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Example - HPV Immunization"/>

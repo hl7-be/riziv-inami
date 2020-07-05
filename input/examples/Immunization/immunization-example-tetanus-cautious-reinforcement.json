@@ -3,7 +3,7 @@
   "id": "immunization-example-tetanus-cautious-reinforcement",
   "meta": {
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination"
     ]
   },
   "extension": [
@@ -28,12 +28,6 @@
     }
   ],
   "status": "completed",
-  "vaccineCode": {
-    "text": "tetanus"
-  },
-  "patient": {
-    "reference": "Patient/pia"
-  },
   "performer": [
     {
       "actor": {
@@ -41,5 +35,11 @@
       }
     }
   ],
+  "vaccineCode": {
+    "text": "tetanus"
+  },
+  "patient": {
+    "reference": "Patient/pia"
+  },
   "occurrenceString": "Summer 2011"
 }

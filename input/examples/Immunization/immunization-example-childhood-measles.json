@@ -3,7 +3,7 @@
   "id": "immunization-example-childhood-measles",
   "meta": {
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination"
     ]
   },
   "extension": [
@@ -28,6 +28,17 @@
     }
   ],
   "status": "completed",
+  "performer": [
+    {
+      "actor": {
+        "identifier": {
+          "use": "official",
+          "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+          "value": "79121137740"
+        }
+      }
+    }
+  ],
   "vaccineCode": {
     "text": "mazelen"
   },

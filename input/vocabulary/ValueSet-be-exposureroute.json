@@ -1,0 +1,71 @@
+{
+  "resourceType": "ValueSet",
+  "id": "be-exposureroute",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BeExposureRoute</h2><div><p>Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=447694001\">447694001</a></td><td>Respiratory tract route</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6064005\">6064005</a></td><td>Topical route</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26643006\">26643006</a></td><td>Oral route</td><td/></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td></tr><tr><td>447694001</td><td>Respiratory tract route</td></tr><tr><td>6064005</td><td>Topical route</td></tr><tr><td>26643006</td><td>Oral route</td></tr></table></div>"
+  },
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-exposureroute",
+  "version": "1.0.0",
+  "name": "BeExposureRoute",
+  "status": "active",
+  "date": "2019-12-19T09:13:57+01:00",
+  "publisher": "eHealth Platform",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "447694001",
+            "designation": [
+              {
+                "language": "en",
+                "value": "Respiratory tract route"
+              }
+            ]
+          },
+          {
+            "code": "6064005",
+            "designation": [
+              {
+                "language": "en",
+                "value": "Topical route"
+              }
+            ]
+          },
+          {
+            "code": "26643006",
+            "designation": [
+              {
+                "language": "en",
+                "value": "Oral route"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
