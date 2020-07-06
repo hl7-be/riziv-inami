@@ -181,6 +181,18 @@
       <groupingId value="immunization"/>
     </resource>
 
+
+    <resource>
+      <reference>
+        <reference value="CodeSystem/be-cs-vaccine-administration-route"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - Vaccine Administration Route"/>
+      <description value="The list of administration routes for vaccines"/>
+      <groupingId value="immunization"/>
+    </resource>
+
+
     <resource>
       <reference>
         <reference value="ValueSet/be-vs-care-location"/>
@@ -190,6 +202,17 @@
       <description value="The list of Care locations"/>
       <groupingId value="immunization"/>
     </resource>
+
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-vs-vaccine-administration-route"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="ValueSet - Vaccine Administration Route"/>
+      <description value="The list of administration routes for vaccines"/>
+      <groupingId value="immunization"/>
+    </resource>
+
 
     <resource>
       <reference>
