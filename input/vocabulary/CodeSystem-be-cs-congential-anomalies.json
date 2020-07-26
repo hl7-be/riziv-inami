@@ -1,0 +1,479 @@
+{
+    "resourceType": "CodeSystem",
+    "status": "draft",
+    "content": "complete",
+    "name": "BeCSCongenitalAnomalies",
+    "id": "be-cs-congenital-anomaly",
+    "title": "Congenital Anomalies Code System",
+    "description": "Congenital Anomalies Code System",
+    "version": "0.1.0",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-congenital-anomalies",
+    "concept": [
+        {
+            "code": "89369001",
+            "display": "Anencephaly",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "Anencéphalie"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Anencefalie"
+                }
+            ]
+        },
+        {
+            "code": "230745008",
+            "display": "Hydrocephaly",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "Hydrocéphalie"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Hydrocefalie"
+                }
+            ]
+        },
+        {
+            "code": "204731006",
+            "display": "Imperforate anus",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "Imperforation anale"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Anale imperforatie"
+                }
+            ]
+        },
+        {
+            "code": "39839004",
+            "display": "Diaphragmatic hernia",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "hernie diaphragmatique"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "hernia diafragmatica"
+                }
+            ]
+        },
+        {
+            "code": "72951007",
+            "display": "Gastroschisis",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "Gastroschisis"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Gastroschisis"
+                }
+            ]
+        },
+        {
+            "code": "111318005",
+            "display": "Congenital cystic adenomatoid malformation of lung",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "malformation adénomatoïde du poumon"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "afwijking long (CALM)"
+                }
+            ]
+        },
+        {
+            "code": "204942005",
+            "display": "Renal agenesis",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "agénésie rénale"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "nier agenese"
+                }
+            ]
+        },
+        {
+            "code": "38804009",
+            "display": "Turner syndrom",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "syndrome de Turner"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "turner syndroom (XO)"
+                }
+            ]
+        },
+        {
+            "code": "86299006",
+            "display": "Tetralogy of Fallot",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "tétralogie de Fallot"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "tetralogie Fallot"
+                }
+            ]
+        },
+        {
+            "code": "67531005",
+            "display": "Spina bifida",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "Spina bifida"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Spina bifida"
+                }
+            ]
+        },
+        {
+            "code": "80281008",
+            "display": "Cleft lip",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "fente labiale"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "gespleten lip"
+                }
+            ]
+        },
+        {
+            "code": "87979003",
+            "display": "Cleft palate",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "fente palatine"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "gespleten verhemelte"
+                }
+            ]
+        },
+        {
+            "code": "67341007",
+            "display": "Longitudinal deficiency of limb",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "anomalie réductionnelle des membres"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "reductie ledematen"
+                }
+            ]
+        },
+        {
+            "code": "18735004",
+            "display": "Congenital omphalocele",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "Omphalocèle"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Omfalocele"
+                }
+            ]
+        },
+        {
+            "code": "204296002",
+            "display": "Discordant ventriculoarterial connection",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "transposition des gros vaisseaux"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "transpositie grote vaten"
+                }
+            ]
+        },
+        {
+            "code": "84296002",
+            "display": "Congenital atresia of small intestine",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "atrésie intestin grêle"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "atresie dundarm"
+                }
+            ]
+        },
+        {
+            "code": "57219006",
+            "display": "Craniosynostosis syndrome",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "Craniosténose"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Craniosynostosis"
+                }
+            ]
+        },
+        {
+            "code": "204967008",
+            "display": "Renal pelvis and ureter obstructive defects",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "anomalie obstructive bassinet / uretère"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "obstructieve defecten nierbekken en ureter"
+                }
+            ]
+        },
+        {
+            "code": "26179002",
+            "display": "Congenital atresia of esophagus",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "atrésie de l'œsophage"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "oesofagale atresie"
+                }
+            ]
+        },
+        {
+            "code": "204712000",
+            "display": "Anal atresia",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "atrésie anale"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "atresie anus"
+                }
+            ]
+        },
+        {
+            "code": "13404009",
+            "display": "Twin-to-twin blood transfer",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "syndrome transfuseur-transfusé "
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "twin-to-twin transfusiesyndroom"
+                }
+            ]
+        },
+        {
+            "code": "105986008",
+            "display": "Congenital skeletal dysplasia",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "dysphasie squelettique / nanisme"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "skeletdysplasie/dwerggroei"
+                }
+            ]
+        },
+        {
+            "code": "276508000",
+            "display": "Hydrops fetalis",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "hydrops fœtal"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "hydrops foetalis"
+                }
+            ]
+        },
+        {
+            "code": "82525005",
+            "display": "Congenital cystic kidney disease",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "dysplasie rénale poly/multikystique"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "poly/multikystische nierdysplasie"
+                }
+            ]
+        },
+        {
+            "code": "30288003",
+            "display": "Ventricular septal defect",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "communication interventriculaire"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "VSD"
+                }
+            ]
+        },
+        {
+            "code": "77480004",
+            "display": "Congenital biliary atresia",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "atrésie des voies biliaires"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "atresie galwegen"
+                }
+            ]
+        },
+        {
+            "code": "416010008",
+            "display": "Hypospadias",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "Hypospade"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Hypospadias"
+                }
+            ]
+        },
+        {
+            "code": "399882002",
+            "display": "Cystic hygroma",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "hygroma kystique"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "cystisch hygroma"
+                }
+            ]
+        },
+        {
+            "code": "41040004",
+            "display": "Complete trisomy 21 syndrome",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "trisomie 21"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "trisomie 21"
+                }
+            ]
+        },
+        {
+            "code": "51500006",
+            "display": "Complete trisomy 18 syndrome",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "trisomie 18"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "trisomie 18"
+                }
+            ]
+        },
+        {
+            "code": "21111006",
+            "display": "Complete trisomy 13 syndrome",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "trisomie 13"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "trisomie 13"
+                }
+            ]
+        }
+    ],
+    "count": 31
+}

@@ -389,6 +389,42 @@
       <description value="Value Set Problem Category"/>
       <groupingId value="problem"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/be-cs-laterality"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Code System Laterality"/>
+      <description value="Code System Laterality"/>
+      <groupingId value="problem"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-vs-laterality"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Value Set Laterality"/>
+      <description value="Value Set Laterality"/>
+      <groupingId value="problem"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/be-cs-bodysite"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Code System Body Site"/>
+      <description value="Code System Body Site"/>
+      <groupingId value="problem"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-vs-bodysite"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Value Set Code System Body Site"/>
+      <description value="Value Set Body Site"/>
+      <groupingId value="problem"/>
+    </resource>
 
 
 <!-- AllergyIntolerance -->

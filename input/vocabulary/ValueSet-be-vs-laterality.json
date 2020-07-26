@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "BeVSLaterality",
+  "id": "be-vs-laterality",
+  "title": "Laterality",
+  "description": "Laterality codes",
+  "version": "0.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-laterality",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-laterality"
+      }
+    ]
+  }
+}

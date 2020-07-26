@@ -1,118 +1,118 @@
 {
-  "resourceType": "CodeSystem",
-  "status": "active",
-  "content": "complete",
-  "name": "BeCSProblemCategory",
-  "id": "be-cs-problem-category",
-  "title": "Problem category Code System",
-  "description": "Problem category Code System",
-  "version": "0.1.0",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-problem-category",
-  "concept": [
-    {
-      "code": "diagnostic",
-      "display": "Diagnostic",
-      "definition": "=une maladie identifiée par l’application d’un raisonnement clinique aux constatations pathologiques et physiologiques",
-      "designation": [
+    "resourceType": "CodeSystem",
+    "status": "active",
+    "content": "complete",
+    "name": "BeCSProblemCategory",
+    "id": "be-cs-problem-category",
+    "title": "Problem category Code System",
+    "description": "Problem category Code System",
+    "version": "0.1.0",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-problem-category",
+    "concept": [
         {
-          "language": "fr-BE",
-          "value": "Diagnostic"
+            "code": "diagnosis",
+            "display": "Diagnosis",
+            "definition": "une maladie identifiée par l’application d’un raisonnement clinique aux constatations pathologiques et physiologiques",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "Diagnostic"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "diagnose"
+                }
+            ]
         },
         {
-          "language": "nl-BE",
-          "value": "diagnose"
-        }
-      ]
-    },
-    {
-      "code": "problem",
-      "display": "Problem",
-      "definition": "=identification de problèmes que le prestataire de soins juge nuisible, potentiellement nocifs et pouvant faire l’objet d’un approfondissement ou d’un traitement",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "Problème"
+            "code": "problem",
+            "display": "Problem",
+            "definition": "identification de problèmes que le prestataire de soins juge nuisible, potentiellement nocifs et pouvant faire l’objet d’un approfondissement ou d’un traitement",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "Problème"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Probleem"
+                }
+            ]
         },
         {
-          "language": "nl-BE",
-          "value": "Probleem"
-        }
-      ]
-    },
-    {
-      "code": "risk",
-      "display": "Risk",
-      "definition": "=identification d’un problème ou d’une situation de santé qui pourrait nécessiter une surveillance ou une gestion continue",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "Risque"
+            "code": "Risk",
+            "display": "Risk",
+            "definition": "identification d’un problème ou d’une situation de santé qui pourrait nécessiter une surveillance ou une gestion continue",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "Risque"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Risico"
+                }
+            ]
         },
         {
-          "language": "nl-BE",
-          "value": "Risico"
-        }
-      ]
-    },
-    {
-      "code": "antecedent",
-      "display": "=translate=",
-      "definition": "=informations sur un problème résolu pour de bon",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "Antécédent"
+            "code": "antecedent",
+            "display": "Antecedent",
+            "definition": "informations sur un problème résolu pour de bon",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "Antécédent"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": ""
+                }
+            ]
         },
         {
-          "language": "nl-BE",
-          "value": "=translate="
-        }
-      ]
-    },
-    {
-      "code": "congenital-condition",
-      "display": "Congenital condition",
-      "definition": "",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "Maladie congénitale"
+            "code": "congenital",
+            "display": "Congenital anomaly",
+            "definition": "",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "Maladie congénitale"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": ""
+                }
+            ]
         },
         {
-          "language": "nl-BE",
-          "value": "=translate="
-        }
-      ]
-    },
-    {
-      "code": "anamnesis",
-      "display": "Anamnesis",
-      "definition": "=informations sur la conclusion d’une anamnèse d’un prestataire de soin autre qu’un médecin",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "Conclusion anamnèse"
+            "code": "conclusion",
+            "display": "Conclusion",
+            "definition": "informations sur la conclusion d’une anamnèse d’un prestataire de soin autre qu’un médecin",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "Conclusion anamnèse"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "Anamnesis conclusie"
+                }
+            ]
         },
         {
-          "language": "nl-BE",
-          "value": "Anamnesis conclusie"
+            "code": "other",
+            "display": "Other",
+            "definition": "Autre",
+            "designation": [
+                {
+                    "language": "fr-BE",
+                    "value": "Autre"
+                },
+                {
+                    "language": "nl-BE",
+                    "value": "andere"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "code": "other",
-      "display": "Other",
-      "definition": "Other",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "Autre"
-        },
-        {
-          "language": "nl-BE",
-          "value": "andere"
-        }
-      ]
-    }
-  ]
+    ]
 }

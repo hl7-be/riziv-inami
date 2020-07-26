@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "BeVSConditionOriginType",
+  "id": "be-vs-condition-origin-type",
+  "title": "Condition Origin Type",
+  "description": "Condition Origin type",
+  "version": "0.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-condition-origin-type",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-condition-origin-type"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "BeVSBodySite",
+  "id": "be-vs-bodysite",
+  "title": "Body Site",
+  "description": "Body Site",
+  "version": "0.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-bodysite",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-bodysite"
+      }
+    ]
+  }
+}

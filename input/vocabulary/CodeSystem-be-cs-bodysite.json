@@ -1,0 +1,18 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "BeCSBodySite",
+  "id": "be-cs-bodysite",
+  "title": "Body Site CodeSystem",
+  "description": "Body Site CodeSystem",
+  "version": "0.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-bodysite",
+  "concept": [
+    {
+      "code": "IM",
+      "display": "Intramuscular"
+    }
+  ],
+  "count": 1
+}

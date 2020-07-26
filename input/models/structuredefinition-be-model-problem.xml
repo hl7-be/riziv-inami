@@ -58,6 +58,10 @@
         <code value="code" />
         <profile value="http://hl7.org/fhir/StructureDefinition/code" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="	http://hl7.org/fhir/ValueSet/condition-clinical" />
+      </binding>
     </element>
     <element id="BeProblem.status">
       <path value="BeProblem.status" />
@@ -69,6 +73,10 @@
         <code value="code" />
         <profile value="http://hl7.org/fhir/StructureDefinition/code" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="	http://hl7.org/fhir/ValueSet/condition-ver-status" />
+      </binding>
     </element>
     <element id="BeProblem.subject">
       <path value="BeProblem.subject" />
@@ -90,6 +98,10 @@
       <type>
         <code value="CodeableReference" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-vs-problem-category" />
+      </binding>
     </element>
 
     <element id="BeProblem.origin">
@@ -102,8 +114,34 @@
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="BeProblem.origin.problemCode">
-      <path value="BeProblem.origin.problemCode" />
+    <element id="BeProblem.origin.type">
+      <path value="BeProblem.origin.type" />
+      <short value="" />
+      <definition value="" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-condition-origin-type" />
+      </binding>
+    </element>
+    <element id="BeProblem.origin.reference">
+      <path value="BeProblem.origin.reference" />
+      <short value="" />
+      <definition value="" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+      </type>
+    </element>
+
+    <element id="BeProblem.problemCode">
+      <path value="BeProblem.problemCode" />
       <short value="" />
       <definition value="" />
       <min value="0" />
@@ -111,9 +149,13 @@
       <type>
         <code value="CodeableReference" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-vs-congenital-anomalies" />
+      </binding>
     </element>
-    <element id="BeProblem.origin.started">
-      <path value="BeProblem.origin.started" />
+    <element id="BeProblem.started">
+      <path value="BeProblem.started" />
       <short value="" />
       <definition value="" />
       <min value="0" />
@@ -122,8 +164,8 @@
         <code value="Period" />
       </type>
     </element>
-    <element id="BeProblem.origin.resolved">
-      <path value="BeProblem.origin.resolved" />
+    <element id="BeProblem.resolved">
+      <path value="BeProblem.resolved" />
       <short value="" />
       <definition value="" />
       <min value="0" />
@@ -132,26 +174,45 @@
         <code value="Period" />
       </type>
     </element>
-    <element id="BeProblem.origin.bodySite">
-      <path value="BeProblem.origin.bodySite" />
+    <element id="BeProblem.bodySite">
+      <path value="BeProblem.bodySite" />
       <short value="" />
       <definition value="" />
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="CodeableReference" />
+        <code value="BackboneElement" />
       </type>
     </element>
-    <element id="BeProblem.origin.bodySite.laterality">
-      <path value="BeProblem.origin.bodySite.laterality" />
+    <element id="BeProblem.bodySite.site">
+      <path value="BeProblem.bodySite.site" />
       <short value="" />
       <definition value="" />
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="CodeableReference" />
+        <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-bodysite" />
+      </binding>
     </element>    
+    <element id="BeProblem.bodySite.laterality">
+      <path value="BeProblem.bodySite.laterality" />
+      <short value="" />
+      <definition value="" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-laterality" />
+      </binding>
+    </element>    
+
 	
     <element id="BeProblem.note">
       <path value="BeProblem.note" />

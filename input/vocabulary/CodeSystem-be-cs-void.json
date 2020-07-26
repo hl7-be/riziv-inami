@@ -1,0 +1,18 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "BeCSVoid",
+  "id": "be-cs-void",
+  "title": "Void CodeSystem",
+  "description": "Void CodeSystem",
+  "version": "0.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-void",
+  "concept": [
+    {
+      "code": "IM",
+      "display": "Intramuscular"
+    }
+  ],
+  "count": 1
+}
