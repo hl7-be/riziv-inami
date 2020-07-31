@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "be-administeredProduct",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-administeredProduct",
+  "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-administeredProduct",
   "version": "0.1.0",
   "name": "BeAdministeredProduct",
   "title": "Product administered",

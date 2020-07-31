@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "be-recorder",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-recorder",
+  "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-recorder",
   "version": "0.1.0",
   "name": "BeRecorder",
   "title": "Who recorded the information",

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "be-immunization-originalorder",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization-originalorder",
+  "url": "https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-immunization-originalorder",
   "version": "0.1.0",
   "name": "BeImmunizationOriginalOrder",
   "title": "Immunization Order, prescription or request",
