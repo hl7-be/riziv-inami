@@ -1,0 +1,51 @@
+{
+  "resourceType": "Immunization",
+  "id": "immunization-example-perscribed-immunization",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-recorder",
+      "valueReference": {
+        "reference": "Organization/org-kind-en-gezin"
+      }
+    },
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunizationLocation",
+      "valueReference": {
+        "reference": "Organization/org-kind-en-gezin"
+      }
+    }
+  ],
+  "language": "nl-BE",
+  "identifier": [
+    {
+      "value": "26877589231",
+      "system": "https://www.kindengezin.be/vaccinatie/immunization-register"
+    }
+  ],
+  "status": "completed",
+  "performer": [
+    {
+      "actor": {
+        "reference": "Organization/org-kind-en-gezin"
+      }
+    }
+  ],
+  "vaccineCode": {
+    "coding": [
+      {
+        "code": "06",
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "display": "Rubella"
+      }
+    ]
+  },
+  "occurrenceString": "Summer 2018",
+  "patient": {
+    "reference": "Patient/pia"
+  }
+}

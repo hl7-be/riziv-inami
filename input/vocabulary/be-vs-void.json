@@ -8,10 +8,6 @@
   "version": "0.1.0",
   "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-void",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-void"
-      }
-    ]
+
   }
 }

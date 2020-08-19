@@ -1,6 +1,6 @@
 {
   "resourceType": "NamingSystem",
-  "id": "be-ns-product-maufacturer",
+  "id": "be-ns-product-manufacturer",
   "status": "active",
   "date": "2020-07-24",
   "name": "BeNSManufacturers",

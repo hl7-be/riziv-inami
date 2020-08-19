@@ -1,0 +1,47 @@
+{
+  "resourceType": "Immunization",
+  "id": "iex1",
+  "meta": {
+    "profile": [
+      "https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination"
+    ]
+  },
+  "language": "fr-BE",
+  "identifier": [
+    {
+      "value": "036a5f82-cad8-4b79-ae2b-a5f20374b60a",
+      "system": "https://www.kindengezin.be/vaccinatie/immunization-register"
+    }
+  ],
+  "status": "completed",
+  "performer": [
+    {
+      "actor": {
+        "identifier": {
+          "use": "official",
+          "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+          "value": "79121137740"
+        }
+      }
+    }
+  ],
+  "vaccineCode": {
+    "coding": [
+      {
+        "code": "165",
+        "system": "http://hl7.org/fhir/sid/cvx"
+      },
+      {
+        "code": "165",
+        "system": "http://hl7.org/fhir/sid/cvx"
+      }
+    ]
+  },
+  "patient": {
+    "identifier": {
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "16032367159"
+    }
+  },
+  "occurrenceDateTime": "2020-05-17"
+}

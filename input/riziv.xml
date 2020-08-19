@@ -244,6 +244,52 @@
       </resource>
       <resource>
          <reference>
+            <reference value="NamingSystem/be-ns-cnk-codes" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="NamingSystem" />
+         <description value="" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="NamingSystem/be-ns-nihdi-organization" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="BeNSNIHDIOrganization" />
+         <description value="NamingSystem - NIHDI Professional numbers" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="NamingSystem/be-ns-nihdi-professional" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="BeNSNIHDIProfessional" />
+         <description value="NamingSystem - NIHDI Professional numbers" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="NamingSystem/be-ns-one-immunizations" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="BeNSONEImmunization" />
+         <description value="NamingSystem for ONE immunizations" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="NamingSystem/be-ns-product-manufacturer" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="BeNSNIHDIProductManufacturer" />
+         <description value="NamingSystem - Product Manufacturer" />
+         <groupingId value="immunization" />
+      </resource>
+
+      <resource>
+         <reference>
             <reference value="Immunization/toto-hexa1" />
          </reference>
          <fhirVersion value="4.0.1" />
@@ -586,6 +632,35 @@
       <description value="Allergy Intolerance profile"/>
       <groupingId value="allergyintolerance"/>
     </resource>	
+
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-allergyintolerancecode" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="BeVSAllergyIntoleranceCode" />
+         <description value="ValueSet - Allergy Intolerance Code" />
+         <groupingId value="allergyintolerance" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-exposureroute" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="BeVSExposureRoute" />
+         <description value="ValueSet - Allergy Intolerance exposure route" />
+         <groupingId value="allergyintolerance" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-riskmanifestation" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="BeVSRiskManifestation" />
+         <description value="ValueSet - Allergy manifestation" />
+         <groupingId value="allergyintolerance" />
+      </resource>
+
       <resource>
          <reference>
             <reference value="Practitioner/durant" />
@@ -656,7 +731,6 @@
          <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance" />
          <groupingId value="allergyintolerance" />
       </resource>
-      <!--
       <resource>
          <reference>
             <reference value="ExampleScenario/scenario-allergy" />
@@ -666,7 +740,6 @@
          <description value="Suspected Allergy, then refuted" />
          <groupingId value="allergyintolerance" />
       </resource>
-       -->
       <page>
          <!-- The root will always be toc.html - the template will force it if you don't do it -->
          <nameUrl value="toc.html" />

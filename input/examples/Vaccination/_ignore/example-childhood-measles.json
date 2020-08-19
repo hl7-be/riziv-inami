@@ -1,0 +1,49 @@
+{
+  "resourceType": "Immunization",
+  "id": "immunization-example-childhood-measles",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-recorder",
+      "valueReference": {
+        "reference": "Organization/org-kind-en-gezin"
+      }
+    },
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunizationLocation",
+      "valueCodeableConcept": {
+        "text": "In Spain"
+      }
+    }
+  ],
+  "language": "nl-BE",
+  "identifier": [
+    {
+      "value": "12345656523",
+      "system": "https://www.kindengezin.be/vaccinatie/immunization-register"
+    }
+  ],
+  "status": "completed",
+  "performer": [
+    {
+      "actor": {
+        "identifier": {
+          "use": "official",
+          "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+          "value": "79121137740"
+        }
+      }
+    }
+  ],
+  "vaccineCode": {
+    "text": "mazelen"
+  },
+  "patient": {
+    "reference": "Patient/pia"
+  },
+  "occurrenceString": "Wanneer de patiënt 20 jaar oud was"
+}
