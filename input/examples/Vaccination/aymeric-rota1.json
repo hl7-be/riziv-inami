@@ -1,0 +1,57 @@
+{
+  "resourceType": "Immunization",
+  "id": "aymeric-rota1",
+  "meta": {
+    "profile": [
+      "https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-immunization-originalorder",
+      "valueReference": {
+        "reference": "aymeric-rota"
+      }
+    },
+    {
+      "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-verificationStatus",
+      "valueCode": "confirmed"
+    }
+  ],
+  "status": "completed",
+  "patient": {
+    "identifier": {
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "20020142173"
+    }
+  },
+  "recorded": "2020-04-06",
+  "occurrenceDateTime": "2020-04-06",
+  "doseQuantity": {
+    "value": 1
+  },
+  "performer": [
+    {
+      "actor": {
+        "identifier": {
+          "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
+          "value": "NIHDI_GP1"
+        }
+      }
+    }
+  ],
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/vaccine-code",
+        "code": "116"
+      }
+    ]
+  },
+  "protocolApplied": [
+    {
+      "doseNumberPositiveInt": 1,
+      "seriesDosesPositiveInt": 3
+    }
+  ]
+}

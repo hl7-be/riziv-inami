@@ -1,0 +1,26 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "be-ns-nihdi-organization",
+  "status": "active",
+  "date": "2020-07-24",
+  "name": "BeNSNIHDIOrganization",
+  "kind": "identifier",
+  "description": "Naming System - Nihdi - Organization",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
+      "preferred": true
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "056",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
+        }
+      ]
+    }
+  ]
+}

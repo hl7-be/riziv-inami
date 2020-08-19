@@ -1,0 +1,69 @@
+{
+  "resourceType": "Immunization",
+  "id": "toto-hexa4-skipped",
+  "meta": {
+    "profile": [
+      "https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-verificationStatus",
+      "valueCode": "confirmed"
+    }
+  ],
+  "identifier": [
+    {
+      "value": "c3743217-7b07-4370-b5e2-3eb0f2af108a",
+      "system": "https://www.one.be/vaccination/immunisation-register"
+    }
+  ],
+  "status": "not-done",
+  "statusReason": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/immunization-status-reason",
+        "code": "MEDPREC"
+      }
+    ]
+  },
+  "patient": {
+    "identifier": {
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "16032376921"
+    }
+  },
+  "recorded": "2017-06-16",
+  "occurrenceDateTime": "2017-06-16",
+  "performer": [
+    {
+      "actor": {
+        "identifier": {
+          "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
+          "value": "NIHDI_ONE"
+        }
+      }
+    },
+    {
+      "actor": {
+        "identifier": {
+          "value": "ONE Nurse 2"
+        }
+      }
+    }
+  ],
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/vaccine-code",
+        "code": "146"
+      }
+    ]
+  },
+  "protocolApplied": [
+    {
+      "doseNumberPositiveInt": 4,
+      "seriesDosesPositiveInt": 4
+    }
+  ]
+}

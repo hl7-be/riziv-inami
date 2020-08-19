@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "id": "be-allergyintolerancecode",
+  "id": "be-vs-allergyintolerancecode",
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BeAllergyIntoleranceCode</h2><div><p>Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Import all the codes that are contained in <a href=\"valueset-be-causativeagent.html\">https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent</a></li><li>Import all the codes that are contained in <a href=\"valueset-be-noallergy.html\">https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy</a></li></ul></div>"

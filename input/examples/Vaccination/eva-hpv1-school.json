@@ -1,0 +1,71 @@
+{
+  "resourceType": "Immunization",
+  "id": "eva-hpv1-school",
+  "meta": {
+    "profile": [
+      "https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-verificationStatus",
+      "valueCode": "confirmed"
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "Organization",
+      "id": "org-msd-belgium",
+      "meta": {
+        "profile": [
+          "https://www.hl7belgium.be/fhir/StructureDefinition/be-organization"
+        ]
+      },
+      "active": true,
+      "name": "MSD Belgium",
+      "identifier": [
+        {
+          "value": "111111111111"
+        }
+      ]
+    }
+  ],
+  "status": "completed",
+  "patient": {
+    "identifier": {
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "7061254428"
+    }
+  },
+  "recorded": "2019-09-05",
+  "occurrenceDateTime": "2019-09-05",
+  "manufacturer": {
+    "reference": "org-msd-belgium"
+  },
+  "doseQuantity": {
+    "value": 1
+  },
+  "performer": [
+    {
+      "actor": {
+        "identifier": {
+          "value": "Reference(School2)"
+        }
+      }
+    }
+  ],
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/vaccine-code",
+        "code": "165"
+      }
+    ]
+  },
+  "protocolApplied": [
+    {
+      "doseNumberPositiveInt": 1,
+      "seriesDosesPositiveInt": 2
+    }
+  ]
+}

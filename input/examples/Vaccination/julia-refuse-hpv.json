@@ -1,0 +1,47 @@
+{
+  "resourceType": "Immunization",
+  "id": "julia-refuse-hpv",
+  "meta": {
+    "profile": [
+      "https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-verificationStatus",
+      "valueCode": "confirmed"
+    }
+  ],
+  "status": "not-done",
+  "patient": {
+    "identifier": {
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "06092473240"
+    }
+  },
+  "recorded": "2019-09-05",
+  "occurrenceDateTime": "2019-09-05",
+  "performer": [
+    {
+      "actor": {
+        "identifier": {
+          "value": "Reference(School2)"
+        }
+      }
+    }
+  ],
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/vaccine-code",
+        "code": "165"
+      }
+    ]
+  },
+  "protocolApplied": [
+    {
+      "doseNumberPositiveInt": 1,
+      "seriesDosesPositiveInt": 2
+    }
+  ]
+}

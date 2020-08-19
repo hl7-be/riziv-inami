@@ -1,0 +1,57 @@
+{
+  "resourceType": "Immunization",
+  "id": "gabriel-flu",
+  "meta": {
+    "profile": [
+      "https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-immunization-originalorder",
+      "valueReference": {
+        "reference": "#order-gabriel-flu"
+      }
+    },
+    {
+      "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-verificationStatus",
+      "valueCode": "confirmed"
+    }
+  ],
+  "status": "completed",
+  "patient": {
+    "identifier": {
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "55011779911"
+    }
+  },
+  "recorded": "2019-10-11",
+  "occurrenceDateTime": "2019-10-11",
+  "doseQuantity": {
+    "value": 1
+  },
+  "performer": [
+    {
+      "actor": {
+        "identifier": {
+          "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
+          "value": "NIHDI_GP2"
+        }
+      }
+    }
+  ],
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/vaccine-code",
+        "code": "141"
+      }
+    ]
+  },
+  "protocolApplied": [
+    {
+      "doseNumberString": "2020",
+      "seriesDosesString": "Yearly"
+    }
+  ]
+}
