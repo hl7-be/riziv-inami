@@ -1,0 +1,12 @@
+---
+feedback:
+  active: true
+  formUrl: https://docs.google.com/forms/d/e/1FAIpQLSeWF4OQebH6B6n_5PcaJPfjG8Sa0L-GbooPM2q5_sKZg9eHjA/viewform?usp=pp_url
+  dashboard: https://github.com/orgs/hl7-be/projects/4
+  parameters:
+  - name: "'entry.1353807103'"
+    value: encodeURIComponent($(document).attr('title'))
+  - name: "'entry.247644557'"
+    value: document.getElementById(id).textContent
+#  - name: "'entry.247644557'"
+#    value: "$(this).attr('id')"
