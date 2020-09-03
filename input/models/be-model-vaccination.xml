@@ -87,8 +87,8 @@
 	
     <element id="BEVaccination.dateTime">
       <path value="BEVaccination.dateTime" />
-      <short value="The dateTime when the vaccination has been recorded" />
-      <definition value="The date and/or time when the immunization administration has been recorded" />
+      <short value="The dateTime when the vaccination has been administered" />
+      <definition value="The date and/or time when the immunization administration has been administered or presumed to be administered" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -119,6 +119,18 @@
       </type>
     </element>
 
+    <element id="BEVaccination.sequenceNumber">
+      <path value="BEVaccination.sequenceNumber" />
+      <short value="The sequence number of an immunization - whether it is the first dose, or second dose..." />
+      <definition value="The sequence number of an immunization when part of a protocol - if it is the first dose, or second dose..." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+      </type>
+    </element>
+
+
     <element id="BEVaccination.type">
       <path value="BEVaccination.type" />
       <short value="The type of vaccination action - for example first dose or reinforcement." />
@@ -129,7 +141,7 @@
         <code value="code" />
       </type>
     </element>
-	
+
 	
     <element id="BEVaccination.reporter">
       <path value="BEVaccination.reporter" />
