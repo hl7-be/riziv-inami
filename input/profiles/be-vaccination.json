@@ -66,7 +66,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/immunization-originalorder"
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-immunization-originalorder"
             ]
           }
         ]
@@ -81,7 +81,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-administeredProduct"
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-administered-product"
             ]
           }
         ]
@@ -96,7 +96,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunizationLocation"
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-immunization-location"
             ]
           }
         ]
@@ -111,7 +111,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-verificationStatus"
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-verificationStatus"
             ]
           }
         ]
@@ -126,8 +126,8 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-recorder"
-            ]
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-recorder"
+            ]  
           }
         ]
       },

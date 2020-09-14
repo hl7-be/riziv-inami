@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "be-ext-immunization-originalorder",
-  "url": "https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-immunization-originalorder",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-immunization-originalorder",
   "version": "0.1.0",
   "name": "BeImmunizationOriginalOrder",
   "title": "Immunization Order, prescription or request",
@@ -36,8 +36,8 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization-originalorder"
-      },
+        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-immunization-originalorder"
+      },             
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",

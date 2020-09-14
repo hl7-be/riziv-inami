@@ -75,7 +75,7 @@
       <path value="BEVaccination.vaccineCode" />
       <short value="The vaccine code, typically identified by the diseas(s) it covers. For example MMR, HPV, Tetanus, DTPa" />
       <definition value="The vaccine code - a type of vaccine, typically identified by the diseas(s) it covers. For example MMR, HPV, Tetanus, DTPa. This should be a coded value." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="CodeableConcept" />
@@ -96,7 +96,18 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
       </type>
     </element>
-	
+
+    <element id="BEVaccination.dateTimeString">
+      <path value="BEVaccination.dateTime" />
+      <short value="A free-text indication of the time when the vaccination has been administered" />
+      <definition value="The date and/or time when the immunization administration has been administered or presumed to be administered, in free text format" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+		
     <element id="BEVaccination.vaccinationRequest">
       <path value="BEVaccination.vaccinationRequest" />
       <short value="The patient-specific order or recommendation for the vaccination" />
@@ -126,7 +137,7 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="code" />
+        <code value="string" />
       </type>
     </element>
 
@@ -159,7 +170,7 @@
       <path value="BEVaccination.recorded" />
       <short value="The date and time when the administration of the vaccine was recorded" />
       <definition value="The date and time when the administration of the vaccine was recorded - typically used when the vaccine event is recorded a posteriori." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="dateTime" />
@@ -197,7 +208,7 @@
       <path value="BEVaccination.administeredProduct" />
       <short value="The details of the product that was administered." />
       <definition value="" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="BackboneElement" />

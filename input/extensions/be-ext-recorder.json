@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "be-ext-recorder",
-  "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-recorder",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-recorder",
   "version": "0.1.0",
   "name": "BeRecorder",
   "title": "Who recorded the information",
@@ -36,7 +36,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-recorder"
+        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-recorder"
       },
       {
         "id": "Extension.value[x]",
@@ -72,6 +72,15 @@
               "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole",
               "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"
             ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.valueCodeableConcept",
+        "path": "Extension.valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
           }
         ]
       }

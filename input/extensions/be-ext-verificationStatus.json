@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "be-ext-verificationStatus",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-verificationStatus",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-verificationStatus",
   "version": "0.1.0",
   "name": "BeVerificationStatus",
   "title": "How certain is the immunization information - confirmed, not confirmed",
@@ -36,7 +36,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-verificationStatus"
+        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-verificationStatus"
       },
       {
         "id": "Extension.value[x]",
