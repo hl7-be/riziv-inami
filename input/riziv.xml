@@ -64,6 +64,10 @@
          <name value="Problem" />
          <description value="Problem resources" />
       </grouping>
+      <grouping id="scoreresults">
+         <name value="Score Results" />
+         <description value="Score results resources" />
+      </grouping>
       <!-- Addiction -->
       <resource>
          <reference>
@@ -740,6 +744,36 @@
          <description value="Suspected Allergy, then refuted" />
          <groupingId value="allergyintolerance" />
       </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-scoreresult" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Score Result" />
+         <description value = "Score Result Observation profile" />
+         <groupingId value="scoreresults" />
+      </resource>
+<!--
+         <resource>
+         <reference>
+            <reference value="StructureDefinition/be-cs-score" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Score Result Code system" />
+         <description value = "Score Result Observation profile" />
+         <groupingId value="scoreresults" />
+      </resource>
+
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-vs-score" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Score Result Value Set" />
+         <description value = "Score Result value set" />
+         <groupingId value="scoreresults" />
+      </resource>
+-->
       <page>
          <!-- The root will always be toc.html - the template will force it if you don't do it -->
          <nameUrl value="toc.html" />
