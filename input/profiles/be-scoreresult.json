@@ -63,16 +63,40 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "short": "!!!! REVIEW: Classification of type of observation (Observation Category). In case of ObservationScreeningScoreResult, this is the reference of the screening tool or questionnaire used.",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code",
         "path": "Observation.code",
+        "short": "The code of the score that is being calculated.",
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://www.hl7belgium.be/fhir/ValueSet/be-vs-score"
         }
       },
       {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "The patient that this score refers to",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient",
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Observation.effectiveDateTime",
         "path": "Observation.effectiveDateTime",
+        "short": "The code of the score that is being calculated.",
         "min": 0,
         "max": "1",
         "type": [
@@ -85,6 +109,71 @@
       {
         "id": "Observation.issued",
         "path": "Observation.issued",
+        "short": "The date and time when the score was made available",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "short": "The care provider that took the assessment",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient",
+              "https://www.hl7belgium.be/fhir/StructureDefinition/be-practitioner",
+              "https://www.hl7belgium.be/fhir/StructureDefinition/be-practitionerrole",
+              "https://www.hl7belgium.be/fhir/StructureDefinition/be-organization"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "The actual score value.",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "short": "The interpretation of the result from the value. For example if value is 12, the interpretation can be 'elevated'",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "short": "The body site to which the score applies, when applicable",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.bodySite.extension:laterality",
+        "path": "Observation.bodySite.extension",
+        "sliceName": "laterality",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.hl7belgium.be/fhir/StructureDefinition/be-ext-laterality"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange",
+        "path": "Observation.referenceRange",
+        "short": "The different ranges of the value",
+        "definition": "The different ranges that the value can have, and corresponding evaluation (e.g. 0..10: normal; 11..20: elevated)",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "short": "The source values for the assessment - for example a QuestionnaireResponse",
         "mustSupport": true
       }
     ]
