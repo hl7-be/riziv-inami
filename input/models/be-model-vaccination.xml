@@ -80,10 +80,9 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+  
     </element>
 
-
-	
 	
     <element id="BEVaccination.dateTime">
       <path value="BEVaccination.dateTime" />
@@ -130,6 +129,18 @@
       </type>
     </element>
 
+
+    <element id="BEVaccination.type">
+      <path value="BEVaccination.type" />
+      <short value="The type of vaccination action - for example first dose or reinforcement." />
+      <definition value="The type of vaccination action - for example first dose or reinforcement." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+      </type>
+    </element>
+
     <element id="BEVaccination.sequenceNumber">
       <path value="BEVaccination.sequenceNumber" />
       <short value="The sequence number of an immunization - whether it is the first dose, or second dose..." />
@@ -141,24 +152,12 @@
       </type>
     </element>
 
-
-    <element id="BEVaccination.type">
-      <path value="BEVaccination.type" />
-      <short value="The type of vaccination action - for example first dose or reinforcement." />
-      <definition value="The type of vaccination action - for example first dose or reinforcement." />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="code" />
-      </type>
-    </element>
-
 	
     <element id="BEVaccination.reporter">
       <path value="BEVaccination.reporter" />
       <short value="The professional that recorded the administration of the vaccine" />
       <definition value="The professional that recorded the administration of the vaccine." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
@@ -180,8 +179,8 @@
     <element id="BEVaccination.performer">
       <path value="BEVaccination.performer" />
       <short value="The professional that administered the medication" />
-      <definition value="The professional that administered the medication." />
-      <min value="0" />
+      <definition value="The professional that administered the medication. Use code &quot;unknown&quot; if not known." />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
@@ -207,7 +206,7 @@
     <element id="BEVaccination.administeredProduct">
       <path value="BEVaccination.administeredProduct" />
       <short value="The details of the product that was administered." />
-      <definition value="" />
+      <definition value="The details of the product that was administered" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -218,9 +217,10 @@
 
     <element id="BEVaccination.administeredProduct.product">
       <path value="BEVaccination.administeredProduct.product" />
-      <short value="The actual product that was administered. This can be just text (not desired), or a code (e.g. 1696392 = Neisvac C Dos 0,5ml) or a reference to an actual Medication product (e.g. http://server/Medication/1696392)" />
-      <definition value="" />
-      <min value="0" />
+      <short value="The actual product that was administered. This should be a produc code or a reference to an actual Medication resource" />
+      <definition value="The actual product that was administered. This can be just text (not desired), or a code (e.g. 1696392 = Neisvac C Dos 0,5ml) or a reference to an actual Medication product (e.g. http://server/Medication/1696392)" />
+      <comment value="In the case where the product is not known, use code &quot;unknown&quot;" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="CodeableReference" />

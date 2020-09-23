@@ -299,7 +299,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Toto - First hexavalent  immunization" />
          <description value="Toto - First hexavalent  immunization" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -309,7 +309,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Toto - 2nd hexavalent  immunization" />
          <description value="Toto - 2nd hexavalent  immunization" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -319,7 +319,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Toto - 3rd hexavalent  immunization" />
          <description value="Toto - 3rd hexavalent  immunization" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -329,7 +329,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Toto - 4th hexavalent  immunization - skipped (fever)" />
          <description value="Toto - 4th hexavalent  immunization - skipped (fever)" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -339,7 +339,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Toto - 4th hexavalent  immunization" />
          <description value="Toto - 4th hexavalent  immunization" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -349,7 +349,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Juan - 1st hexa (reported)" />
          <description value="Juan - 1st hexa (reported)" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -359,7 +359,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Juan - 2nd hexa (hospital)" />
          <description value="Juan - 2nd hexa (hospital)" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -369,7 +369,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Juan - 3rd hexa (not done)" />
          <description value="Juan - 3rd hexa (not done)" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -379,7 +379,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Juan - 3rd hexa (effective)" />
          <description value="Juan - 3rd hexa (effective)" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -389,7 +389,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Eva - HPV 1st dose" />
          <description value="Eva - HPV 1st dose" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -399,7 +399,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Eva - HPV 2nd dose" />
          <description value="Eva - HPV 2nd dose" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -409,7 +409,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Julia - refuse HPV" />
          <description value="Julia - refuse HPV" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -419,7 +419,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Simon HPV - work" />
          <description value="Simon HPV - work" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -429,7 +429,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Aymeric - rotavirus 1st dose" />
          <description value="Aymeric - rotavirus 1st dose" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -439,7 +439,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Aymeric - rotavirus 2nd dose" />
          <description value="Aymeric - rotavirus 2nd dose" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -449,7 +449,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Aymeric - rotavirus 3rd dose" />
          <description value="Aymeric - rotavirus 3rd dose" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -459,7 +459,7 @@
          <fhirVersion value="4.0.1" />
          <name value="Gabriel - influenza vaccine" />
          <description value="Gabriel - influenza vaccine" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <!--

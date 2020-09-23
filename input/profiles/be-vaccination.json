@@ -1,7 +1,17 @@
 {
   "resourceType": "StructureDefinition",
   "id": "be-vaccination",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Medications"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-vaccination",
   "version": "0.1.0",
   "name": "BeVaccination",
   "title": "BEVaccination",
@@ -66,7 +76,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-immunization-originalorder"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/be-immunization-originalorder"
             ]
           }
         ]
@@ -81,7 +91,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-administered-product"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/be-administeredProduct"
             ]
           }
         ]
@@ -96,22 +106,22 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-immunization-location"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/be-immunizationLocation"
             ]
           }
         ]
       },
       {
-        "id": "Immunization.extension:verificationstatus",
+        "id": "Immunization.extension:verificationStatus",
         "path": "Immunization.extension",
-        "sliceName": "verificationstatus",
+        "sliceName": "verificationStatus",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-verificationStatus"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/be-verificationStatus"
             ]
           }
         ]
@@ -126,8 +136,8 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-recorder"
-            ]  
+              "https://www.hl7belgium.be/fhir/StructureDefinition/be-recorder"
+            ]
           }
         ]
       },
@@ -207,6 +217,7 @@
         "id": "Immunization.recorded",
         "path": "Immunization.recorded",
         "short": "The date/time when the immunization event has been recorded",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -246,9 +257,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner",
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization",
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole"
+              "https://www.hl7belgium.be/fhir/StructureDefinition/be-practitioner",
+              "https://www.hl7belgium.be/fhir/StructureDefinition/be-organization",
+              "https://www.hl7belgium.be/fhir/StructureDefinition/be-practitionerrole"
             ]
           }
         ]
@@ -285,7 +296,8 @@
           {
             "code": "string"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Immunization.protocolApplied.doseNumberPositiveInt",
@@ -297,7 +309,8 @@
           {
             "code": "positiveInt"
           }
-        ]
+        ],
+        "mustSupport": true
       }
     ]
   }

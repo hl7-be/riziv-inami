@@ -10,7 +10,7 @@
     {
       "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-immunization-originalorder",
       "valueReference": {
-        "reference": "#order-gabriel-flu"
+        "reference": "ImmunizationRecommendation/order-gabriel-flu"
       }
     },
     {
