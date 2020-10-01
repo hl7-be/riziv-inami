@@ -65,7 +65,8 @@
       {
         "id": "Observation.category",
         "path": "Observation.category",
-        "short": "!!!! REVIEW: Classification of type of observation (Observation Category). In case of ObservationScreeningScoreResult, this is the reference of the screening tool or questionnaire used.",
+        "short": "The high-level group or category of the score - e.g. 'Risk score' or 'Pain score'",
+        "definition": "The precise code of the score. For example, 'DOLOPLUS'.",
         "mustSupport": true
       },
       {

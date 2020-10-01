@@ -11,6 +11,37 @@
     "include": [
       {
         "system": "https://www.hl7belgium.be/fhir/CodeSystem/be-cs-score"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "763117005",
+            "display": "FINDRISC (Finnish Diabetes Risk Score) score",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Finnish Diabetes Risk Score (observable entity)"
+              },
+              {
+                "language": "en",
+                "value": "Finnish Diabetes Risk Score"
+              },
+              {
+                "language": "nl-BE",
+                "value": "Finnish Diabetes Risk Score"
+              },
+              {
+                "language": "fr-BE",
+                "value": "Finnish Diabetes Risk Score"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

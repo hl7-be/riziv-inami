@@ -243,7 +243,11 @@
       {
         "id": "Immunization.route",
         "path": "Immunization.route",
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.hl7belgium.be/fhir/ValueSet/be-vs-vaccine-administration-route"
+        }
       },
       {
         "id": "Immunization.performer",
