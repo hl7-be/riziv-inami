@@ -6,11 +6,11 @@
   "title": "Body Site",
   "description": "Body Site",
   "version": "0.1.0",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-bodysite",
+  "url": "https://www.riziv-inami.be/fhir/ValueSet/be-vs-bodysite",
   "compose": {
     "include": [
       {
-        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-bodysite"
+        "system": "https://www.riziv-inami.be/fhir/CodeSystem/be-cs-bodysite"
       }
     ]
   }

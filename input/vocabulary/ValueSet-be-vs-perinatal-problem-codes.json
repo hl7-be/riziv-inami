@@ -16,7 +16,7 @@
     "inactive": true,
     "include": [
       {
-        "system": "	http://snomed.info/sct",
+        "system": "http://snomed.info/sct",
         "concept": [
           {
             "code": "14647-2",

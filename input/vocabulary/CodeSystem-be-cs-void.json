@@ -7,7 +7,7 @@
   "title": "Void CodeSystem",
   "description": "Void CodeSystem",
   "version": "0.1.0",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-void",
+  "url": "https://www.riziv-inami.be/fhir/CodeSystem/be-cs-void",
   "concept": [
     {
       "code": "IM",

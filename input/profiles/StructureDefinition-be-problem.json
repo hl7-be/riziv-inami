@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "be-problem",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-problem",
+  "url": "https://www.riziv-inami.be/fhir/StructureDefinition/be-problem",
   "version": "0.1.0",
   "name": "BeProblem",
   "title": "BEVaccination",

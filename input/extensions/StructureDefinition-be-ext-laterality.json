@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "be-ext-laterality",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-ext-laterality",
+  "url": "https://www.riziv-inami.be/fhir/StructureDefinition/be-ext-laterality",
   "version": "0.1.0",
   "name": "BeLaterality",
   "title": "Laterality extension",
