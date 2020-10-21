@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "id": "be-vs-score",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-be-cs-score.html\"><code>https://www.hl7belgium.be/fhir/CodeSystem/be-cs-score</code></a></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>English (English, en)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td><td><b>French (Belgium) (fr)</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=763117005\">763117005</a></td><td>FINDRISC (Finnish Diabetes Risk Score) score</td><td>Finnish Diabetes Risk Score</td><td>Finnish Diabetes Risk Score</td><td>Finnish Diabetes Risk Score</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-score",
+  "version": "0.1.0",
+  "name": "BeVSScore",
+  "title": "Score Value Set",
+  "status": "active",
+  "date": "2020-10-01T11:01:09+00:00",
+  "publisher": "RIZIV-INAMI",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://riziv-inami.be"
+        }
+      ]
+    }
+  ],
+  "description": "Score Value Set",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.hl7belgium.be/fhir/CodeSystem/be-cs-score"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "763117005",
+            "display": "FINDRISC (Finnish Diabetes Risk Score) score",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Finnish Diabetes Risk Score (observable entity)"
+              },
+              {
+                "language": "en",
+                "value": "Finnish Diabetes Risk Score"
+              },
+              {
+                "language": "nl-BE",
+                "value": "Finnish Diabetes Risk Score"
+              },
+              {
+                "language": "fr-BE",
+                "value": "Finnish Diabetes Risk Score"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

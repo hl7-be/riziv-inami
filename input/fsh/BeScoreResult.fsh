@@ -93,12 +93,13 @@ Description: "An explicit statement of laterality of a lesion, or a treatment, e
 * valueCode from BeVSLaterality
 */
 
-
+/*
 CodeSystem:  BeCSScore
 Id: be-cs-score
 Title: "Score Code System"
 Description:  "Score Code System"
 * #other "Other"
+
 
 ValueSet: BeVSScore
 Id: be-vs-score
@@ -106,6 +107,6 @@ Title: "Score Value Set"
 Description:  "Score Value Set"
 * codes from system BeCSScore
 
-
+*/
 
 

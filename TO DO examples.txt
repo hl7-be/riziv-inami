@@ -1,0 +1,49 @@
+Example 1. TOTO normal vaccination
+Vacccine.code = MMR
+has NISS
+On time
+--> ONE
+
+2. JUAN
+no NISS, gets ID ONE
+--> ONE
+
+
+3. Refusal
+Does not consent HPV
+consent ----->?
+--> ONE
+
+
+4. No stock, then contraindication etc, then take Vaccine
+--> DOMES-ZEPHYR
+--> ONE
+
+5/1: reaction, fiche jaune
+
+
+6. Aymeric has a rotavirus vaccine prescribed, given by his GP
+
+7. TOTO2 has a vaccine into DMI
+
+8. TOTO3 has a vaccine, registered in TOPAZ
+
+
+
+
+
+
+
+
+
+8. 
+
+
+0. reply Marc
+1. Patient Will asserter, etc roles
+1.1 examples
+2. Administered Product
+3. Vaccine examples
+4. fix text
+5. Problem
+6. Observation

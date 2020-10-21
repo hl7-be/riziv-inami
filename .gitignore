@@ -4,6 +4,8 @@ temp
 template
 output
 input-cache
+junkyard
+fsh-generated
 
 # Don't commit this because it's so large #
 ###########################################

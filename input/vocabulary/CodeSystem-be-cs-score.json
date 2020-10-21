@@ -1,0 +1,448 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "be-cs-score",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.hl7belgium.be/fhir/CodeSystem/be-cs-score defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DOLOPLUS2<a name=\"be-cs-score-DOLOPLUS2\"> </a></td><td>Doloplus 2 score</td><td>Pain assessment for people with verbal communication impairment</td></tr><tr><td style=\"white-space:nowrap\">EAT-10<a name=\"be-cs-score-EAT-10\"> </a></td><td>Eating Assessment Tool</td><td>Dysphagia Assessment scale</td></tr><tr><td style=\"white-space:nowrap\">EVA<a name=\"be-cs-score-EVA\"> </a></td><td>Echelle Visuelle Analogique</td><td>Visual analogical scale for pain assessment</td></tr><tr><td style=\"white-space:nowrap\">EDIN<a name=\"be-cs-score-EDIN\"> </a></td><td>Échelle Douleur Inconfort Nouveau-Né</td><td>TBD</td></tr><tr><td style=\"white-space:nowrap\">HEDEN<a name=\"be-cs-score-HEDEN\"> </a></td><td>Hétéro-Evaluation de la Douleur chez l'ENfant</td><td>Hétéro-Evaluation de la Douleur chez l'ENfant</td></tr><tr><td style=\"white-space:nowrap\">Katz<a name=\"be-cs-score-Katz\"> </a></td><td>Index of Independence in Activities of Daily Living</td><td>Index of Independence in Activities of Daily Living</td></tr><tr><td style=\"white-space:nowrap\">MMSE<a name=\"be-cs-score-MMSE\"> </a></td><td>Mini-Mental State Examination</td><td>Mini-Mental State Examination</td></tr><tr><td style=\"white-space:nowrap\">MNA-complete<a name=\"be-cs-score-MNA-complete\"> </a></td><td>Mini Nutritional Assessment - complete</td><td>Mini Nutritional Assessment - complete</td></tr><tr><td style=\"white-space:nowrap\">MNA-simplified<a name=\"be-cs-score-MNA-simplified\"> </a></td><td>Mini Nutritional Assessment - simplified</td><td>Mini Nutritional Assessment - simplified</td></tr><tr><td style=\"white-space:nowrap\">MUST<a name=\"be-cs-score-MUST\"> </a></td><td>Malnutrition Universal Screening</td><td>Malnutrition Universal Screening</td></tr><tr><td style=\"white-space:nowrap\">NAP<a name=\"be-cs-score-NAP\"> </a></td><td>Niveau d'Activité Physique</td><td>Niveau d'Activité Physique</td></tr><tr><td style=\"white-space:nowrap\">NORTON<a name=\"be-cs-score-NORTON\"> </a></td><td>Norton Pressure Sore Risk-Assessment Scale Scoring System</td><td>Norton Pressure Sore Risk-Assessment Scale Scoring System</td></tr><tr><td style=\"white-space:nowrap\">NRS2002<a name=\"be-cs-score-NRS2002\"> </a></td><td>Nutritional Risk Screening</td><td>Nutritional Risk Screening</td></tr><tr><td style=\"white-space:nowrap\">PAINAD<a name=\"be-cs-score-PAINAD\"> </a></td><td>Pain Assessment in Advanced Dementia Scale</td><td>Pain Assessment in Advanced Dementia Scale</td></tr><tr><td style=\"white-space:nowrap\">SCORE<a name=\"be-cs-score-SCORE\"> </a></td><td>Systemic Coronary Risk Estimation</td><td>Systemic Coronary Risk Estimation</td></tr><tr><td style=\"white-space:nowrap\">SGA<a name=\"be-cs-score-SGA\"> </a></td><td>Subjective Global Assessment</td><td>Subjective Global Assessment</td></tr><tr><td style=\"white-space:nowrap\">SNAQ<a name=\"be-cs-score-SNAQ\"> </a></td><td>Short Nutritional Assessment Questionnaire</td><td>Short Nutritional Assessment Questionnaire</td></tr><tr><td style=\"white-space:nowrap\">TIMED-CHAIR-STAND<a name=\"be-cs-score-TIMED-CHAIR-STAND\"> </a></td><td>Timed Chair Stand</td><td>Timed Chair Stand</td></tr><tr><td style=\"white-space:nowrap\">TUG<a name=\"be-cs-score-TUG\"> </a></td><td>Timed Up&amp;Go : évalue le risque de chute chez une personne</td><td>Timed Up&amp;Go : évalue le risque de chute chez une personne</td></tr><tr><td style=\"white-space:nowrap\">TINETTI<a name=\"be-cs-score-TINETTI\"> </a></td><td>Tinetti test</td><td>Tinetti test</td></tr><tr><td style=\"white-space:nowrap\">WATERLOW<a name=\"be-cs-score-WATERLOW\"> </a></td><td>Waterlow pressure ulcer risk assessment</td><td>Waterlow pressure ulcer risk assessment</td></tr><tr><td style=\"white-space:nowrap\">WECKX<a name=\"be-cs-score-WECKX\"> </a></td><td>SCORE INZAKE ZORGBEHOEVENDHEID </td><td>SCORE INZAKE ZORGBEHOEVENDHEID </td></tr><tr><td style=\"white-space:nowrap\">DAS<a name=\"be-cs-score-DAS\"> </a></td><td>Disease Activity Score</td><td>Disease Activity Score</td></tr><tr><td style=\"white-space:nowrap\">CDAI<a name=\"be-cs-score-CDAI\"> </a></td><td>Clinical Disease Activity Index</td><td>Clinical Disease Activity Index</td></tr><tr><td style=\"white-space:nowrap\">SDAI<a name=\"be-cs-score-SDAI\"> </a></td><td>SDAI ou Simplified Disease Activity Index</td><td>SDAI ou Simplified Disease Activity Index</td></tr><tr><td style=\"white-space:nowrap\">EMIR<a name=\"be-cs-score-EMIR\"> </a></td><td>Echelle de Mesure de l'Impact de la Polyarthrite Rhumatoïde</td><td>Echelle de Mesure de l'Impact de la Polyarthrite Rhumatoïde</td></tr><tr><td style=\"white-space:nowrap\">GARS<a name=\"be-cs-score-GARS\"> </a></td><td>Groningen Activity Restriction Scale</td><td>Groningen Activity Restriction Scale</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"be-cs-score-other\"> </a></td><td>Other</td><td/></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>DOLOPLUS2</td><td>Evaluation de la douleur chez les personnes présentant des troubles de la communication verbale</td><td>TBD</td></tr><tr><td>EAT-10</td><td>échelle d'évaluation du degré de dysphagie</td><td>TBD</td></tr><tr><td>EVA</td><td>Echelle Visuelle Analogique</td><td>TBD</td></tr><tr><td>EDIN</td><td>échelle de la douleur et de l'inconfort du nouveau-né</td><td>TBD</td></tr><tr><td>HEDEN</td><td>hétéro-évaluation de la douleur chez l'enfant</td><td>TBD</td></tr><tr><td>Katz</td><td>évaluation du degré de dépendance du patient</td><td>TBD</td></tr><tr><td>MMSE</td><td>Mini-Mental State Examination</td><td>TBD</td></tr><tr><td>MNA-complete</td><td>Mini Nutritional Assessment : échelle d'évaluation de la dénutrition des personnes âgées.</td><td>TBD</td></tr><tr><td>MNA-simplified</td><td>Mini Nutritional Assessment : échelle d'évaluation de la dénutrition des personnes âgées.</td><td>TBD</td></tr><tr><td>MUST</td><td>Malnutrition Universal Screening</td><td>TBD</td></tr><tr><td>NAP</td><td>Niveau d'Activité Physique</td><td>TBD</td></tr><tr><td>NORTON</td><td>évaluation du risque d'escarre</td><td>TBD</td></tr><tr><td>NRS2002</td><td>Nutritional Risk Screening</td><td>TBD</td></tr><tr><td>PAINAD</td><td/><td>TBD</td></tr><tr><td>SCORE</td><td>Systémic Coronary Risk Estimation</td><td>TBD</td></tr><tr><td>SGA</td><td>Subjective Global Assessment</td><td>TBD</td></tr><tr><td>SNAQ</td><td>Short Nutritional Assessment Questionnaire</td><td>TBD</td></tr><tr><td>TIMED-CHAIR-STAND</td><td>évaluation des risques de chutes et la force musculaire des membres inférieurs</td><td>TBD</td></tr><tr><td>TUG</td><td>Timed Up&amp;Go : évalue le risque de chute chez une personne</td><td>TBD</td></tr><tr><td>TINETTI</td><td>évalue le risque de chute chez une personne âgée</td><td>TBD</td></tr><tr><td>WATERLOW</td><td>indice de dénutrition chez les enfants</td><td>TBD</td></tr><tr><td>WECKX</td><td>mesure de degré de dépendance physique</td><td>TBD</td></tr><tr><td>DAS</td><td>Disease Activity Score</td><td>TBD</td></tr><tr><td>CDAI</td><td>Clinical Disease Activity Index</td><td>TBD</td></tr><tr><td>SDAI</td><td>SDAI ou Simplified Disease Activity Index</td><td>TBD</td></tr><tr><td>EMIR</td><td>Echelle de Mesure de l'Impact de la Polyarthrite Rhumatoïde</td><td>TBD</td></tr><tr><td>GARS</td><td>Groningen Activity Restriction Scale</td><td>TBD</td></tr><tr><td>other</td><td></td><td></td></tr></table></div>"
+  },
+  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+  "version": "0.1.0",
+  "name": "BeCSScore",
+  "title": "Score Code System",
+  "status": "active",
+  "date": "2020-10-01T11:01:09+00:00",
+  "publisher": "RIZIV-INAMI",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://somewhere.org"
+        }
+      ]
+    }
+  ],
+  "description": "Score Code System",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 1,
+  "concept": [
+    {
+      "code": "DOLOPLUS2",
+      "display": "Doloplus 2 score",
+      "definition": "Pain assessment for people with verbal communication impairment",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Evaluation de la douleur chez les personnes présentant des troubles de la communication verbale"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "EAT-10",
+      "display": "Eating Assessment Tool",
+      "definition": "Dysphagia Assessment scale",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "échelle d'évaluation du degré de dysphagie"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "EVA",
+      "display": "Echelle Visuelle Analogique",
+      "definition": "Visual analogical scale for pain assessment",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Echelle Visuelle Analogique"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "EDIN",
+      "display": "Échelle Douleur Inconfort Nouveau-Né",
+      "definition": "TBD",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "échelle de la douleur et de l'inconfort du nouveau-né"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "HEDEN",
+      "display": "Hétéro-Evaluation de la Douleur chez l'ENfant",
+      "definition": "Hétéro-Evaluation de la Douleur chez l'ENfant",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "hétéro-évaluation de la douleur chez l'enfant"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "Katz",
+      "display": "Index of Independence in Activities of Daily Living",
+      "definition": "Index of Independence in Activities of Daily Living",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "évaluation du degré de dépendance du patient"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "MMSE",
+      "display": "Mini-Mental State Examination",
+      "definition": "Mini-Mental State Examination",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Mini-Mental State Examination"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "MNA-complete",
+      "display": "Mini Nutritional Assessment - complete",
+      "definition": "Mini Nutritional Assessment - complete",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Mini Nutritional Assessment : échelle d'évaluation de la dénutrition des personnes âgées."
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "MNA-simplified",
+      "display": "Mini Nutritional Assessment - simplified",
+      "definition": "Mini Nutritional Assessment - simplified",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Mini Nutritional Assessment : échelle d'évaluation de la dénutrition des personnes âgées."
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "MUST",
+      "display": "Malnutrition Universal Screening",
+      "definition": "Malnutrition Universal Screening",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Malnutrition Universal Screening"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "NAP",
+      "display": "Niveau d'Activité Physique",
+      "definition": "Niveau d'Activité Physique",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Niveau d'Activité Physique"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "NORTON",
+      "display": "Norton Pressure Sore Risk-Assessment Scale Scoring System",
+      "definition": "Norton Pressure Sore Risk-Assessment Scale Scoring System",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "évaluation du risque d'escarre"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "NRS2002",
+      "display": "Nutritional Risk Screening",
+      "definition": "Nutritional Risk Screening",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Nutritional Risk Screening"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "PAINAD",
+      "display": "Pain Assessment in Advanced Dementia Scale",
+      "definition": "Pain Assessment in Advanced Dementia Scale",
+      "designation": [
+        {
+          "language": "fr-BE"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "SCORE",
+      "display": "Systemic Coronary Risk Estimation",
+      "definition": "Systemic Coronary Risk Estimation",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Systémic Coronary Risk Estimation"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "SGA",
+      "display": "Subjective Global Assessment",
+      "definition": "Subjective Global Assessment",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Subjective Global Assessment"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "SNAQ",
+      "display": "Short Nutritional Assessment Questionnaire",
+      "definition": "Short Nutritional Assessment Questionnaire",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Short Nutritional Assessment Questionnaire"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "TIMED-CHAIR-STAND",
+      "display": "Timed Chair Stand",
+      "definition": "Timed Chair Stand",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "évaluation des risques de chutes et la force musculaire des membres inférieurs"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "TUG",
+      "display": "Timed Up&Go : évalue le risque de chute chez une personne",
+      "definition": "Timed Up&Go : évalue le risque de chute chez une personne",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Timed Up&Go : évalue le risque de chute chez une personne"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "TINETTI",
+      "display": "Tinetti test",
+      "definition": "Tinetti test",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "évalue le risque de chute chez une personne âgée"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "WATERLOW",
+      "display": "Waterlow pressure ulcer risk assessment",
+      "definition": "Waterlow pressure ulcer risk assessment",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "indice de dénutrition chez les enfants"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "WECKX",
+      "display": "SCORE INZAKE ZORGBEHOEVENDHEID ",
+      "definition": "SCORE INZAKE ZORGBEHOEVENDHEID ",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "mesure de degré de dépendance physique"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "DAS",
+      "display": "Disease Activity Score",
+      "definition": "Disease Activity Score",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Disease Activity Score"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "CDAI",
+      "display": "Clinical Disease Activity Index",
+      "definition": "Clinical Disease Activity Index",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Clinical Disease Activity Index"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "SDAI",
+      "display": "SDAI ou Simplified Disease Activity Index",
+      "definition": "SDAI ou Simplified Disease Activity Index",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "SDAI ou Simplified Disease Activity Index"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "EMIR",
+      "display": "Echelle de Mesure de l'Impact de la Polyarthrite Rhumatoïde",
+      "definition": "Echelle de Mesure de l'Impact de la Polyarthrite Rhumatoïde",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Echelle de Mesure de l'Impact de la Polyarthrite Rhumatoïde"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "GARS",
+      "display": "Groningen Activity Restriction Scale",
+      "definition": "Groningen Activity Restriction Scale",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Groningen Activity Restriction Scale"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
+      "code": "other",
+      "display": "Other"
+    }
+  ]
+}
