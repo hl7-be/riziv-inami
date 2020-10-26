@@ -1,0 +1,166 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <!--trial-->
+  <id value="be-model-scoreresult" />
+  <url value="https://www.hl7belgium.org/fhir/StructureDefinition/be-model-scoreresult" />
+  <version value="0.1.0" />
+  <name value="BeScoreResult" />
+  <status value="draft" />
+  <description value="This is the logical model of a Score Result, the result of a scoring assessment by a person or a system. Examples are risk scores, or pain score..." />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="BeScoreResult" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Resource" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="BeScoreResult">
+      <short value="The score result" />
+      <path value="BeScoreResult" />
+      <min value="0" />
+      <max value="*" />
+    </element>
+    <element id="BeScoreResult.identifier">
+      <path value="BeScoreResult.identifier" />
+      <short value="The business identifier(s) for this score result" />
+      <definition value="The business identifier(s) for this score result - This is an optional attribute, used for example to track a score result throughout its lifecycle, or across vaults." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+      </type>
+    </element>
+    <element id="BeScoreResult.subject">
+      <path value="BeScoreResult.subject" />
+      <short value="The person for which the score has been assessed" />
+      <definition value="The patient" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+      </type>
+    </element>
+    <element id="BeScoreResult.category">
+      <path value="BeScoreResult.category" />
+      <short value="The score category" />
+      <definition value="Here the grouping of score categories - for example 'Pain' or 'Risk'. The actual score code is in the attribute 'code'. This is a grouping or categorization."  />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="BeScoreResult.code">
+      <path value="BeScoreResult.code" />
+      <short value="The score that has been calculated" />
+      <definition value="This is code for the score (e.g. DOLOPLUS, FINDRISC, APGAR)" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+	
+    <element id="BeScoreResult.period">
+      <path value="BeScoreResult.period" />
+      <short value="The date or time interval that the score refers to." />
+      <definition value="The date or time interval that the score refers to." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+
+    <element id="BeScoreResult.recordedDate">
+      <path value="BeScoreResult.recordedDate" />
+      <short value="The date when the score is being recorded or updated" />
+      <definition value="The date when the score is being recorded or updated" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+
+    <element id="BeScoreResult.value[x]">
+      <path value="BeScoreResult.value[x]" />
+      <short value="The result of the score - the actual score of the patient" />
+      <definition value="The result of the score - the actual score of the patient , e.g. '10' or 'high risk'" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Quantity" />
+      </type>
+      <type>
+        <code value="Ratio" />
+      </type>
+      <type>
+        <code value="boolean" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+
+
+    <element id="BeScoreResult.interpretation">
+      <path value="BeScoreResult.interpretation" />
+      <short value="What the score means or implies, e.g. 'high risk, must follow up'." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+
+
+    <element id="BeScoreResult.referenceRange">
+      <path value="BeScoreResult.referenceRange" />
+      <short value="The reference evaluation ranges for the score, e.g. '1 to 2 = low risk', etc." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+
+    <element id="BeScoreResult.referenceRange.range">
+      <path value="BeScoreResult.referenceRange.range" />
+      <short value="Each range for the score" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Range" />
+      </type>
+    </element>
+    <element id="BeScoreResult.referenceRange.meaning">
+      <path value="BeScoreResult.referenceRange.meaning" />
+      <short value="The reference meaning or interpretation for the range" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+
+
+    <element id="BeScoreResult.derivedFrom">
+      <path value="BeScoreResult.derivedFrom" />
+      <short value="The data source that this result derives from, e.g. a response to a questionnaire, or a clinical document.. '." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+
+
+
+  </differential>
+</StructureDefinition>

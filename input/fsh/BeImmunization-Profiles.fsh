@@ -46,8 +46,8 @@ Description:    """
 * recorded 1..1
 * extension contains BeImmunizationOriginalOrder named immunization-originalorder 0..1
 * extension contains BeAdministeredProduct named administeredProduct 0..1
-* extension contains BeImmunizationLocation named immunizationLocation 0..1
-* extension contains BeVerificationStatus named verificationStatus 0..1
+* extension contains BeImmunizationLocation named immunization-location 0..1
+* extension contains BeImmunizationConfirmationStatus named immunization-confirmationStatus 0..1
 * extension contains BeRecorder named recorder 0..1
 * route from be-vs-vaccine-administration-route 
 
@@ -67,7 +67,6 @@ Extension: BeImmunizationOriginalOrder
 Id: be-ext-immunization-originalorder
 Title: "Immunization Order, prescription or request"
 Description: "A plan, proposal or order that is fulfilled in whole or in part by an event."
-
 * value[x] only Reference
 * valueReference only Reference(ImmunizationRecommendation or MedicationRequest or CarePlan)
 
@@ -79,11 +78,10 @@ Description: "The product administered"
 * value[x] only CodeableConcept or Reference
 * valueReference only Reference(Medication)
 
-Extension: BeVerificationStatus
-Id: be-ext-verificationStatus
+Extension: BeImmunizationConfirmationStatus
+Id: be-ext-immunization-confirmationStatus
 Title: "How certain is the immunization information - confirmed, not confirmed"
 Description: "How certain/reliable is the immunization information"
-
 * value[x] only code
 * valueCode from be-vs-immunization-confirmation-status (required)
 
@@ -98,10 +96,9 @@ Description: "The recorder of the information - note that this may not always be
 
 
 Extension: BeImmunizationLocation
-Id: be-ext-immunizationLocation
+Id: be-ext-immunization-location
 Title: "Location (reference, code or text) of the immunization"
 Description: "Location (reference, code or text) of the immunization"
-
 * value[x] only CodeableConcept or Reference
 * valueReference only Reference(Location or be-organization)
 * valueCodeableConcept from BeVSCareLocation (preferred)

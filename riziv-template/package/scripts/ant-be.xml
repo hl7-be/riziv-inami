@@ -3,7 +3,10 @@
   <import file="ant.xml" as="base"/>
   <target name="prepareDiagramSource">
     <property name="dir.lib" value="${ig.template}/scripts"/>
-    <property name="dir.scenarios-input" value="${ig.template}/scenarios"/>
+<!--
+    <property name="dir.scenarios-input" value="${ig.template}/scenarios"/> 
+-->
+    <property name="dir.scenarios-input" value="${dir.input}/images-source"/>
     <mkdir dir="${dir.scenarios-input}"/>
     <xslt basedir="${dir.input}/scenarios" includes="*.xml" destdir="${dir.scenarios-input}" extension=".txt" style="${ig.scripts}/diagram.xslt"/>
   </target>

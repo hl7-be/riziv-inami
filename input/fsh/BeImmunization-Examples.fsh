@@ -46,7 +46,7 @@ Title:   "Toto - First hexavalent  immunization"
 * protocolApplied.doseNumberPositiveInt = 1
 * protocolApplied.seriesDosesPositiveInt = 4
 * extension[administeredProduct].valueCodeableConcept = http://snomed.info/sct#3050176
-* extension[verificationStatus].valueCode = #confirmed
+* extension[immunization-confirmationStatus].valueCode = #confirmed
 
 /*============================================= Example 2 =============================================*/
 Instance: toto-hexa2
@@ -74,7 +74,7 @@ Title:   "Toto - 2nd hexavalent  immunization"
 * protocolApplied.doseNumberPositiveInt = 2
 * protocolApplied.seriesDosesPositiveInt = 4
 * extension[administeredProduct].valueCodeableConcept = http://snomed.info/sct#3050176
-* extension[verificationStatus].valueCode = #confirmed
+* extension[immunization-confirmationStatus].valueCode = #confirmed
 
 /*============================================= Example 3 =============================================*/
 Instance: toto-hexa3
@@ -101,7 +101,7 @@ Title:   "Toto - 3rd hexavalent  immunization"
 * vaccineCode.coding[1].code = #3050176
 * protocolApplied.doseNumberPositiveInt = 3
 * protocolApplied.seriesDosesPositiveInt = 4
-* extension[verificationStatus].valueCode = #confirmed
+* extension[immunization-confirmationStatus].valueCode = #confirmed
 
 /*============================================= Example 4 =============================================*/
 Instance: toto-hexa4-skipped
@@ -126,7 +126,7 @@ Title:   "Toto - 4th hexavalent  immunization - skipped (fever)"
 * vaccineCode.coding[0].code = #146
 * protocolApplied.doseNumberPositiveInt = 4
 * protocolApplied.seriesDosesPositiveInt = 4
-* extension[verificationStatus].valueCode = #confirmed
+* extension[immunization-confirmationStatus].valueCode = #confirmed
 
 /*============================================= Example 5 =============================================*/
 Instance: toto-hexa4-swelling
@@ -155,7 +155,7 @@ Title:   "Toto - 4th hexavalent  immunization"
 * reaction.detail.reference = #erythema
 * protocolApplied.doseNumberPositiveInt = 4
 * protocolApplied.seriesDosesPositiveInt = 4
-* extension[verificationStatus].valueCode = #confirmed
+* extension[immunization-confirmationStatus].valueCode = #confirmed
 
 /*============================================= Example 6 =============================================*/
 Instance: juan-hexa1-reported
@@ -180,7 +180,7 @@ Title:   "Juan - 1st hexa (reported)"
 * vaccineCode.coding[1].code = #3050176
 * protocolApplied.doseNumberPositiveInt = 1
 * protocolApplied.seriesDosesPositiveInt = 3
-* extension[verificationStatus].valueCode = #unconfirmed
+* extension[immunization-confirmationStatus].valueCode = #unconfirmed
 /*============================================= Example 7 =============================================*/
 Instance: juan-hexa2-reported-hospital
 InstanceOf: BeVaccination 
@@ -205,7 +205,7 @@ Title:   "Juan - 2nd hexa (hospital)"
 * vaccineCode.coding[1].code = #3050176
 * protocolApplied.doseNumberPositiveInt = 2
 * protocolApplied.seriesDosesPositiveInt = 3
-* extension[verificationStatus].valueCode = #unconfirmed
+* extension[immunization-confirmationStatus].valueCode = #unconfirmed
 /*============================================= Example 8 =============================================*/
 Instance: juan-hexa3-skipped
 InstanceOf: BeVaccination 
@@ -230,7 +230,7 @@ Title:   "Juan - 3rd hexa (not done)"
 * vaccineCode.coding[1].code = #3050176
 * protocolApplied.doseNumberPositiveInt = 3
 * protocolApplied.seriesDosesPositiveInt = 3
-* extension[verificationStatus].valueCode = #confirmed
+* extension[immunization-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 9 =============================================*/
 Instance: juan-hexa4
 InstanceOf: BeVaccination 
@@ -253,7 +253,7 @@ Title:   "Juan - 3rd hexa (effective)"
 * vaccineCode.coding[0].code = #146
 * protocolApplied.doseNumberPositiveInt = 3
 * protocolApplied.seriesDosesPositiveInt = 3
-* extension[verificationStatus].valueCode = #confirmed
+* extension[immunization-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 10 =============================================*/
 Instance: eva-hpv1-school
 InstanceOf: BeVaccination 
@@ -273,7 +273,7 @@ Title:   "Eva - HPV 1st dose"
 * vaccineCode.coding[0].code = #165
 * protocolApplied.doseNumberPositiveInt = 1
 * protocolApplied.seriesDosesPositiveInt = 2
-* extension[verificationStatus].valueCode = #confirmed
+* extension[immunization-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 11 =============================================*/
 Instance: eva-hpv2-school
 InstanceOf: BeVaccination 
@@ -293,7 +293,7 @@ Title:   "Eva - HPV 2nd dose"
 * vaccineCode.coding[0].code = #165
 * protocolApplied.doseNumberPositiveInt = 2
 * protocolApplied.seriesDosesPositiveInt = 2
-* extension[verificationStatus].valueCode = #confirmed
+* extension[immunization-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 12 =============================================*/
 Instance: julia-refuse-hpv
 InstanceOf: BeVaccination 
@@ -310,7 +310,7 @@ Title:   "Julia - refuse HPV"
 * vaccineCode.coding[0].code = #165
 * protocolApplied.doseNumberPositiveInt = 1
 * protocolApplied.seriesDosesPositiveInt = 2
-* extension[verificationStatus].valueCode = #confirmed
+* extension[immunization-confirmationStatus].valueCode = #confirmed
 Instance: simon-hpv-at-work
 InstanceOf: BeVaccination 
 Usage: #example 
@@ -328,7 +328,7 @@ Title:   "Simon HPV - work"
 * protocolApplied.doseNumberPositiveInt = 1
 * protocolApplied.seriesDosesPositiveInt = 1
 * extension[immunization-originalorder].valueReference = Reference(simon-hpv)
-* extension[verificationStatus].valueCode = #confirmed
+* extension[immunization-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 14 =============================================*/
 Instance: aymeric-rota1
 InstanceOf: BeVaccination 
@@ -348,7 +348,7 @@ Title:   "Aymeric - rotavirus 1st dose"
 * protocolApplied.doseNumberPositiveInt = 1
 * protocolApplied.seriesDosesPositiveInt = 3
 * extension[immunization-originalorder].valueReference = Reference(aymeric-rota)
-* extension[verificationStatus].valueCode = #confirmed
+* extension[immunization-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 15 =============================================*/
 Instance: aymeric-rota2
 InstanceOf: BeVaccination 
@@ -368,7 +368,7 @@ Title:   "Aymeric - rotavirus 2nd dose"
 * protocolApplied.doseNumberPositiveInt = 2
 * protocolApplied.seriesDosesPositiveInt = 3
 * extension[immunization-originalorder].valueReference = Reference(aymeric-rota)
-* extension[verificationStatus].valueCode = #confirmed
+* extension[immunization-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 16 =============================================*/
 Instance: aymeric-rota3
 InstanceOf: BeVaccination 
@@ -388,7 +388,7 @@ Title:   "Aymeric - rotavirus 3rd dose"
 * protocolApplied.doseNumberPositiveInt = 3
 * protocolApplied.seriesDosesPositiveInt = 3
 * extension[immunization-originalorder].valueReference = Reference(aymeric-rota)
-* extension[verificationStatus].valueCode = #confirmed
+* extension[immunization-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 17 =============================================*/
 Instance: gabriel-flu
 InstanceOf: BeVaccination 
@@ -408,7 +408,7 @@ Title:   "Gabriel - influenza vaccine"
 * protocolApplied.doseNumberString = "2020"
 * protocolApplied.seriesDosesString = "Yearly"
 * extension[immunization-originalorder].valueReference = Reference(order-gabriel-flu)
-* extension[verificationStatus].valueCode = #confirmed
+* extension[immunization-confirmationStatus].valueCode = #confirmed
 
 /* 
 ========================================================== Other exmples ==========================================================
@@ -524,7 +524,7 @@ Title:    "Immunization Example - 2. childhood measles"
 * recorded = "2020"
 
 * occurrenceString = "Wanneer de patiënt 20 jaar oud was"
-* extension[be-ext-immunizationLocation].valueCodeableConcept.text = "In Spain"
+* extension[be-ext-immunization-location].valueCodeableConcept.text = "In Spain"
 
 Instance: immunization-example-tetanus-cautious-reinforcement
 InstanceOf: BeVaccination
@@ -544,7 +544,7 @@ Title:    "Immunization Example - 3. Emergency reinforcement"
 * performer.actor = Reference(org-uz-gent)
 * recorded = "2020-05-17"
 * occurrenceString = "Summer 2011"
-* extension[be-ext-immunizationLocation].valueReference = Reference(org-uz-gent)
+* extension[be-ext-immunization-location].valueReference = Reference(org-uz-gent)
 
 
 Instance: immunization-example-not-given-stock
@@ -569,7 +569,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * patient = Reference(patient-pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
-* extension[be-ext-immunizationLocation].valueReference = Reference(org-kind-en-gezin)
+* extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
 
 
 
@@ -604,7 +604,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
 * occurrenceString = "Summer 2011"
-* extension[be-ext-immunizationLocation].valueReference = Reference(org-kind-en-gezin)
+* extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
 * note.text = "Patiënt heeft nu koorts, aanbevolen 1 ​​week te wachten"
 
 
@@ -628,7 +628,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * patient = Reference(patient-pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
-* extension[be-ext-immunizationLocation].valueReference = Reference(org-kind-en-gezin)
+* extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
 
 
 
@@ -653,7 +653,7 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 * patient = Reference(patient-pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
-* extension[be-ext-immunizationLocation].valueReference = Reference(org-kind-en-gezin)
+* extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
 
 
 Instance: immunization-example-mistaken-entry-update
@@ -677,7 +677,7 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 * patient = Reference(patient-pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
-* extension[be-ext-immunizationLocation].valueReference = Reference(org-kind-en-gezin)
+* extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
 
 
 Instance: immunization-example-perscribed-immunization
@@ -700,7 +700,7 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 * patient = Reference(patient-pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
-* extension[be-ext-immunizationLocation].valueReference = Reference(org-kind-en-gezin)
+* extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
 
 
 Instance: observation-swelling
@@ -733,7 +733,7 @@ Title:    "Immunization Example - Immediate reaction (swelling and redness) upon
 * patient = Reference(patient-pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
-* extension[be-ext-immunizationLocation].valueReference = Reference(org-kind-en-gezin)
+* extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
 * reaction.date = "2020-05-12"
 * reaction.detail = Reference(observation-swelling)
 * recorded = "2020-05-12"

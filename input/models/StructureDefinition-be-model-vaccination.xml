@@ -74,7 +74,7 @@
     <element id="BEVaccination.vaccineCode">
       <path value="BEVaccination.vaccineCode" />
       <short value="The vaccine code, typically identified by the diseas(s) it covers. For example MMR, HPV, Tetanus, DTPa" />
-      <definition value="The vaccine code - a type of vaccine, typically identified by the diseas(s) it covers. For example MMR, HPV, Tetanus, DTPa. This should be a coded value." />
+      <definition value="The vaccine code - a type of vaccine, typically identified by the disease(s) it covers. For example MMR, HPV, Tetanus, DTPa. This should be a coded value." />
       <min value="1" />
       <max value="1" />
       <type>
@@ -84,18 +84,20 @@
     </element>
 
 	
-    <element id="BEVaccination.dateTime">
-      <path value="BEVaccination.dateTime" />
-      <short value="The dateTime when the vaccination has been administered" />
+    <element id="BEVaccination.vaccinationDate[x]">
+      <path value="BEVaccination.vaccinationDate[x]" />
+      <short value="The date and time when the vaccination has been administered" />
       <definition value="The date and/or time when the immunization administration has been administered or presumed to be administered" />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="dateTime" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <type>
+        <code value="string" />
       </type>
     </element>
-
+<!--
     <element id="BEVaccination.dateTimeString">
       <path value="BEVaccination.dateTimeString" />
       <short value="A free-text indication of the time when the vaccination has been administered" />
@@ -106,7 +108,7 @@
         <code value="string" />
       </type>
     </element>
-		
+-->		
     <element id="BEVaccination.vaccinationRequest">
       <path value="BEVaccination.vaccinationRequest" />
       <short value="The patient-specific order or recommendation for the vaccination" />

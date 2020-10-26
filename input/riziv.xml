@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
    <id value="be.fhir.be.riziv" />
-   <url value="https://www.hl7belgium.org/fhir/riziv" />
+   <url value="https://www.hl7belgium.org/fhir/riziv/ImplementationGuide/riziv" />
    <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
    <version value="0.1.0" />
    <name value="RIZIV-INAMI" />
@@ -159,16 +159,17 @@ A set of examples demonstrates the use of the profile.
          <description value="The Core BE profile for Immunization (event)" />
          <groupingId value="immunization" />
       </resource>
-      <!--
-      <reference>
-        <reference value="StructureDefinition/basedOn"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Order that Immunization is based on"/>
-      <description value="Order that Immunization is based on"/>
-      <groupingId value="immunization"/>
-    </resource>
--->
+      
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/be-ext-immunization-location"/>
+        </reference>
+        <fhirVersion value="4.0.1"/>
+        <name value="Location of the immunization event"/>
+        <description value="Location of the immunization event"/>
+        <groupingId value="immunization"/>
+      </resource>
+  
       <resource>
          <reference>
             <reference value="CodeSystem/be-cs-care-location" />
@@ -261,15 +262,6 @@ A set of examples demonstrates the use of the profile.
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/be-ext-immunizationLocation" />
-         </reference>
-         <fhirVersion value="4.0.1" />
-         <name value="Extension - Immunization location" />
-         <description value="Immunization location" />
-         <groupingId value="immunization" />
-      </resource>
-      <resource>
-         <reference>
             <reference value="StructureDefinition/be-ext-recorder" />
          </reference>
          <fhirVersion value="4.0.1" />
@@ -279,11 +271,11 @@ A set of examples demonstrates the use of the profile.
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/be-ext-verificationStatus" />
+            <reference value="StructureDefinition/be-ext-immunization-confirmationStatus" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Extension - Immunization verification status" />
-         <description value="Immunization verification status" />
+         <name value="Extension - Immunization confirmation status" />
+         <description value="Immunization confirmation status" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -810,6 +802,15 @@ A set of examples demonstrates the use of the profile.
          <name value="ExampleScenario - Suspected Allergy" />
          <description value="Suspected Allergy, then refuted" />
          <groupingId value="allergyintolerance" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-model-scoreresult" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Score Result" />
+         <description value = "Score Result Observation profile" />
+         <groupingId value="scoreresults" />
       </resource>
       <resource>
          <reference>
