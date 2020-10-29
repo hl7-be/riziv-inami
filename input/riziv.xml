@@ -808,8 +808,8 @@ A set of examples demonstrates the use of the profile.
             <reference value="StructureDefinition/be-model-scoreresult" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Score Result" />
-         <description value = "Score Result Observation profile" />
+         <name value="Score Result Logical Model" />
+         <description value = "Score Result Logical Model" />
          <groupingId value="scoreresults" />
       </resource>
       <resource>
@@ -817,10 +817,24 @@ A set of examples demonstrates the use of the profile.
             <reference value="StructureDefinition/be-scoreresult" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Score Result" />
+         <name value="Score Result Profile " />
          <description value = "Score Result Observation profile" />
          <groupingId value="scoreresults" />
       </resource>
+
+      <resource>
+         <reference>
+            <reference value="Observation/example-findRisc-screeningScoreResult" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Example - FINDRISC score result" />
+         <description value="FIDNRISC score result example, obtained from a QuestionnaireResponse" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-scoreresult" />
+         <groupingId value="scoreresults" />
+      </resource>
+ 
+
+
 
          <resource>
          <reference>

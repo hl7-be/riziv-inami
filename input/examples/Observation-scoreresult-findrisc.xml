@@ -1,0 +1,119 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="example-findRisc-screeningScoreResult"/>
+  <meta>
+    <profile
+             value="https://www.hl7belgium.be/fhir/StructureDefinition/be-scoreresult"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b>category</b>: <span title="Codes: {http://www.snomed.org/ No code}">FINDRISC</span></p><p><b>code</b>: <span title="Codes: {http://www.snomed.org/ 763117005}">23.5</span></p><p><b>subject</b>: <span>Jane AAA</span></p><p><b>effective</b>: Oct 6, 2020, 11:28:17 AM</p><p><b>issued</b>: Oct 6, 2020, 11:28:17 AM</p><p><b>performer</b>: <span>AAAA BBBB</span></p><p><b>value</b>: 18</p><p><b>interpretation</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}">Score is high. The paient need to check.</span></p><p><b>note</b>: Remark: The patient's score is high since 3 months. ( @Oct 6, 2020, 11:28:17 AM)</p><blockquote><p><b>referenceRange</b></p><p><b>low</b>: 0</p><p><b>high</b>: 3</p><p><b>type</b>: <span title="Codes: ">Very low</span></p></blockquote><blockquote><p><b>referenceRange</b></p><p><b>low</b>: 4</p><p><b>high</b>: 8</p><p><b>type</b>: <span title="Codes: ">Low</span></p></blockquote><blockquote><p><b>referenceRange</b></p><p><b>low</b>: 9</p><p><b>high</b>: 12</p><p><b>type</b>: <span title="Codes: ">Moderate</span></p></blockquote><blockquote><p><b>referenceRange</b></p><p><b>low</b>: 13</p><p><b>high</b>: 20</p><p><b>type</b>: <span title="Codes: ">High</span></p></blockquote><blockquote><p><b>referenceRange</b></p><p><b>low</b>: 21</p><p><b>high</b>: 26</p><p><b>type</b>: <span title="Codes: ">Very high</span></p></blockquote><p><b>derivedFrom</b>: <span></span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://www.snomed.org/"/>
+      <code value="risk"/>
+      <display value="RISK"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://www.snomed.org/"/>
+      <code value="763117005"/>
+      <display value="FINDRISC score result"/>
+    </coding>
+  </code>
+  <subject>
+    <identifier>
+      <system
+              value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+      <value value="111a-222b-333d"/>
+    </identifier>
+    <display value="Jane AAA"/>
+  </subject>
+  <effectiveDateTime value="2020-10-06T13:28:17.239+02:00"/>
+  <issued value="2020-10-06T13:28:17.239+02:00"/>
+  <performer>
+    <identifier>
+      <system
+              value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi"/>
+      <value value="111a-22b-33c"/>
+    </identifier>
+    <display value="AAAA BBBB"/>
+  </performer>
+  <valueInteger value="18"/>
+  <interpretation>
+    <coding>
+      <system
+              value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="H"/>
+      <display value="High"/>
+    </coding>
+    <text value="Score is high. The patient should be advised on mitigating the risk."/>
+  </interpretation>
+  <note>
+    <time value="2020-10-06T13:28:17.239+02:00"/>
+    <text value="Remark: The patient&#39;s score has been high since 3 months."/>
+  </note>
+  <referenceRange>
+    <low>
+      <value value="0"/>
+    </low>
+    <high>
+      <value value="3"/>
+    </high>
+    <type>
+      <text value="Very low"/>
+    </type>
+  </referenceRange>
+  <referenceRange>
+    <low>
+      <value value="4"/>
+    </low>
+    <high>
+      <value value="8"/>
+    </high>
+    <type>
+      <text value="Low"/>
+    </type>
+  </referenceRange>
+  <referenceRange>
+    <low>
+      <value value="9"/>
+    </low>
+    <high>
+      <value value="12"/>
+    </high>
+    <type>
+      <text value="Moderate"/>
+    </type>
+  </referenceRange>
+  <referenceRange>
+    <low>
+      <value value="13"/>
+    </low>
+    <high>
+      <value value="20"/>
+    </high>
+    <type>
+      <text value="High"/>
+    </type>
+  </referenceRange>
+  <referenceRange>
+    <low>
+      <value value="21"/>
+    </low>
+    <high>
+      <value value="26"/>
+    </high>
+    <type>
+      <text value="Very high"/>
+    </type>
+  </referenceRange>
+  <derivedFrom>
+    <identifier>
+      <system
+              value="https://www.manzana.be/fhir/QuestionnaireResponse/9d07a557-65df-4f4e-b869-1571f4b6c639"/>
+    </identifier>
+  </derivedFrom>
+</Observation>
