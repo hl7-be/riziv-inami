@@ -293,7 +293,7 @@ A set of examples demonstrates the use of the profile.
          </reference>
          <fhirVersion value="4.0.1" />
          <name value="BeNSNIHDIOrganization" />
-         <description value="NamingSystem - NIHDI Professional numbers" />
+         <description value="NamingSystem - NIHDI Organization numbers" />
          <groupingId value="immunization" />
       </resource>
       <resource>

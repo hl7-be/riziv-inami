@@ -165,11 +165,11 @@
     <element id="BEPatientWill.directive.effectiveTime.time">
       <path value="BEPatientWill.directive.effectiveTime.time" />
       <short value="A free-text indication of the period of validity for the patient will directive - e.g. until recovery, 5 years after death.." />
-      <definition value="A free-text indication of the period of validity for the patient will directive" />
+      <definition value="A free-text or coded indication of the period of validity for the patient will directive" />
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="Period" />
+        <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/StructureDefinition/Period" />
       </type>
     </element>	
