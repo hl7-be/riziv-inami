@@ -24,7 +24,7 @@
       <short value="The business identifier(s) for this score result" />
       <definition value="The business identifier(s) for this score result - This is an optional attribute, used for example to track a score result throughout its lifecycle, or across vaults." />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <type>
         <code value="Identifier" />
       </type>
@@ -44,7 +44,7 @@
       <path value="BeScoreResult.category" />
       <short value="The score category" />
       <definition value="Here the grouping of score categories - for example 'Pain' or 'Risk'. The actual score code is in the attribute 'code'. This is a grouping or categorization."  />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="CodeableConcept" />
@@ -55,8 +55,9 @@
       <path value="BeScoreResult.code" />
       <short value="The score that has been calculated" />
       <definition value="This is code for the score (e.g. DOLOPLUS, FINDRISC, APGAR)" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
+
       <type>
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
@@ -89,7 +90,7 @@
       <path value="BeScoreResult.value[x]" />
       <short value="The result of the score - the actual score of the patient" />
       <definition value="The result of the score - the actual score of the patient , e.g. '10' or 'high risk'" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="CodeableConcept" />
