@@ -29,9 +29,9 @@ Description:    """
 * bodySite.extension contains BeLaterality named laterality 0..1
 * bodySite.extension[BeLaterality] MS
 
-* effectiveDateTime MS
-* effectiveDateTime 1..1
-* effectiveDateTime ^short = "The code of the score that is being calculated."
+* effectivePeriod MS
+* effectivePeriod 1..1
+* effectivePeriod ^short = "The code of the score that is being calculated."
 
 * code MS
 * code ^short = "The code of the score that is being calculated."
