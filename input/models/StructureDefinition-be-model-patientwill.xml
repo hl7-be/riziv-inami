@@ -170,7 +170,6 @@
       <max value="1" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Period" />
       </type>
     </element>	
 	
