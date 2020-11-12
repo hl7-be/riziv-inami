@@ -44,7 +44,7 @@ Description:    """
 Extension: BeExtProblemOriginType
 Id: be-ext-problem-origin-type
 Title: "Problem Type"
-Description: "An explicit statement of laterality of a lesion, or a treatment, etc."
+Description: "A classification of the event that triggers the problem to be evaluated - whether the problem was reported from a referring GP..."
 * value[x] only code
 * valueCode from BeVSProblemOriginType
 

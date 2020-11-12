@@ -40,12 +40,12 @@ Title: "Body Site"
 Description:  "Body Site"
 * codes from system BeCSBodySite
 
-
+/*
 CodeSystem: BeCSProblemOriginType
 Id: be-cs-problem-origin-type
 Title: "Problem Origin Type"
 Description:  "Problem Origin Type"
-
+*/
 
 
 ValueSet: BeVSProblemOriginType
@@ -54,12 +54,12 @@ Title: "Problem Origin Type"
 Description:  "Problem Origin Type"
 * codes from system BeCSProblemOriginType
 
-
+/*
 CodeSystem: BeCSProblemCategory
 Id: be-cs-problem-category
 Title: "Problem Category"
 Description:  "Problem Category"
-
+*/
 
 ValueSet: BeVSProblemCategory
 Id: be-vs-problem-category

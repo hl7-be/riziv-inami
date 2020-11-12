@@ -100,7 +100,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-vs-problem-category" />
+        <valueSet value="https://www.hl7belgium.org/fhir/CodeSystem/be-vs-problem-category" />
       </binding>
     </element>
 
@@ -125,7 +125,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-condition-origin-type" />
+        <valueSet value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-condition-origin-type" />
       </binding>
     </element>
     <element id="BeProblem.origin.reference">
@@ -151,7 +151,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-vs-congenital-anomalies" />
+        <valueSet value="https://www.hl7belgium.org/fhir/CodeSystem/be-vs-congenital-anomalies" />
       </binding>
     </element>
     <element id="BeProblem.started">
@@ -195,7 +195,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-bodysite" />
+        <valueSet value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite" />
       </binding>
     </element>    
     <element id="BeProblem.bodySite.laterality">
@@ -209,7 +209,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-laterality" />
+        <valueSet value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-laterality" />
       </binding>
     </element>    
 

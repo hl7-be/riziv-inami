@@ -1,0 +1,24 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "BeCSProblemCategory",
+  "id": "be-cs-problem-category",
+  "title": "Problem Category",
+  "description": "Problem Category",
+  "version": "0.1.0",
+  "url": "https://www.hl7belgium.org/fhir/riziv/CodeSystem/be-cs-problem-category",
+  "concept":
+  [
+    {"code" : "diagnosis","display" : "Diagnosis","definition" : "A disease identified from a clinical reasoning, based on pathological and physiological ascertainments","designation" : [{"language" : "fr-BE","value" : "Diagnostic"},{"language" : "nl-BE","value" : "diagnose"}]},
+    {"code" : "problem","display" : "Problem","definition" : "identification of problems that the healthcare provider considers harmful, potentially harmful, and which may be the subject of further investigation or treatment","designation" : [{"language" : "fr-BE","value" : "Problème"},{"language" : "nl-BE","value" : "Probleem"}]},
+    {"code" : "Risk","display" : "Risk","definition" : "identification of a health problem or situation that may require ongoing monitoring or management","designation" : [{"language" : "fr-BE","value" : "Risque"},{"language" : "nl-BE","value" : "Risico"}]},
+    {"code" : "antecedent","display" : "Antecedent","definition" : "information about a problem that has been resolved","designation" : [{"language" : "fr-BE","value" : "Antécédent"},{"language" : "nl-BE","value" : "Antecedent"}]},
+    {"code" : "congenital","display" : "Congenital anomaly","definition" : "Congenital anomaly","designation" : [{"language" : "fr-BE","value" : "Maladie congénitale"},{"language" : "nl-BE","value" : "Aangeboren afwijking"}]},
+    {"code" : "conclusion","display" : "Conclusion","definition" : "informations sur la conclusion d’une anamnèse d’un prestataire de soin autre qu’un médecin","designation" : [{"language" : "fr-BE","value" : "Conclusion anamnèse"},{"language" : "nl-BE","value" : "Anamnesis conclusie"}]},
+    {"code" : "other","display" : "Other","definition" : "Autre","designation" : [{"language" : "fr-BE","value" : "Autre"},{"language" : "nl-BE","value" : "andere"}]}
+    
+
+  ]
+
+}
