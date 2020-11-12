@@ -1,0 +1,17 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "BeCSPAtiwntWillCategory",
+  "id": "be-cs-patientwill-category",
+  "title": "Patient Will Category CodeSystem",
+  "description": "Body Site CodeSystem",
+  "version": "0.1.0",
+  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category",
+  "concept": [
+    {"code" : "advanced-care-directive","display" : "Advanced Care Directive","definition" : "General directives expressed voluntarily by the patient","designation" : [{"language" : "fr-BE","value" : "Volontés diverses"},{"language" : "nl-BE","value" : "Verschillende wensen"}]},
+    {"code" : "research","display" : "Research","definition" : "Consent to participate in research protocols and / or share results","designation" : [{"language" : "fr-BE","value" : "Recherche"},{"language" : "nl-BE","value" : "Onderzoek"}]},
+    {"code" : "treatment","display" : "Treatment","definition" : "Specific treatments in the context of resuscitation and / or during hospitalization","designation" : [{"language" : "fr-BE","value" : "Traitement"},{"language" : "nl-BE","value" : "Behandeling"}]}
+      ],
+  "count": 1
+}

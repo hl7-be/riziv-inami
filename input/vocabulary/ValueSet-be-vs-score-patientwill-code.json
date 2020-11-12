@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "id": "be-vs-patientwill-code",
+  "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-code",
+  "version": "0.1.0",
+  "name": "BeVSScore",
+  "title": "Score Value Set",
+  "status": "draft",
+  "date": "2020-10-01T11:01:09+00:00",
+  "publisher": "RIZIV-INAMI",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://riziv-inami.be"
+        }
+      ]
+    }
+  ],
+  "description": "Score Value Set",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.hl7belgium.be/fhir/CodeSystem/be-cs-patientwill-code"
+      }
+    ]
+  }
+}

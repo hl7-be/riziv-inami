@@ -59,7 +59,11 @@
         "short": "The category or the patient will directive",
         "definition": "The types or classification of patient will. This element supports indexing and retrieval of consent statements.&#xD;&#xA;The actual detail of the patient will (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)",
         "comment": "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.&#xD;&#xA;SHALL be given and a consumer SHALL NOT ignore this.",
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-category"
+        }
       },
       {
         "id": "Consent.patient",
@@ -132,6 +136,12 @@
         "mustSupport": true
       },
       {
+        "id": "Consent.provision",
+        "path": "Consent.provision",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Consent.provision.period",
         "path": "Consent.provision.period",
         "min": 1,
@@ -156,7 +166,12 @@
         "id": "Consent.provision.code",
         "path": "Consent.provision.code",
         "short": "The actual directive in the will",
-        "definition": "The detailed patient will directive (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)"
+        "definition": "The detailed patient will directive (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-code"
+        }
       },
       {
         "id": "Consent.provision.data",
