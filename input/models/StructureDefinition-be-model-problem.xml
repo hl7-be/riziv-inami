@@ -60,7 +60,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="	http://hl7.org/fhir/ValueSet/condition-clinical" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/condition-clinical" />
       </binding>
     </element>
     <element id="BeProblem.status">
@@ -75,7 +75,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="	http://hl7.org/fhir/ValueSet/condition-ver-status" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/condition-ver-status" />
       </binding>
     </element>
     <element id="BeProblem.subject">
