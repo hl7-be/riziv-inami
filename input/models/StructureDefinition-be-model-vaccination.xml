@@ -54,8 +54,6 @@
         <valueSet value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-immunization-status-reason" />
       </binding>
     </element>
-
-
 	
     <element id="BEVaccination.patient">
       <path value="BEVaccination.patient" />
