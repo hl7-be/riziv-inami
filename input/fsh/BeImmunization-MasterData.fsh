@@ -109,7 +109,7 @@ Age 65: pneumo + flu
 
 
 
-
+/*
 Instance: pia
 InstanceOf: BePatient
 Usage: #example
@@ -120,3 +120,4 @@ Title:    "Pia Peters"
 * name.family = "Peters"
 * name.given = "Pia"
 * gender = #female
+*/

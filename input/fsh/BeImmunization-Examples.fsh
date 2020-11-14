@@ -527,7 +527,10 @@ Title:    "Immunization Example - 1. HPV"
 * performer[0].actor.identifier.value = "79121137740"
 * vaccineCode.coding.code = #165
 * vaccineCode.coding.system = "http://hl7.org/fhir/sid/cvx"
-* patient = Reference(pia)
+//* patient = Reference(pia)
+* patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* patient.identifier.value = "59050937740"
+
 * occurrenceDateTime = "2020-05-17"
 * recorded = "2020-05-17"
 
@@ -544,7 +547,10 @@ Title:    "Immunization Example - 2. childhood measles"
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
 * vaccineCode.text = "mazelen"
-* patient = Reference(pia)
+//* patient = Reference(pia)
+* patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* patient.identifier.value = "59050937740"
+
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * recorded = "2020"
 
@@ -564,7 +570,9 @@ Title:    "Immunization Example - 3. Emergency reinforcement"
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
 * vaccineCode.text = "tetanus"
-* patient = Reference(pia)
+* patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* patient.identifier.value = "59050937740"
+//* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-uz-gent)
 * performer.actor = Reference(org-uz-gent)
 * recorded = "2020-05-17"
@@ -591,7 +599,9 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 
 * vaccineCode.coding.code = #HBV
 * vaccineCode.coding.display = "Hepatitis B"
-* patient = Reference(pia)
+* patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* patient.identifier.value = "59050937740"
+//* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
 * extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
@@ -625,7 +635,9 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * vaccineCode.coding.code = #HBV
 * vaccineCode.coding.display = "Hepatitis B"
 * occurrenceDateTime = "2020-03-12"
-* patient = Reference(pia)
+* patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* patient.identifier.value = "59050937740"
+//* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * occurrenceString = "Zomer"
 * performer.actor = Reference(org-kind-en-gezin)
@@ -650,7 +662,9 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * occurrenceDateTime = "2020-03-12"
 * recorded = "2020-03-12"
 
-* patient = Reference(pia)
+* patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* patient.identifier.value = "59050937740"
+//* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
 * extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
@@ -675,7 +689,9 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 * occurrenceString = "Summer 2018"
 * recorded = "2020"
 
-* patient = Reference(pia)
+* patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* patient.identifier.value = "59050937740"
+//* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
 * extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
@@ -699,7 +715,9 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 * occurrenceString = "Summer 2018"
 * recorded = "2020"
 
-* patient = Reference(pia)
+* patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* patient.identifier.value = "59050937740"
+//* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
 * extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
@@ -722,7 +740,9 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 * vaccineCode.coding.display = "Rubella"
 * occurrenceString = "Summer 2018"
 * recorded = "2020-05-17"
-* patient = Reference(pia)
+* patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* patient.identifier.value = "59050937740"
+//* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
 * extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
@@ -755,7 +775,9 @@ Title:    "Immunization Example - Immediate reaction (swelling and redness) upon
 * vaccineCode.coding.system = "http://hl7.org/fhir/sid/cvx"
 * vaccineCode.coding.display = "Measles"
 * occurrenceDateTime = "2020-05-12"
-* patient = Reference(pia)
+* patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* patient.identifier.value = "59050937740"
+//* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
 * extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)

@@ -530,7 +530,7 @@ A set of examples demonstrates the use of the profile.
          <groupingId value="immunization" />
       </resource>
 
-
+<!--
       <resource>
          <reference>
             <reference value="Patient/pia" />
@@ -540,7 +540,7 @@ A set of examples demonstrates the use of the profile.
          <description value="Example Patient - Pia Peters" />
          <groupingId value="immunization" />
       </resource>
-
+-->
       <!--
     <resource>
       <reference>
