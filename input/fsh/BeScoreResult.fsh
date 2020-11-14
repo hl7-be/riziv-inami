@@ -58,7 +58,6 @@ Description:    """
 
 
 
-/*
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "coding.code"
 * category ^slicing.rules = #open
@@ -67,6 +66,7 @@ Description:    """
 
 * category[ProblemType] from BeVSProblemCategory
 
+/*
 
 * bodySite from BeVSBodySite
 * bodySite.extension contains BeLaterality named laterality 0..1
@@ -108,5 +108,9 @@ Description:  "Score Value Set"
 * codes from system BeCSScore
 
 */
-
+ValueSet: BeVSProblemCategory
+Id: be-vs-score
+Title: "Score Category Value Set"
+Description:  "Score Category Value Set"
+* ^status = #draft
 

@@ -50,11 +50,20 @@ Title:    "UZ Gent"
 
 Instance: org-msd-belgium
 InstanceOf: BeOrganization
-Usage: #inline
+Usage: #example
 Description: "MSD Belgium"
 * active = true
 * name = "MSD Belgium"
 * identifier.value = "111111111111"
+
+Instance: org-sanofi
+InstanceOf: BeOrganization
+Usage: #example
+Description: "Sanofi France"
+* active = true
+* name = "Sanofi France"
+* identifier.value = "111111111122"
+
 
 
 Instance: belgianVaccinationPlan
@@ -99,3 +108,13 @@ Age 65: pneumo + flu
 
 
 
+Instance: patient-pia
+InstanceOf: BePatient
+Usage: #example
+Description: "Patient Pia Peters"
+Title:    "Pia Peters"
+* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* identifier.value = "59050937740"
+* name.family = "Peters"
+* name.given = "Pia"
+* gender = #female

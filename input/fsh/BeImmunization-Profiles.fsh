@@ -28,6 +28,7 @@ Description:    """
 * patient only Reference(BePatient)
 * performer.actor 1..1 
 * performer.actor only Reference(BePractitioner or BeOrganization or BePractitionerRole)
+* location 0..0
 
 // changes 12-05
 //* basedOn
@@ -75,7 +76,7 @@ Extension: BeAdministeredProduct
 Id: be-ext-administeredProduct
 Title: "Product administered"
 Description: "The product administered"
-* value[x] only CodeableConcept or Reference
+* value[x] only Reference
 * valueReference only Reference(Medication)
 
 Extension: BeImmunizationConfirmationStatus
