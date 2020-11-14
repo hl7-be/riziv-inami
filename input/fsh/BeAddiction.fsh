@@ -91,9 +91,14 @@ InstanceOf: BeAddiction
 Usage: #example 
 Description: "This is an example addiction, showing a patient's smoking addiction of 2 packs per day"
 Title:   "Pia - smoking addiction"
-* extension[immunization-originalorder].valueReference = Reference(order-gabriel-flu)
-* extension[AddictionQuantifier].valueRation.numerator.value = 2
-* extension[AddictionQuantifier].valueRation.numerator.value.unit = "packs"
-* extension[AddictionQuantifier].valueRation.denominator.value = 1
-* extension[AddictionQuantifier].valueRation.denominator.value.unit = "day"
-* extension[AddictionQuantifier].valueRation.denominator.value.code = #d
+* extension[be-ext-addiction-quantifier].valueRatio.numerator.value = 2
+* extension[be-ext-addiction-quantifier].valueRatio.numerator.unit = "packs"
+* extension[be-ext-addiction-quantifier].valueRatio.denominator.value = 1
+* extension[be-ext-addiction-quantifier].valueRatio.denominator.unit = "day"
+* extension[be-ext-addiction-quantifier].valueRatio.denominator.code = #d
+* category.coding.code = #365981007
+* category.coding.display = "Tobacco smoking behavior "
+* code.coding.code = #65568007
+* code.coding.display = "Cigarette smoker"
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "59031540656"
