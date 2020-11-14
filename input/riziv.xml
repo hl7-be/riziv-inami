@@ -117,7 +117,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Example - Patient Smoking addiction" />
          <description value="Patient Smoking addiction" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-addiction" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-addiction" />
          <groupingId value="addiction" />
       </resource>
 
@@ -152,7 +152,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Example - Patient Will" />
          <description value="Patient Will" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patientwill" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-patientwill" />
          <groupingId value="patientwill" />
       </resource>
       <!-- -->
