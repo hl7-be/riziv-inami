@@ -50,7 +50,7 @@ Title:    "UZ Gent"
 
 Instance: org-msd-belgium
 InstanceOf: BeOrganization
-Usage: #inline
+Usage: #example
 Description: "MSD Belgium"
 * active = true
 * name = "MSD Belgium"

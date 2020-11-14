@@ -13,12 +13,22 @@ Usage: #example
 
 Instance: order-gabriel-flu
 InstanceOf: ImmunizationRecommendation
-Usage: #inline
+Usage: #example
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * patient.identifier.value = "55011779911"
 * date = "2019-09-02"
 * recommendation.vaccineCode = http://snomed.info/sct#142004
 * recommendation.forecastStatus = #due
+
+Instance: order-simon-hpv
+InstanceOf: ImmunizationRecommendation
+Usage: #example
+* patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* patient.identifier.value = "80112136791"
+* date = "2020-03-22"
+* recommendation.vaccineCode = http://hl7.org/fhir/sid/cvx#165
+* recommendation.forecastStatus = #opt
+
 
 /*============================================= Example 1 =============================================*/
 Instance: toto-hexa1
@@ -268,7 +278,7 @@ Title:   "Eva - HPV 1st dose"
 * patient.identifier.value = "7061254428"
 * recorded = "2019-09-05"
 * occurrenceDateTime = "2019-09-05"
-* manufacturer.reference = #org-msd-belgium
+* manufacturer = Reference(org-msd-belgium)
 * doseQuantity.value = 1
 * performer[0].actor.identifier.value = "Reference(School2)"
 * vaccineCode.coding[0].system = "http://hl7.org/fhir/sid/cvx"
@@ -288,7 +298,7 @@ Title:   "Eva - HPV 2nd dose"
 * patient.identifier.value = "7061254428"
 * recorded = "2020-04-23"
 * occurrenceDateTime = "2020-04-23"
-* manufacturer.reference = #org-msd-belgium
+* manufacturer = Reference(org-msd-belgium)
 * doseQuantity.value = 1
 * performer[0].actor.identifier.value = "Reference(School2)"
 * vaccineCode.coding[0].system = "http://hl7.org/fhir/sid/cvx"
@@ -617,8 +627,8 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * occurrenceDateTime = "2020-03-12"
 * patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* occurrenceString = "Zomer"
 * performer.actor = Reference(org-kind-en-gezin)
-* occurrenceString = "Summer 2011"
 * extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
 * note.text = "Patiënt heeft nu koorts, aanbevolen 1 ​​week te wachten"
 
