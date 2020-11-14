@@ -109,6 +109,22 @@ A set of examples demonstrates the use of the profile.
          <description value="Belgian Profile to capture Addictions (on substances or others)" />
          <groupingId value="addiction" />
       </resource>
+
+      <resource>
+         <reference>
+            <reference value="Condition/addiction-smoking" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Example - Patient Smoking addiction" />
+         <description value="Patient Smoking addiction" />
+         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-addiction" />
+         <groupingId value="addiction" />
+      </resource>
+
+
+
+
+
       <!-- -->
       <!-- Patient Will-->
       <resource>
