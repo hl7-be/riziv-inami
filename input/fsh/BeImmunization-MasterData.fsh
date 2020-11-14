@@ -50,7 +50,7 @@ Title:    "UZ Gent"
 
 Instance: org-msd-belgium
 InstanceOf: BeOrganization
-Usage: #example
+Usage: #inline
 Description: "MSD Belgium"
 * active = true
 * name = "MSD Belgium"
@@ -65,13 +65,15 @@ Description: "Sanofi France"
 * identifier.value = "111111111122"
 
 
-
+/*
 Instance: belgianVaccinationPlan
 InstanceOf: PlanDefinition
 Usage: #example
 Description: "Belgian Standard vaccination schedule "
 Title:    "Immunization Example - 1. Toto normal"
 * status = #draft
+*/
+
 /*
 2m 8 weeks: 
   hexavalent ()
@@ -108,7 +110,7 @@ Age 65: pneumo + flu
 
 
 
-Instance: patient-pia
+Instance: pia
 InstanceOf: BePatient
 Usage: #example
 Description: "Patient Pia Peters"

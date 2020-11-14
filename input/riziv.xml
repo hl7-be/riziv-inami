@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
-   <id value="be.fhir.be.riziv" />
+   <id value="hl7.fhir.be.riziv" />
    <url value="https://www.hl7belgium.org/fhir/riziv/ImplementationGuide/riziv" />
    <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
    <version value="0.1.0" />
@@ -29,7 +29,7 @@
       -->
       </coding>
    </jurisdiction>
-   <packageId value="hl7.be.fhir.riziv.summary" />
+   <packageId value="hl7.fhir.be.riziv" />
    <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
    <license value="CC0-1.0" />
    <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
@@ -472,6 +472,15 @@ A set of examples demonstrates the use of the profile.
       </resource>
       <resource>
          <reference>
+            <reference value="ImmunizationRecommendation/aymeric-rota" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Aymeric - rotavirus prescription" />
+         <description value="Aymeric - rotavirus prescription" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
             <reference value="Immunization/aymeric-rota1" />
          </reference>
          <fhirVersion value="4.0.1" />
@@ -510,6 +519,28 @@ A set of examples demonstrates the use of the profile.
          <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
+
+      <resource>
+         <reference>
+            <reference value="Observation/observation-swelling" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Observation - swelling reaction" />
+         <description value="Observation - swelling reaction" />
+         <groupingId value="immunization" />
+      </resource>
+
+
+      <resource>
+         <reference>
+            <reference value="Patient/pia" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Example Patient - Pia Peters" />
+         <description value="Example Patient - Pia Peters" />
+         <groupingId value="immunization" />
+      </resource>
+
       <!--
     <resource>
       <reference>
@@ -592,6 +623,8 @@ A set of examples demonstrates the use of the profile.
       <groupingId value="immunization"/>
     </resource>
 -->
+
+
       <!-- Problem -->
       <resource>
          <reference>

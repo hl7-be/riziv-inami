@@ -96,7 +96,7 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="CodeableReference" />
+        <code value="CodeableConcept" />
       </type>
       <binding>
         <strength value="required" />
@@ -147,7 +147,7 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="CodeableReference" />
+        <code value="CodeableConcept" />
       </type>
       <binding>
         <strength value="required" />

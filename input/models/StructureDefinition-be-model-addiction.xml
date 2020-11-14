@@ -184,7 +184,8 @@
       <min value="1" />
       <max value="1" />
       <type>
-        <code value="CodeableReference" />
+        <code value="CodeableConcept" />
+        <code value="Reference" />
       </type>
     </element>
 

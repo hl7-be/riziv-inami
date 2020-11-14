@@ -223,7 +223,8 @@
       <min value="1" />
       <max value="1" />
       <type>
-        <code value="CodeableReference" />
+        <code value="CodeableConcept" />
+        <code value="Reference" />
       </type>
     </element>
 
@@ -246,7 +247,7 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="Date" />
+        <code value="date" />
       </type>
     </element>
 
@@ -259,7 +260,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="CodeableReference" />
+        <code value="CodeableConcept" />
+        <code value="Reference" />
       </type>
     </element>
 

@@ -6,7 +6,7 @@
 
 Instance: erythema
 InstanceOf: Condition
-Usage: #inline
+Usage: #example
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "16032376921"
 * code = http://snomed.info/sct#247441003
@@ -114,7 +114,7 @@ Title:   "Toto - 4th hexavalent  immunization - skipped (fever)"
 * identifier.value = "c3743217-7b07-4370-b5e2-3eb0f2af108a"
 * identifier.system = "https://www.one.be/vaccination/immunisation-register"
 * status = #not-done
-* statusReason.coding.system = "http://hl7.org/fhir/ValueSet/immunization-status-reason"
+* statusReason.coding.system = "http://terminology.hl7.org/CodeSystem/v3-ActReason"
 * statusReason.coding.code = #MEDPREC
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * patient.identifier.value = "16032376921"
@@ -171,7 +171,7 @@ Title:   "Juan - 1st hexa (reported)"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/one-patientid"
 * patient.identifier.value = "3564564568"
 * recorded = "2016-05-30"
-* extension[immunization-location].valueReference = Reference(ONEAnderlecht)
+* extension[immunization-location].valueReference = Reference(org-one-brussels)
 * lotNumber = "NA"
 * occurrenceDateTime = "2016-05-30"
 * manufacturer = Reference(org-sanofi)
@@ -332,6 +332,19 @@ Title:   "Simon HPV - work"
 * extension[immunization-originalorder].valueReference = Reference(simon-hpv)
 * extension[immunization-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 14 =============================================*/
+Instance: aymeric-rota
+InstanceOf: ImmunizationRecommendation
+Usage: #example 
+Description: "Aymeric - rotavirus prescription"
+Title:   "Aymeric - rotavirus prescription"
+* patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* patient.identifier.value = "20020142173"
+* date = "2020-04-06"
+* recommendation.forecastStatus.text = "Recommended"
+* recommendation.targetDisease = http://snomed.info/sct#64694002
+
+
+
 Instance: aymeric-rota1
 InstanceOf: BeVaccination 
 Usage: #example 
@@ -504,7 +517,7 @@ Title:    "Immunization Example - 1. HPV"
 * performer[0].actor.identifier.value = "79121137740"
 * vaccineCode.coding.code = #165
 * vaccineCode.coding.system = "http://hl7.org/fhir/sid/cvx"
-* patient = Reference(patient-pia)
+* patient = Reference(pia)
 * occurrenceDateTime = "2020-05-17"
 * recorded = "2020-05-17"
 
@@ -521,7 +534,7 @@ Title:    "Immunization Example - 2. childhood measles"
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
 * vaccineCode.text = "mazelen"
-* patient = Reference(patient-pia)
+* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * recorded = "2020"
 
@@ -541,7 +554,7 @@ Title:    "Immunization Example - 3. Emergency reinforcement"
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
 * vaccineCode.text = "tetanus"
-* patient = Reference(patient-pia)
+* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-uz-gent)
 * performer.actor = Reference(org-uz-gent)
 * recorded = "2020-05-17"
@@ -568,7 +581,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 
 * vaccineCode.coding.code = #HBV
 * vaccineCode.coding.display = "Hepatitis B"
-* patient = Reference(patient-pia)
+* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
 * extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
@@ -602,7 +615,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * vaccineCode.coding.code = #HBV
 * vaccineCode.coding.display = "Hepatitis B"
 * occurrenceDateTime = "2020-03-12"
-* patient = Reference(patient-pia)
+* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
 * occurrenceString = "Summer 2011"
@@ -627,7 +640,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * occurrenceDateTime = "2020-03-12"
 * recorded = "2020-03-12"
 
-* patient = Reference(patient-pia)
+* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
 * extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
@@ -652,7 +665,7 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 * occurrenceString = "Summer 2018"
 * recorded = "2020"
 
-* patient = Reference(patient-pia)
+* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
 * extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
@@ -676,7 +689,7 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 * occurrenceString = "Summer 2018"
 * recorded = "2020"
 
-* patient = Reference(patient-pia)
+* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
 * extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
@@ -699,7 +712,7 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 * vaccineCode.coding.display = "Rubella"
 * occurrenceString = "Summer 2018"
 * recorded = "2020-05-17"
-* patient = Reference(patient-pia)
+* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
 * extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
@@ -732,7 +745,7 @@ Title:    "Immunization Example - Immediate reaction (swelling and redness) upon
 * vaccineCode.coding.system = "http://hl7.org/fhir/sid/cvx"
 * vaccineCode.coding.display = "Measles"
 * occurrenceDateTime = "2020-05-12"
-* patient = Reference(patient-pia)
+* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
 * extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)

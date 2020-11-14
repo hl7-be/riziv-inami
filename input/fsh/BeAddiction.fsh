@@ -96,6 +96,8 @@ Title:   "Pia - smoking addiction"
 * extension[be-ext-addiction-quantifier].valueRatio.denominator.value = 1
 * extension[be-ext-addiction-quantifier].valueRatio.denominator.unit = "day"
 * extension[be-ext-addiction-quantifier].valueRatio.denominator.code = #d
+* extension[be-ext-addiction-quantifier].valueRatio.denominator.system = "http://unitsofmeasure.org"
+
 * category.coding.code = #365981007
 * category.coding.display = "Tobacco smoking behavior "
 * code.coding.code = #65568007
