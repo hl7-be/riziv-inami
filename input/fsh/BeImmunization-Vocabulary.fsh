@@ -35,6 +35,7 @@ Id: be-vs-vaccine-administration-route
 //Usage: #definition
 Title: "Vaccine Administration Route"
 Description:  "Vaccine Administration Route"
+* ^status = #draft
 * codes from system BeCSVaccineAdministrationRoute
 
 
@@ -44,6 +45,7 @@ Id: be-vs-immunization-status-reason
 //Usage: #definition
 Title: "Immunization status Value Set"
 Description:  "Immunization status Value Set"
+* ^status = #draft
 * codes from system BeCSStatusReason
 
 /*
@@ -62,6 +64,7 @@ ValueSet: BeVSImmunizationConfirmationStatus
 Id: be-vs-immunization-confirmation-status
 Title: "Immunization status Value Set"
 Description:  "Immunization status Value Set"
+* ^status = #draft
 * codes from system BeCSImmunizationConfirmationStatus
 
 
@@ -102,6 +105,7 @@ ValueSet: BeVSCareLocation
 Id: be-vs-care-location
 Title: "Care Location Value Set"
 Description:  "Care Location Value Set"
+* ^status = #draft
 * codes from system BeCSCareLocation
 
 

@@ -24,6 +24,7 @@ ValueSet: BeVSLaterality
 Id: be-vs-laterality
 Title: "Laterality"
 Description:  "Laterality"
+* ^status = #draft
 * codes from system BeCSLaterality
 
 /*
@@ -38,6 +39,7 @@ ValueSet: BeVSBodySite
 Id: be-vs-bodysite
 Title: "Body Site"
 Description:  "Body Site"
+* ^status = #draft
 * codes from system BeCSBodySite
 
 /*
@@ -52,6 +54,7 @@ ValueSet: BeVSProblemOriginType
 Id: be-vs-problem-origin-type
 Title: "Problem Origin Type"
 Description:  "Problem Origin Type"
+* ^status = #draft
 * codes from system BeCSProblemOriginType
 
 /*
@@ -65,4 +68,14 @@ ValueSet: BeVSProblemCategory
 Id: be-vs-problem-category
 Title: "Problem Category"
 Description:  "Problem Category"
+* ^status = #draft
 * codes from system BeCSProblemCategory
+
+
+
+ValueSet: BeVSProblemCode
+Id: be-vs-problem-code
+Title: "Problem Code"
+Description:  "Problem Code"
+* ^status = #draft
+

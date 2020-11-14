@@ -1,7 +1,7 @@
 Profile:        BeProblem
 Parent:         Condition
 Id:             be-problem
-Title:          "BEVaccination"
+Title:          "BEProblem"
 Description:    """ 
     Defines a patient's known problem, a diagnostic or antecedent that deserves attention."""
 
@@ -20,7 +20,7 @@ Description:    """
 * onset[x] MS
 * abatement[x] MS
 * note MS
-
+* encounter MS
 
 
 * category ^slicing.discriminator.type = #pattern
@@ -29,13 +29,14 @@ Description:    """
 * category contains ProblemType 0..1
 * category[ProblemType].coding.system = "BeVSProblemCategory"
 
-* category[ProblemType] from BeVSProblemCategory
+* category[ProblemType] from BeVSProblemCategory (extensible)
+* code from BeVSProblemCode (extensible)
 
 
 * bodySite from BeVSBodySite
 * bodySite.extension contains BeLaterality named laterality 0..1
 * extension contains BeExtProblemOriginType named ProblemOriginType 0..1 MS
-* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named OriginalOrder 0..1 MS
+//* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named OriginalOrder 0..1 MS
 
 
 
