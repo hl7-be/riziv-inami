@@ -45,8 +45,8 @@
   <process>
     <title value="Allergy Intolerance Use Case"/>
     <description value="description"/>
-    <preConditions value="precondition"/>
-    <postConditions value="post status"/>
+    <preConditions value="The patient visits their GP and shows signs of inflammation. The GP will check for possible allergies, while presently there are no allergies registered for the patient."/>
+    <postConditions value="The patient's allergy information in the central vault is updated with a refuted allergy (which may or not be shown in the patient record)."/>
 
     <step>
       <operation>
