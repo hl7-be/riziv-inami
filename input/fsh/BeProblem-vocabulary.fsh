@@ -25,7 +25,7 @@ Id: be-vs-laterality
 Title: "Laterality"
 Description:  "Laterality"
 * ^status = #draft
-* codes from system BeCSLaterality
+* codes from system https://www.hl7.org/fhir/valueset-bodystructure-relative-location.html //BeCSLaterality
 
 /*
 CodeSystem: BeCSBodySite

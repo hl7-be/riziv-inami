@@ -7,7 +7,7 @@
   "title": "Problem Category",
   "description": "Problem Category",
   "version": "0.1.0",
-  "url": "https://www.hl7belgium.org/fhir/riziv/CodeSystem/be-cs-problem-category",
+  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category",
   "concept":
   [
     {"code" : "diagnosis","display" : "Diagnosis","definition" : "A disease identified from a clinical reasoning, based on pathological and physiological ascertainments","designation" : [{"language" : "fr-BE","value" : "Diagnostic"},{"language" : "nl-BE","value" : "diagnose"}]},

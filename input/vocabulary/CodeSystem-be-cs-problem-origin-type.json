@@ -7,7 +7,7 @@
   "title": "Problem Origin Type",
   "description": "Problem Origin Type",
   "version": "0.1.0",
-  "url": "https://www.hl7belgium.org/fhir/riziv/CodeSystem/be-cs-problem-origin-type",
+  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type",
   "concept": [
     {"code" : "referral","display" : "Referral order","definition" : "Following a referral order","designation" : [{"language" : "fr-BE","value" : "prescription de renvoi"},{"language" : "nl-BE","value" : "verwijsvoorschrift "}]},
     {"code" : "own-initiative","display" : "Patient's own initiative","definition" : "The patient has arrived on their own initiative","designation" : [{"language" : "fr-BE","value" : "libre"},{"language" : "nl-BE","value" : "Op eigen initiatief"}]},

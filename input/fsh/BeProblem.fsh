@@ -40,8 +40,6 @@ Description:    """
 
 
 
-
-
 Extension: BeExtProblemOriginType
 Id: be-ext-problem-origin-type
 Title: "Problem Type"

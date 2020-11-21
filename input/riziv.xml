@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
    <id value="hl7.fhir.be.riziv" />
-   <url value="https://www.hl7belgium.org/fhir/riziv/ImplementationGuide/riziv" />
+   <url value="https://www.hl7belgium.org/fhir/ImplementationGuide/riziv" />
    <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
    <version value="0.1.0" />
    <name value="RIZIV-INAMI" />
@@ -109,6 +109,15 @@ A set of examples demonstrates the use of the profile.
          <description value="Belgian Profile to capture Addictions (on substances or others)" />
          <groupingId value="addiction" />
       </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-ext-addiction-quantifier" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Addiction Quantifier extension" />
+         <description value="Belgian Extension to allow quantification of addictions (on substances or others) - for example 10 packs per week, 1 bottle per day" />
+         <groupingId value="addiction" />
+      </resource>
 
       <resource>
          <reference>
@@ -117,7 +126,25 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Example - Patient Smoking addiction" />
          <description value="Patient Smoking addiction" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-addiction" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-addiction" />
+         <groupingId value="addiction" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-addiction-category" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Addiction Categories" />
+         <description value="Addiction Category value set" />
+         <groupingId value="addiction" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-addiction-code" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Addiction Codes" />
+         <description value="Addiction Code value set" />
          <groupingId value="addiction" />
       </resource>
 
@@ -143,6 +170,42 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Patient Will core BE profile" />
          <description value="The Core BE profile for Patient Will" />
+         <groupingId value="patientwill" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-patientwill-category" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Patient Will Categories" />
+         <description value="Patient Will Category code system" />
+         <groupingId value="patientwill" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-patientwill-category" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Patient Will Categories" />
+         <description value="Patient Will Category value set" />
+         <groupingId value="patientwill" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-patientwill-directive" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Patient Will directives" />
+         <description value="Patient Will directive code system" />
+         <groupingId value="patientwill" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-patientwill-directive" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Patient Will directives" />
+         <description value="Patient Will directive value set" />
          <groupingId value="patientwill" />
       </resource>
       <resource>
@@ -347,7 +410,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Toto - First hexavalent  immunization" />
          <description value="Toto - First hexavalent  immunization" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -357,7 +420,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Toto - 2nd hexavalent  immunization" />
          <description value="Toto - 2nd hexavalent  immunization" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -367,7 +430,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Toto - 3rd hexavalent  immunization" />
          <description value="Toto - 3rd hexavalent  immunization" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -377,7 +440,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Toto - 4th hexavalent  immunization - skipped (fever)" />
          <description value="Toto - 4th hexavalent  immunization - skipped (fever)" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -387,7 +450,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Toto - 4th hexavalent  immunization" />
          <description value="Toto - 4th hexavalent  immunization" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -397,7 +460,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Juan - 1st hexa (reported)" />
          <description value="Juan - 1st hexa (reported)" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -407,7 +470,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Juan - 2nd hexa (hospital)" />
          <description value="Juan - 2nd hexa (hospital)" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -417,7 +480,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Juan - 3rd hexa (not done)" />
          <description value="Juan - 3rd hexa (not done)" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -427,7 +490,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Juan - 3rd hexa (effective)" />
          <description value="Juan - 3rd hexa (effective)" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -437,7 +500,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Eva - HPV 1st dose" />
          <description value="Eva - HPV 1st dose" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -447,7 +510,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Eva - HPV 2nd dose" />
          <description value="Eva - HPV 2nd dose" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -457,7 +520,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Julia - refuse HPV" />
          <description value="Julia - refuse HPV" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -467,7 +530,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Simon HPV - work" />
          <description value="Simon HPV - work" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -486,7 +549,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Aymeric - rotavirus 1st dose" />
          <description value="Aymeric - rotavirus 1st dose" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -496,7 +559,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Aymeric - rotavirus 2nd dose" />
          <description value="Aymeric - rotavirus 2nd dose" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -506,7 +569,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Aymeric - rotavirus 3rd dose" />
          <description value="Aymeric - rotavirus 3rd dose" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -516,7 +579,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Gabriel - influenza vaccine" />
          <description value="Gabriel - influenza vaccine" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
 
@@ -700,6 +763,16 @@ A set of examples demonstrates the use of the profile.
       </resource>
       <resource>
          <reference>
+            <reference value="ValueSet/be-vs-problem-code" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Problem Codes Value Set" />
+         <description value="Problem Code Value Set" />
+         <groupingId value="problem" />
+      </resource>
+<!--
+         <resource>
+         <reference>
             <reference value="CodeSystem/be-cs-laterality" />
          </reference>
          <fhirVersion value="4.0.1" />
@@ -707,6 +780,7 @@ A set of examples demonstrates the use of the profile.
          <description value="Code System Laterality" />
          <groupingId value="problem" />
       </resource>
+-->      
       <resource>
          <reference>
             <reference value="ValueSet/be-vs-laterality" />
@@ -730,7 +804,7 @@ A set of examples demonstrates the use of the profile.
             <reference value="ValueSet/be-vs-bodysite" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Value Set Code System Body Site" />
+         <name value="Value Set Body Site" />
          <description value="Value Set Body Site" />
          <groupingId value="problem" />
       </resource>
@@ -878,7 +952,7 @@ A set of examples demonstrates the use of the profile.
          <fhirVersion value="4.0.1" />
          <name value="Example - FINDRISC score result" />
          <description value="FIDNRISC score result example, obtained from a QuestionnaireResponse" />
-         <exampleCanonical value="https://www.hl7belgium.org/fhir/riziv/StructureDefinition/be-scoreresult" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-scoreresult" />
          <groupingId value="scoreresults" />
       </resource>
  
