@@ -13,6 +13,7 @@ Description:    """
 * code 1..1 MS
 * subject 1..1 MS 
 * bodySite 0..0
+* ^jurisdiction.coding = urn:iso:std:iso:3166#BE
 
 * category from BeVSAddictionCategory (extensible)
 * code from BeVSAddictionCode (extensible)

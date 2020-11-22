@@ -5,11 +5,20 @@
 */
 
 Instance: erythema
-InstanceOf: Condition
+InstanceOf: Observation
 Usage: #example
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "16032376921"
 * code = http://snomed.info/sct#247441003
+* status = #final
+
+Instance: fever
+InstanceOf: Observation
+Usage: #example
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "16032376921"
+* code = http://snomed.info/sct#386661006
+* status = #final
 
 Instance: order-gabriel-flu
 InstanceOf: ImmunizationRecommendation
@@ -17,7 +26,7 @@ Usage: #example
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * patient.identifier.value = "55011779911"
 * date = "2019-09-02"
-* recommendation.vaccineCode = http://snomed.info/sct#142004
+* recommendation.vaccineCode = http://hl7.org/fhir/sid/cvx#141
 * recommendation.forecastStatus = #due
 
 Instance: order-simon-hpv
@@ -129,6 +138,7 @@ Title:   "Toto - 4th hexavalent  immunization - skipped (fever)"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * patient.identifier.value = "16032376921"
 * recorded = "2017-06-16"
+* reasonReference = Reference(fever)
 * extension[immunization-location].valueReference = Reference(org-one-brussels)
 * occurrenceDateTime = "2017-06-16"
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"
@@ -164,7 +174,7 @@ Title:   "Toto - 4th hexavalent  immunization"
 * vaccineCode.coding[0].system = "http://hl7.org/fhir/sid/cvx"
 * vaccineCode.coding[0].code = #146
 * vaccineCode.coding[1].code = #3050176
-* reaction.detail.reference = #erythema
+* reaction.detail = Reference (erythema)
 * protocolApplied.doseNumberPositiveInt = 4
 * protocolApplied.seriesDosesPositiveInt = 4
 * extension[immunization-confirmationStatus].valueCode = #confirmed
@@ -339,7 +349,7 @@ Title:   "Simon HPV - work"
 * vaccineCode.coding[0].code = #165
 * protocolApplied.doseNumberPositiveInt = 1
 * protocolApplied.seriesDosesPositiveInt = 1
-* extension[immunization-originalorder].valueReference = Reference(simon-hpv)
+* extension[immunization-originalorder].valueReference = Reference(order-simon-hpv)
 * extension[immunization-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 14 =============================================*/
 Instance: aymeric-rota
@@ -637,12 +647,12 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * occurrenceDateTime = "2020-03-12"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
-//* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * occurrenceString = "Zomer"
 * performer.actor = Reference(org-kind-en-gezin)
 * extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
 * note.text = "Patiënt heeft nu koorts, aanbevolen 1 ​​week te wachten"
+
 
 
 Instance: immunization-example-not-given-refusal

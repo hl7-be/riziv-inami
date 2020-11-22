@@ -225,7 +225,7 @@ A set of examples demonstrates the use of the profile.
             <reference value="StructureDefinition/be-model-vaccination" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Logical Model Immunization" />
+         <name value="Logical Model Vaccination" />
          <description value="Vaccination logical model" />
          <groupingId value="immunization" />
       </resource>
@@ -234,8 +234,8 @@ A set of examples demonstrates the use of the profile.
             <reference value="StructureDefinition/be-vaccination" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Immunization core BE profile" />
-         <description value="The Core BE profile for Immunization (event)" />
+         <name value="Vaccination core BE profile" />
+         <description value="The Core BE profile for Vaccination (event)" />
          <groupingId value="immunization" />
       </resource>
       
@@ -244,8 +244,8 @@ A set of examples demonstrates the use of the profile.
           <reference value="StructureDefinition/be-ext-immunization-location"/>
         </reference>
         <fhirVersion value="4.0.1"/>
-        <name value="Location of the immunization event"/>
-        <description value="Location of the immunization event"/>
+        <name value="Location of the vaccination event"/>
+        <description value="Location of the vaccination event"/>
         <groupingId value="immunization"/>
       </resource>
   
@@ -263,7 +263,7 @@ A set of examples demonstrates the use of the profile.
             <reference value="CodeSystem/be-cs-immunization-confirmation-status" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="CodeSystem - immunization confirmation status" />
+         <name value="CodeSystem - vaccination confirmation status" />
          <description value="The list of immunization confirmation status" />
          <groupingId value="immunization" />
       </resource>
@@ -308,7 +308,7 @@ A set of examples demonstrates the use of the profile.
             <reference value="ValueSet/be-vs-immunization-confirmation-status" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="ValueSet - immunization confirmation status" />
+         <name value="ValueSet - vaccination confirmation status" />
          <description value="The list of immunization confirmation status" />
          <groupingId value="immunization" />
       </resource>
@@ -335,7 +335,7 @@ A set of examples demonstrates the use of the profile.
             <reference value="StructureDefinition/be-ext-immunization-originalorder" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Extension - Immunization original order" />
+         <name value="Extension - Vaccination original order" />
          <description value="Immunization original order  (e.g. prescription)" />
          <groupingId value="immunization" />
       </resource>
@@ -344,16 +344,19 @@ A set of examples demonstrates the use of the profile.
             <reference value="StructureDefinition/be-ext-recorder" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Extension - Immunization recorder" />
+         <name value="Extension - Vaccination recorder" />
          <description value="Immunization recorder" />
          <groupingId value="immunization" />
       </resource>
+
+
+
       <resource>
          <reference>
             <reference value="StructureDefinition/be-ext-immunization-confirmationStatus" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Extension - Immunization confirmation status" />
+         <name value="Extension - Vaccination confirmation status" />
          <description value="Immunization confirmation status" />
          <groupingId value="immunization" />
       </resource>
@@ -408,8 +411,8 @@ A set of examples demonstrates the use of the profile.
             <reference value="Immunization/toto-hexa1" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Toto - First hexavalent  immunization" />
-         <description value="Toto - First hexavalent  immunization" />
+         <name value="Toto - First hexavalent immunization" />
+         <description value="Toto - First hexavalent immunization" />
          <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
@@ -418,8 +421,8 @@ A set of examples demonstrates the use of the profile.
             <reference value="Immunization/toto-hexa2" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Toto - 2nd hexavalent  immunization" />
-         <description value="Toto - 2nd hexavalent  immunization" />
+         <name value="Toto - 2nd hexavalent immunization" />
+         <description value="Toto - 2nd hexavalent immunization" />
          <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
@@ -428,8 +431,8 @@ A set of examples demonstrates the use of the profile.
             <reference value="Immunization/toto-hexa3" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Toto - 3rd hexavalent  immunization" />
-         <description value="Toto - 3rd hexavalent  immunization" />
+         <name value="Toto - 3rd hexavalent immunization" />
+         <description value="Toto - 3rd hexavalent immunization" />
          <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
@@ -438,8 +441,8 @@ A set of examples demonstrates the use of the profile.
             <reference value="Immunization/toto-hexa4-skipped" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Toto - 4th hexavalent  immunization - skipped (fever)" />
-         <description value="Toto - 4th hexavalent  immunization - skipped (fever)" />
+         <name value="Toto - 4th hexavalent immunization - skipped (fever)" />
+         <description value="Toto - 4th hexavalent immunization - skipped (fever)" />
          <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
@@ -448,8 +451,8 @@ A set of examples demonstrates the use of the profile.
             <reference value="Immunization/toto-hexa4-swelling" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Toto - 4th hexavalent  immunization" />
-         <description value="Toto - 4th hexavalent  immunization" />
+         <name value="Toto - 4th hexavalent immunization" />
+         <description value="Toto - 4th hexavalent immunization" />
          <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
@@ -521,6 +524,42 @@ A set of examples demonstrates the use of the profile.
          <name value="Julia - refuse HPV" />
          <description value="Julia - refuse HPV" />
          <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ImmunizationRecommendation/order-gabriel-flu" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Gabriel - Flu vaccine prescription" />
+         <description value="Gabriel - flu vacccine prescription" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ImmunizationRecommendation/order-simon-hpv" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Simon - HPV vaccine prescription" />
+         <description value="Simon - HPV vacccine prescription" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Observation/erythema" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Toto reaction - erythema" />
+         <description value="Toto - example of reaction (erythema)" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Observation/fever" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Toto finding - fever" />
+         <description value="Toto - example of finding that prevents vaccination (fever)" />
          <groupingId value="immunization" />
       </resource>
       <resource>
@@ -721,8 +760,8 @@ A set of examples demonstrates the use of the profile.
             <reference value="StructureDefinition/be-ext-problem-origin-type" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Extension - Problem type" />
-         <description value="Extension for Problem type" />
+         <name value="Extension - Problem origin type" />
+         <description value="Extension for Problem origin type" />
          <groupingId value="problem" />
       </resource>
       <resource>
@@ -730,8 +769,8 @@ A set of examples demonstrates the use of the profile.
             <reference value="ValueSet/be-vs-problem-origin-type" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="ValueSet - Problem type" />
-         <description value="Set of values for problem type" />
+         <name value="ValueSet - Problem origin type" />
+         <description value="Set of values for problem origin type" />
          <groupingId value="problem" />
       </resource>
       <resource>
@@ -739,8 +778,8 @@ A set of examples demonstrates the use of the profile.
             <reference value="CodeSystem/be-cs-problem-origin-type" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="CodeSystem - Problem type" />
-         <description value="Codes for Problem type" />
+         <name value="CodeSystem - Problem origin type" />
+         <description value="Codes for Problem origin type" />
          <groupingId value="problem" />
       </resource>
       <resource>
@@ -978,6 +1017,15 @@ A set of examples demonstrates the use of the profile.
          <description value = "Score Result value set" />
          <groupingId value="scoreresults" />
       </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-scorecategory" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Score Category Value Set" />
+         <description value = "Score Category value set" />
+         <groupingId value="scoreresults" />
+      </resource>      
 
       <page>
          <!-- The root will always be toc.html - the template will force it if you don't do it -->

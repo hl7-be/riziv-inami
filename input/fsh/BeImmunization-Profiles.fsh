@@ -29,6 +29,7 @@ Description:    """
 * performer.actor 1..1 
 * performer.actor only Reference(BePractitioner or BeOrganization or BePractitionerRole)
 * location 0..0
+* ^jurisdiction.coding = urn:iso:std:iso:3166#BE
 
 // changes 12-05
 //* basedOn

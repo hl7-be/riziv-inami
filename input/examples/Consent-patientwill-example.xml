@@ -28,7 +28,6 @@
       <code value="treatment" />
       <display value="Treatment" />
     </coding>
-    <text value="No resuscitation" />
   </category>
   <patient>
     <identifier>

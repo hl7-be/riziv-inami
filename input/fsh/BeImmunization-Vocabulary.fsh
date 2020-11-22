@@ -62,8 +62,8 @@ Description:  "Immunization status Code System."
 ValueSet: BeVSImmunizationConfirmationStatus
 //Usage: #definition
 Id: be-vs-immunization-confirmation-status
-Title: "Immunization status Value Set"
-Description:  "Immunization status Value Set"
+Title: "Vaccination status Value Set"
+Description:  "Vaccination status Value Set"
 * ^status = #draft
 * codes from system BeCSImmunizationConfirmationStatus
 
@@ -122,7 +122,7 @@ Description: "Naming System - CNK Product Codes"
 * uniqueId[0].type = #uri
 * uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cnk-codes"
 * uniqueId[0].preferred = true
-* jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
+* jurisdiction = urn:iso:std:iso:3166#BE
 
           
 Instance: be-ns-product-manufacturer
@@ -137,7 +137,7 @@ Description: "Naming System - Product Manufacturers"
 * uniqueId[0].type = #uri
 * uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/product-manufacturer"
 * uniqueId[0].preferred = true
-* jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
+* jurisdiction = urn:iso:std:iso:3166#BE
 
 
 
@@ -153,7 +153,7 @@ Description: "Naming System - ONE Immunizations"
 * uniqueId[0].type = #uri
 * uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/one-immunizations"
 * uniqueId[0].preferred = true
-* jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
+* jurisdiction = urn:iso:std:iso:3166#BE
 
 Instance: be-ns-nihdi-professional
 InstanceOf: NamingSystem
@@ -167,7 +167,7 @@ Description: "Naming System - Nihdi - Professional"
 * uniqueId[0].type = #uri
 * uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-professional"
 * uniqueId[0].preferred = true
-* jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
+* jurisdiction = urn:iso:std:iso:3166#BE
 
 
 Instance: be-ns-nihdi-organization
@@ -182,5 +182,5 @@ Description: "Naming System - Nihdi - Organization"
 * uniqueId[0].type = #uri
 * uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"
 * uniqueId[0].preferred = true
-* jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
+* jurisdiction = urn:iso:std:iso:3166#BE
 

@@ -28,6 +28,7 @@ Description:    """
 * bodySite ^short = "The body site to which the score applies, when applicable"
 * bodySite.extension contains BeLaterality named laterality 0..1
 * bodySite.extension[BeLaterality] MS
+* ^jurisdiction.coding = urn:iso:std:iso:3166#BE
 
 * effectivePeriod MS
 * effectivePeriod 1..1
@@ -57,14 +58,13 @@ Description:    """
 
 
 
-
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "coding.code"
 * category ^slicing.rules = #open
-* category contains ProblemType 0..1
-* category[ProblemType].coding.system = "BeVSProblemCategory"
+* category contains ScoreCategory 0..1
+* category[ScoreCategory].coding.system = "BeVSScoreCategory"
 
-* category[ProblemType] from BeVSProblemCategory
+* category[ScoreCategory] from BeVSScoreCategory
 
 /*
 
@@ -79,7 +79,7 @@ Description:    """
 
 Extension: BeExtProblemOriginType
 Id: be-ext-problem-origin-type
-Title: "Problem Type"
+Title: "Problem Origin Type"
 Description: "An explicit statement of laterality of a lesion, or a treatment, etc."
 * value[x] only code
 * valueCode from BeVSProblemOriginType
@@ -108,8 +108,8 @@ Description:  "Score Value Set"
 * codes from system BeCSScore
 
 */
-ValueSet: BeVSProblemCategory
-Id: be-vs-score
+ValueSet: BeVSScoreCategory
+Id: be-vs-scorecategory
 Title: "Score Category Value Set"
 Description:  "Score Category Value Set"
 * ^status = #draft

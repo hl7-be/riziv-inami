@@ -207,7 +207,7 @@
       <path value="BEVaccination.administeredProduct" />
       <short value="The details of the product that was administered." />
       <definition value="The details of the product that was administered" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="BackboneElement" />

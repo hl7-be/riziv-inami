@@ -66,15 +66,15 @@
 <p></p>
 <p></p>
 
-<a name="immunization"> </a>
-<h3 id="immunization">Immunization</h3>
+<a name="vaccination"> </a>
+<h3 id="immunization">Vaccination</h3>
 
 <a name="use-case-1-1"> </a>
 <h4 id="use-case-1-1">Use Case 1</h4>
 
 <a name="summary-4"> </a>
 <h5 id="summary-4">Summary</h5>
-<p>This the basic use case where na immunization record is created, shared and updated.</p>
+<p>This the basic use case where an immunization record is created, shared and updated.</p>
 <p>(TBD)</p>
 
 <a name="section-1"> </a>

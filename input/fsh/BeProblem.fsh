@@ -21,6 +21,7 @@ Description:    """
 * abatement[x] MS
 * note MS
 * encounter MS
+* ^jurisdiction.coding = urn:iso:std:iso:3166#BE
 
 
 * category ^slicing.discriminator.type = #pattern
@@ -42,8 +43,8 @@ Description:    """
 
 Extension: BeExtProblemOriginType
 Id: be-ext-problem-origin-type
-Title: "Problem Type"
-Description: "The type of event that triggers the problem to be evaluated - whether the problem was reported from a referring GP..."
+Title: "Problem Origin Type"
+Description: "The type of event that triggers the problem to be evaluated - whether the problem was reported from a referring GP, etc..."
 * value[x] only code
 * valueCode from BeVSProblemOriginType
 
@@ -54,7 +55,5 @@ Title: "Laterality extension"
 Description: "An explicit statement of laterality of a lesion, or a treatment, etc."
 * value[x] only code
 * valueCode from BeVSLaterality
-
-
 
 
