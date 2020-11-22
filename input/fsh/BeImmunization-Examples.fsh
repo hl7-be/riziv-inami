@@ -648,7 +648,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
-* occurrenceString = "Zomer"
+* occurrenceString = "Summer 2011"
 * performer.actor = Reference(org-kind-en-gezin)
 * extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
 * note.text = "Patiënt heeft nu koorts, aanbevolen 1 ​​week te wachten"

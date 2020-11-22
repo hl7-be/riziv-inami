@@ -1,7 +1,7 @@
 {
   "resourceType": "CodeSystem",
   "id": "be-cs-vaccine-administration-route",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-vaccine-administration-route",
+  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccine-administration-route",
   "version": "0.1.0",
   "name": "BeCSVaccineAdministrationRoute",
   "title": "Vaccine Administration Route",

@@ -237,7 +237,8 @@
       "definition": "Pain Assessment in Advanced Dementia Scale",
       "designation": [
         {
-          "language": "fr-BE"
+          "language": "fr-BE",
+          "value": "TBD"
         },
         {
           "language": "nl-BE",
