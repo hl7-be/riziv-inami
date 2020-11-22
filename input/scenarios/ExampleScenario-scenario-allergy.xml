@@ -2,7 +2,7 @@
 <ExampleScenario xmlns="http://hl7.org/fhir">
   <id value="scenario-allergy"/>
   <version value="0.0.1"/>
-  <name value="Allergy scenario"/>
+  <name value="AllergyScenario"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2019-09-11T00:00:00.000+01:00"/>
@@ -51,10 +51,9 @@
     <step>
       <operation>
         <name value="Get patient's allergies"/>
+        <number value="1"/>
         <initiator value="GP"/>
         <receiver value="VAULT"/>
-        <request>
-        </request>
         <response>
           <resourceId value="EB"/>
         </response>
@@ -66,13 +65,12 @@
     <step>
       <operation>
         <name value="Create new Allergy record entry"/>
+        <number value="2"/>
         <initiator value="GP"/>
         <receiver value="VAULT"/>
         <request>
           <resourceId value="noel-allergy.v0"/>
         </request>
-        <response>
-        </response>
       </operation>
     </step>
 
@@ -80,10 +78,9 @@
     <step>
       <operation>
         <name value="Get patient's allergies"/>
+        <number value="3"/>
         <initiator value="SPEC"/>
         <receiver value="VAULT"/>
-        <request>
-        </request>
         <response>
           <resourceId value="noel-allergy.v0"/>
         </response>
@@ -95,13 +92,12 @@
     <step>
       <operation>
         <name value="Update Allergy record"/>
+        <number value="4"/>
         <initiator value="SPEC"/>
         <receiver value="VAULT"/>
         <request>
           <resourceId value="noel-allergy.v1"/>
         </request>
-        <response>
-        </response>
       </operation>
     </step>
 
@@ -109,10 +105,9 @@
     <step>
       <operation>
         <name value="Get patient's allergies"/>
+        <number value="5"/>
         <initiator value="GP"/>
         <receiver value="VAULT"/>
-        <request>
-        </request>
         <response>
           <resourceId value="noel-allergy.v1"/>
         </response>

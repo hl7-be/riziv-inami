@@ -14,6 +14,7 @@
     <element id="BEVaccination">
       <path value="BEVaccination" />
       <short value="A record of an immunization or vaccination" />
+      <definition value="A record of an immunization or vaccination" />
       <min value="0" />
       <max value="*" />
     </element>

@@ -15,6 +15,7 @@
   <differential>
     <element id="BeAddiction">
       <short value="A subject's addiction" />
+      <definition value="A record of a patient's addiction." />
       <path value="BeAddiction" />
       <min value="0" />
       <max value="*" />
@@ -32,6 +33,7 @@
     <element id="BeAddiction.clinicalStatus">
       <path value="BeAddiction.clinicalStatus" />
       <short value="The clinical status of the addiction - whether it is active, resolved..." />
+      <definition value="The clinical status of the addiction - whether it is active, resolved..." />
       <min value="0" />
       <max value="1" />
       <type>
@@ -42,6 +44,7 @@
     <element id="BeAddiction.verificationStatus">
       <path value="BeAddiction.verificationStatus" />
       <short value="The verification status of the addiction - whether it is suspected, confirmed, etc." />
+      <definition value="The verification status of the addiction - whether it is suspected, confirmed, etc." />
       <min value="0" />
       <max value="1" />
       <type>
@@ -52,7 +55,7 @@
     <element id="BeAddiction.subject">
       <path value="BeAddiction.subject" />
       <short value="The person that has/had the addiction" />
-      <definition value="The patient" />
+      <definition value="The patient that has/had the addiction" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -123,7 +126,7 @@
       </type>
     </element>    <element id="BeAddiction.period.text">
       <path value="BeAddiction.period.text" />
-      <short value="A free text indication of the time period of addiction - e.g. &quot;teenager&quot;, etc. " />
+      <short value="A free text indication of the time period of addiction - e.g. &quot;teenager&quot;, etc." />
       <definition value="A free text indication of the time period of addiction - e.g. as &quot;teenager&quot;, &quot;approx 5 years ago&quot;, etc" />
       <min value="0" />
       <max value="1" />

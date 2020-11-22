@@ -31,6 +31,8 @@
     </element>
     <element id="BEPatientWill.status">
       <path value="BEPatientWill.status" />
+      <short value="The status of the patient's will" />
+      <definition value="The status of a patient's will" />
       <min value="1" />
       <max value="1" />
       <type>

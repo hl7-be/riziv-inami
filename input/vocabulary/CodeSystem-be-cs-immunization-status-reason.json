@@ -7,7 +7,7 @@
   "title": "Immunization status reason Code System.",
   "description": "Immunization reason status Code System.",
   "version": "0.1.0",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-cs-immunization-status-reason",
+  "url": "https:/www.hl7belgium.org/fhir/CodeSystem/be-cs-immunization-status-reason",
   "concept": [
     {
       "code": "other",

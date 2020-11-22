@@ -15,6 +15,7 @@
   <differential>
     <element id="BeScoreResult">
       <short value="The score result" />
+      <definition value="A record of a calculated or determined score." />
       <path value="BeScoreResult" />
       <min value="0" />
       <max value="*" />
@@ -123,10 +124,10 @@
       </type>
     </element>
 
-
     <element id="BeScoreResult.interpretation">
       <path value="BeScoreResult.interpretation" />
       <short value="What the score means or implies, e.g. 'high risk, must follow up'." />
+      <definition value="What the score means or implies, e.g. 'high risk, must follow up'." />
       <min value="0" />
       <max value="1" />
       <type>
@@ -137,6 +138,7 @@
     <element id="BeScoreResult.referenceRange">
       <path value="BeScoreResult.referenceRange" />
       <short value="The reference evaluation ranges for the score, e.g. '1 to 2 = low risk', etc." />
+      <definition value="The reference evaluation ranges for the score, e.g. '1 to 2 = low risk', etc." />
       <min value="0" />
       <max value="*" />
       <type>
@@ -146,7 +148,8 @@
 
     <element id="BeScoreResult.referenceRange.range">
       <path value="BeScoreResult.referenceRange.range" />
-      <short value="Each range for the score" />
+      <short value="The range of values for the score" />
+      <definition value="The range of values for the score" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -156,6 +159,7 @@
     <element id="BeScoreResult.referenceRange.meaning">
       <path value="BeScoreResult.referenceRange.meaning" />
       <short value="The reference meaning or interpretation for the range" />
+      <definition value="The reference meaning or interpretation for the range" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -163,18 +167,16 @@
       </type>
     </element>
 
-
     <element id="BeScoreResult.derivedFrom">
       <path value="BeScoreResult.derivedFrom" />
       <short value="The data source that this result derives from, e.g. a response to a questionnaire, or a clinical document.. '." />
+      <definition value="The data source that this result derives from, e.g. a response to a questionnaire, or a clinical document.. '." />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="Reference" />
       </type>
     </element>
-
-
 
   </differential>
 </StructureDefinition>

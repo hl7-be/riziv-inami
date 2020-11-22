@@ -14,6 +14,7 @@
     <element id="BeProblem">
       <path value="BeProblem" />
       <short value="A record of a problem" />
+      <definition value="A record of a problem - a risk, a condition, etc." />
       <min value="0" />
       <max value="*" />
     </element>
@@ -52,6 +53,7 @@
     <element id="BeProblem.clinicalStatus">
       <path value="BeProblem.clinicalStatus" />
       <short value="The clinical status of the problem - whether it is active, resolved..." />
+      <definition value="The clinical status of the problem - whether it is active, resolved..." />
       <min value="0" />
       <max value="1" />
       <type>
