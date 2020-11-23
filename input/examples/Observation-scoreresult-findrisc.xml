@@ -2,25 +2,21 @@
   <id value="example-findRisc-screeningScoreResult"/>
   <meta>
     <profile
-             value="https://www.hl7belgium.be/fhir/StructureDefinition/be-scoreresult"/>
+             value="https://www.hl7belgium.org/fhir/StructureDefinition/be-scoreresult"/>
   </meta>
-  <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b>category</b>: <span title="Codes: {http://www.snomed.org/ No code}">FINDRISC</span></p><p><b>code</b>: <span title="Codes: {http://www.snomed.org/ 763117005}">23.5</span></p><p><b>subject</b>: <span>Jane AAA</span></p><p><b>effective</b>: Oct 6, 2020, 11:28:17 AM</p><p><b>issued</b>: Oct 6, 2020, 11:28:17 AM</p><p><b>performer</b>: <span>AAAA BBBB</span></p><p><b>value</b>: 18</p><p><b>interpretation</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}">Score is high. The paient need to check.</span></p><p><b>note</b>: Remark: The patient's score is high since 3 months. ( @Oct 6, 2020, 11:28:17 AM)</p><blockquote><p><b>referenceRange</b></p><p><b>low</b>: 0</p><p><b>high</b>: 3</p><p><b>type</b>: <span title="Codes: ">Very low</span></p></blockquote><blockquote><p><b>referenceRange</b></p><p><b>low</b>: 4</p><p><b>high</b>: 8</p><p><b>type</b>: <span title="Codes: ">Low</span></p></blockquote><blockquote><p><b>referenceRange</b></p><p><b>low</b>: 9</p><p><b>high</b>: 12</p><p><b>type</b>: <span title="Codes: ">Moderate</span></p></blockquote><blockquote><p><b>referenceRange</b></p><p><b>low</b>: 13</p><p><b>high</b>: 20</p><p><b>type</b>: <span title="Codes: ">High</span></p></blockquote><blockquote><p><b>referenceRange</b></p><p><b>low</b>: 21</p><p><b>high</b>: 26</p><p><b>type</b>: <span title="Codes: ">Very high</span></p></blockquote><p><b>derivedFrom</b>: <span></span></p></div>
-  </text>
   <status value="final"/>
   <category>
     <coding>
-      <system value="http://www.snomed.org/"/>
+      <system value="http://snomed.info/sct"/>
       <code value="risk"/>
       <display value="RISK"/>
     </coding>
   </category>
   <code>
     <coding>
-      <system value="http://www.snomed.org/"/>
+      <system value="http://snomed.info/sct"/>
       <code value="763117005"/>
-      <display value="FINDRISC score result"/>
+      <display value="FINDRISC score resultFINDRISC (Finnish Diabetes Risk Score) score"/>
     </coding>
   </code>
   <subject>
@@ -31,7 +27,9 @@
     </identifier>
     <display value="Jane AAA"/>
   </subject>
-  <effectiveDateTime value="2020-10-06T13:28:17.239+02:00"/>
+  <effectivePeriod>
+  <start value="2020-10-06T13:28:17.239+02:00"/>
+  </effectivePeriod>
   <issued value="2020-10-06T13:28:17.239+02:00"/>
   <performer>
     <identifier>

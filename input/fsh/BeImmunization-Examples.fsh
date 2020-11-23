@@ -27,7 +27,7 @@ Usage: #example
 * patient.identifier.value = "55011779911"
 * date = "2019-09-02"
 * recommendation.vaccineCode = http://hl7.org/fhir/sid/cvx#141
-* recommendation.forecastStatus = #due
+* recommendation.forecastStatus = http://terminology.hl7.org/CodeSystem/immunization-recommendation-status#due
 
 Instance: order-simon-hpv
 InstanceOf: ImmunizationRecommendation
@@ -36,7 +36,7 @@ Usage: #example
 * patient.identifier.value = "80112136791"
 * date = "2020-03-22"
 * recommendation.vaccineCode = http://hl7.org/fhir/sid/cvx#165
-* recommendation.forecastStatus = #opt
+* recommendation.forecastStatus = http://terminology.hl7.org/CodeSystem/immunization-recommendation-status#due
 
 
 /*============================================= Example 1 =============================================*/
@@ -648,7 +648,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
-* occurrenceString = "Summer 2011"
+// * occurrenceString = "Summer 2011"
 * performer.actor = Reference(org-kind-en-gezin)
 * extension[be-ext-immunization-location].valueReference = Reference(org-kind-en-gezin)
 * note.text = "Patiënt heeft nu koorts, aanbevolen 1 ​​week te wachten"

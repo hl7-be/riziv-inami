@@ -41,7 +41,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="http://hl7.org/fhir/valueset-consent-state-codes" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/consent-state-codes" />
       </binding>
     </element>
     <element id="BEPatientWill.dateTime">
@@ -138,7 +138,7 @@
       </type>
       <binding>
         <strength value="extensible" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/valueset-consent-category.html" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/consent-category" />
       </binding>
     </element>
 

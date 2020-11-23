@@ -5,7 +5,6 @@ Title:          "BEScoreResult"
 Description:    """ 
     Defines a patient's known problem, a diagnostic or antecedent that deserves attention."""
 
-
 * identifier MS
 * issued MS
 * issued 1..1
@@ -32,7 +31,7 @@ Description:    """
 
 * effectivePeriod MS
 * effectivePeriod 1..1
-* effectivePeriod ^short = "The code of the score that is being calculated."
+* effectivePeriod ^short = "The time period that the score refers to."
 
 * code MS
 * code ^short = "The code of the score that is being calculated."
@@ -52,8 +51,6 @@ Description:    """
 
 * interpretation MS
 * interpretation ^short = "The interpretation of the result from the value. For example if value is 12, the interpretation can be 'elevated'"
-
-
 
 
 

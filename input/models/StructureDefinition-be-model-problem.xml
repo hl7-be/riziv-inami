@@ -108,8 +108,8 @@
 
     <element id="BeProblem.origin">
       <path value="BeProblem.origin" />
-      <short value="." />
-      <definition value="" />
+      <short value="How the problem came to be recorded" />
+      <definition value="How the problem came to be recorded - in a consult, etc." />
       <min value="0" />
       <max value="1" />
       <type>
@@ -118,8 +118,8 @@
     </element>
     <element id="BeProblem.origin.type">
       <path value="BeProblem.origin.type" />
-      <short value="" />
-      <definition value="" />
+      <short value="A coded type of the problem record origin" />
+      <definition value="A coded type of the problem record origin" />
       <min value="0" />
       <max value="1" />
       <type>

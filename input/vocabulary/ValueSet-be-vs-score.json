@@ -1,10 +1,6 @@
 {
   "resourceType": "ValueSet",
   "id": "be-vs-score",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-be-cs-score.html\"><code>https://www.hl7belgium.be/fhir/CodeSystem/be-cs-score</code></a></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>English (English, en)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td><td><b>French (Belgium) (fr)</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=763117005\">763117005</a></td><td>FINDRISC (Finnish Diabetes Risk Score) score</td><td>Finnish Diabetes Risk Score</td><td>Finnish Diabetes Risk Score</td><td>Finnish Diabetes Risk Score</td></tr></table></li></ul></div>"
-  },
   "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-score",
   "version": "0.1.0",
   "name": "BeVSScore",
@@ -36,7 +32,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://www.hl7belgium.be/fhir/CodeSystem/be-cs-score"
+        "system": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"
       },
       {
         "system": "http://snomed.info/sct",

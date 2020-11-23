@@ -4,7 +4,7 @@
   "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-category",
   "version": "0.1.0",
   "name": "BeVSPatientWillCategory",
-  "title": "Score Value Set",
+  "title": "Patient Will Category",
   "status": "draft",
   "date": "2020-10-01T11:01:09+00:00",
   "publisher": "RIZIV-INAMI",
@@ -32,7 +32,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://www.hl7belgium.be/fhir/CodeSystem/be-cs-patientwill-category"
+        "system": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category"
       }
     ]
   }

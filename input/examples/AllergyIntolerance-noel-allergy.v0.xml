@@ -21,6 +21,7 @@
   <category value="medication"/>
   <code>
     <coding>
+      <system value="http://snomed.info/sct"/>
       <code value="373270004"/>
       <display value="Penicillin antibacterial"/>
     </coding>

@@ -23,10 +23,10 @@
          <!-- This is the code for universal -->
          <system value="http://unstats.un.org/unsd/methods/m49/m49.htm" />
          <code value="056" />
-         <!-- Change to this if the IG is country-specific
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-      -->
+      </coding>
+      <coding>
+         <system value="urn:iso:std:iso:3166" />
+         <code value="BE" />
       </coding>
    </jurisdiction>
    <packageId value="hl7.fhir.be.riziv" />
@@ -47,22 +47,19 @@
       <grouping id="allergyintolerance">
          <name value="Allergy Intolerance" />
          <description value="Allergy / Intolerance resources. These artefacts define the constraints and vocabulary necessary to record allergies and intolerances, suspected or confirmed. 
-A few example resources and scenario demonstrate the use of these resources.
-" />
+A few example resources and scenario demonstrate the use of these resources." />
       </grouping>
       <grouping id="patientwill">
          <name value="Patient Will" />
          <description value="Patient Will profile and vocabulary. The Patient Will captures a patient's expressed preferences related to care provision.  
 The Logical Data Model defines the functional data needs.  
-An example demonstrates the use of the profile.  
-" />
+An example demonstrates the use of the profile." />
       </grouping>
       <grouping id="addiction">
          <name value="Addiction" />
          <description value="The profile for Addiction, intended to capture known or suspected substance or other addictions.   
 The Logical Data Model defines the functional data needs.  
-An example demonstrates the use of the profile.  
-" />
+An example demonstrates the use of the profile." />
       </grouping>
       <grouping id="immunization">
          <name value="Vaccination" />
@@ -70,8 +67,7 @@ An example demonstrates the use of the profile.
 The Logical Data Model defines the functional data needs.  
 The vocabulary resources help ensure conformity and data consistency.  
 The profile and extensions define the technical specifications.  
-A set of examples demonstrates the use of the profile.  
-         " />
+A set of examples demonstrates the use of the profile." />
       </grouping>
       <grouping id="problem">
          <name value="Problem" />
@@ -79,16 +75,14 @@ A set of examples demonstrates the use of the profile.
 The Logical Data Model defines the functional data needs.  
 The vocabulary resources help ensure conformity and data consistency.  
 The profile and extensions define the technical specifications.  
-A set of examples demonstrates the use of the profile.  
-" />
+A set of examples demonstrates the use of the profile." />
       </grouping>
       <grouping id="scoreresults">
          <name value="Score Results" />
          <description value="The Score Results resource captures an overal assessment score about a health indicator associated with a patient.  
 The vocabulary resources help ensure conformity and data consistency.  
 The profile defines the technical specifications.  
-A set of examples demonstrates the use of the profile.  
-" />
+A set of examples demonstrates the use of the profile." />
       </grouping>
       <!-- Addiction -->
       <resource>
@@ -660,7 +654,7 @@ A set of examples demonstrates the use of the profile.
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Example - Childhood measles vaccination (reported)"/>
-      <description value="Vaccination Example - Reported vaccination for measles as child "/>
+      <description value="Vaccination Example - Reported vaccination for measles as child"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination"/>
       <groupingId value="immunization"/>
     </resource>
@@ -857,7 +851,7 @@ A set of examples demonstrates the use of the profile.
       <description value="Allergy Intolerance profile"/>
       <groupingId value="allergyintolerance"/>
     </resource>	
-
+<!--
       <resource>
          <reference>
             <reference value="ValueSet/be-vs-allergyintolerancecode" />
@@ -878,14 +872,14 @@ A set of examples demonstrates the use of the profile.
       </resource>
       <resource>
          <reference>
-            <reference value="ValueSet/be-vs-riskmanifestation" />
+            <reference value="ValueSet/be-riskmanifestation" />
          </reference>
          <fhirVersion value="4.0.1" />
          <name value="BeVSRiskManifestation" />
          <description value="ValueSet - Allergy manifestation" />
          <groupingId value="allergyintolerance" />
       </resource>
-
+-->
       <resource>
          <reference>
             <reference value="Practitioner/durant" />

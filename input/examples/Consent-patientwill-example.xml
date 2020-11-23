@@ -3,18 +3,6 @@
   <meta>
     <profile value="https://www.ehealth.fgov.be/fhir/StructureDefinition/be-patientwill" />
   </meta>
-  <text>
-    <status value="generated" />
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <p> 
-  DNR
-  </p>
-      <p> NB. This is a 'consent' example ONLY in the context of patientwill!
-			No standardized codified valueset yet available for Belgian use.
- Patient Jane Fhirwoman: do not resuscitate
-   </p>
-    </div>
-  </text>
   <status value="active" />
   <scope>
     <coding>
@@ -48,6 +36,10 @@
   </policyRule>
 
   <provision> 
+    <period> 
+        <start value="2020-10-06" />
+    </period> 
+    
     <code> 
       <coding>
         <system value="http://snomed.info/sct" />

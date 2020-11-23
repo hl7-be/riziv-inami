@@ -222,7 +222,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="http://hl7.org/fhir/valueset-performer-function.html" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/performer-function" />
       </binding>
     </element>
 
