@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "be-vs-allergyintolerancecode",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode",
+  "version": "1.0.0",
+  "name": "BeAllergyIntoleranceCode",
+  "status": "draft",
+  "date": "2019-12-19T09:13:57+01:00",
+  "publisher": "eHealth Platform",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy"
+        ]
+      }
+    ]
+  }
+}

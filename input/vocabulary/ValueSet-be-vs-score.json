@@ -62,7 +62,221 @@
                 "value": "Finnish Diabetes Risk Score"
               }
             ]
-          }
+          },
+          { 
+            "code": "446661009",
+            "display": "Visual Analogic Scale for pain assessment",
+            "definition": "Visual analogical scale for pain assessment",
+            "designation": [
+              {
+                "language": "fr-BE",
+                "value": "(EVA) Echelle Visuelle Analogique"
+              },
+              {
+                "language": "nl-BE",
+                "value": "TBD"
+              }
+            ]
+          },
+          {
+            "code": "73547007",
+            "display": "Index of Independence in Activities of Daily Living",
+            "definition": "Index of Independence in Activities of Daily Living",
+            "designation": [
+              {
+                "language": "fr-BE",
+                "value": "Grille d'évaluation de l'autonomie pour les activités basales de la vie quotidienne"
+              },
+              {
+                "language": "nl-BE",
+                "value": "TBD"
+              }
+            ]
+          },
+          {
+            "code": "447316007",
+            "display": "Mini-Mental State Examination",
+            "definition": "Mini-Mental State Examination",
+            "designation": [
+              {
+                "language": "fr-BE",
+                "value": "Examen mental de Folstein"
+              },
+              {
+                "language": "nl-BE",
+                "value": "TBD"
+              }
+            ]
+          },
+          {
+            "code": "444297006",
+            "display": "Malnutrition Universal Screening",
+            "definition": "Malnutrition Universal Screening",
+            "designation": [
+              {
+                "language": "fr-BE",
+                "value": "Malnutrition Universal Screening"
+              },
+              {
+                "language": "nl-BE",
+                "value": "TBD"
+              }
+            ]
+          },
+          {
+            "code": "443133008",
+            "display": "Norton Pressure Sore Risk-Assessment Scale Scoring System",
+            "definition": "Norton Pressure Sore Risk-Assessment Scale Scoring System",
+            "designation": [
+              {
+                "language": "fr-BE",
+                "value": "évaluation du risque d'escarre"
+              },
+              {
+                "language": "nl-BE",
+                "value": "TBD"
+              }
+            ]
+          },
+          {
+            "code": "7121000122100",
+            "display": "Pain Assessment in Advanced Dementia Scale",
+            "definition": "Pain Assessment in Advanced Dementia Scale",
+            "designation": [
+              {
+                "language": "fr-BE",
+                "value": "TBD"
+              },
+              {
+                "language": "nl-BE",
+                "value": "TBD"
+              }
+            ]
+          },
+          {
+            "code": "273849003",
+            "display": "Subjective Global Assessment",
+            "definition": "Subjective Global Assessment",
+            "designation": [
+              {
+                "language": "fr-BE",
+                "value": "Subjective Global Assessment"
+              },
+              {
+                "language": "nl-BE",
+                "value": "TBD"
+              }
+            ]
+          },
+          {
+            "code": "450738001",
+            "display": "Timed Chair Stand",
+            "definition": "Timed Chair Stand",
+            "designation": [
+              {
+                "language": "fr-BE",
+                "value": "évaluation des risques de chutes et la force musculaire des membres inférieurs"
+              },
+              {
+                "language": "nl-BE",
+                "value": "TBD"
+              }
+            ]
+          },
+          {
+            "code": "444680009",
+            "display": "Timed Up&Go : évalue le risque de chute chez une personne",
+            "definition": "Timed Up&Go : évalue le risque de chute chez une personne",
+            "designation": [
+              {
+                "language": "fr-BE",
+                "value": "Timed Up&Go : évalue le risque de chute chez une personne"
+              },
+              {
+                "language": "nl-BE",
+                "value": "TBD"
+              }
+            ]
+          },
+          {
+            "code": "278897004",
+            "display": "Waterlow pressure ulcer risk assessment",
+            "definition": "Waterlow pressure ulcer risk assessment",
+            "designation": [
+              {
+                "language": "fr-BE",
+                "value": "(WATERLOW) Echelle d'évaluation du risque d'escarre"
+              },
+              {
+                "language": "nl-BE",
+                "value": "TBD"
+              }
+            ]
+          },
+          {
+            "code": "763259004",
+            "display": "Disease Activity Score",
+            "definition": "Disease Activity Score",
+            "designation": [
+              {
+                "language": "fr-BE",
+                "value": "(DAS) Score d'activité de la polyarthrite rhumatoïde"
+              },
+              {
+                "language": "nl-BE",
+                "value": "TBD"
+              }
+            ]
+          },
+          {
+            "code": "273364009",
+            "display": "Clinical Disease Activity Index",
+            "definition": "Clinical Disease Activity Index",
+            "designation": [
+              {
+                "language": "fr-BE",
+                "value": "(CDAI) Indice d'activité de la polyarthrite rhumatoïde"
+              },
+              {
+                "language": "nl-BE",
+                "value": "TBD"
+              }
+            ]
+          },
+          {
+            "code": "443318007",
+            "display": "Tinetti balance and gait scale",
+            "definition": "Tinetti balance and gait scale",
+            "designation": [
+              {
+                "language": "fr-BE",
+                "value": "évalue le risque de chute chez une personne âgée"
+              },
+              {
+                "language": "nl-BE",
+                "value": "TBD"
+              }
+            ]
+          },
+          
+ 
+
+          {
+            "code": "719124004",
+            "display": "Arthritis Impact Measurement Scales 2 (AIMS2)",
+            "definition": "Arthritis Impact Measurement Scales 2 (AIMS2)",
+            "designation": [
+              {
+                "language": "fr-BE",
+                "value": "(EMIR) Echelle de Mesure de l'Impact de la Polyarthrite Rhumatoïde"
+              },
+              {
+                "language": "nl-BE",
+                "value": "TBD"
+              }
+            ]
+          }      
+
         ]
       }
     ]

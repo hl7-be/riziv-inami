@@ -33,6 +33,35 @@
   "count": 1,
   "concept": [
     {
+      "code": "ADBB",
+      "display": "Alarm distress baby scale",
+      "definition": "Alarm distress baby scale",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Alarm détresse bébé"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },    {
+      "code": "BRANDEN",
+      "display": "Branden",
+      "definition": "Branden",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Branden"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TBD"
+        }
+      ]
+    },
+    {
       "code": "DOLOPLUS2",
       "display": "Doloplus 2 score",
       "definition": "Pain assessment for people with verbal communication impairment",
@@ -63,23 +92,8 @@
       ]
     },
     {
-      "code": "EVA",
-      "display": "Echelle Visuelle Analogique",
-      "definition": "Visual analogical scale for pain assessment",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "Echelle Visuelle Analogique"
-        },
-        {
-          "language": "nl-BE",
-          "value": "TBD"
-        }
-      ]
-    },
-    {
       "code": "EDIN",
-      "display": "Échelle Douleur Inconfort Nouveau-Né",
+      "display": "Neonatal pain and discomfort scale",
       "definition": "TBD",
       "designation": [
         {
@@ -100,36 +114,6 @@
         {
           "language": "fr-BE",
           "value": "hétéro-évaluation de la douleur chez l'enfant"
-        },
-        {
-          "language": "nl-BE",
-          "value": "TBD"
-        }
-      ]
-    },
-    {
-      "code": "Katz",
-      "display": "Index of Independence in Activities of Daily Living",
-      "definition": "Index of Independence in Activities of Daily Living",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "évaluation du degré de dépendance du patient"
-        },
-        {
-          "language": "nl-BE",
-          "value": "TBD"
-        }
-      ]
-    },
-    {
-      "code": "MMSE",
-      "display": "Mini-Mental State Examination",
-      "definition": "Mini-Mental State Examination",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "Mini-Mental State Examination"
         },
         {
           "language": "nl-BE",
@@ -168,21 +152,6 @@
       ]
     },
     {
-      "code": "MUST",
-      "display": "Malnutrition Universal Screening",
-      "definition": "Malnutrition Universal Screening",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "Malnutrition Universal Screening"
-        },
-        {
-          "language": "nl-BE",
-          "value": "TBD"
-        }
-      ]
-    },
-    {
       "code": "NAP",
       "display": "Niveau d'Activité Physique",
       "definition": "Niveau d'Activité Physique",
@@ -197,21 +166,7 @@
         }
       ]
     },
-    {
-      "code": "NORTON",
-      "display": "Norton Pressure Sore Risk-Assessment Scale Scoring System",
-      "definition": "Norton Pressure Sore Risk-Assessment Scale Scoring System",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "évaluation du risque d'escarre"
-        },
-        {
-          "language": "nl-BE",
-          "value": "TBD"
-        }
-      ]
-    },
+
     {
       "code": "NRS2002",
       "display": "Nutritional Risk Screening",
@@ -227,21 +182,7 @@
         }
       ]
     },
-    {
-      "code": "PAINAD",
-      "display": "Pain Assessment in Advanced Dementia Scale",
-      "definition": "Pain Assessment in Advanced Dementia Scale",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "TBD"
-        },
-        {
-          "language": "nl-BE",
-          "value": "TBD"
-        }
-      ]
-    },
+
     {
       "code": "SCORE",
       "display": "Systemic Coronary Risk Estimation",
@@ -257,21 +198,7 @@
         }
       ]
     },
-    {
-      "code": "SGA",
-      "display": "Subjective Global Assessment",
-      "definition": "Subjective Global Assessment",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "Subjective Global Assessment"
-        },
-        {
-          "language": "nl-BE",
-          "value": "TBD"
-        }
-      ]
-    },
+
     {
       "code": "SNAQ",
       "display": "Short Nutritional Assessment Questionnaire",
@@ -317,36 +244,7 @@
         }
       ]
     },
-    {
-      "code": "TINETTI",
-      "display": "Tinetti test",
-      "definition": "Tinetti test",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "évalue le risque de chute chez une personne âgée"
-        },
-        {
-          "language": "nl-BE",
-          "value": "TBD"
-        }
-      ]
-    },
-    {
-      "code": "WATERLOW",
-      "display": "Waterlow pressure ulcer risk assessment",
-      "definition": "Waterlow pressure ulcer risk assessment",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "indice de dénutrition chez les enfants"
-        },
-        {
-          "language": "nl-BE",
-          "value": "TBD"
-        }
-      ]
-    },
+
     {
       "code": "WECKX",
       "display": "SCORE INZAKE ZORGBEHOEVENDHEID",
@@ -363,36 +261,6 @@
       ]
     },
     {
-      "code": "DAS",
-      "display": "Disease Activity Score",
-      "definition": "Disease Activity Score",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "Disease Activity Score"
-        },
-        {
-          "language": "nl-BE",
-          "value": "TBD"
-        }
-      ]
-    },
-    {
-      "code": "CDAI",
-      "display": "Clinical Disease Activity Index",
-      "definition": "Clinical Disease Activity Index",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "Clinical Disease Activity Index"
-        },
-        {
-          "language": "nl-BE",
-          "value": "TBD"
-        }
-      ]
-    },
-    {
       "code": "SDAI",
       "display": "SDAI ou Simplified Disease Activity Index",
       "definition": "SDAI ou Simplified Disease Activity Index",
@@ -400,21 +268,6 @@
         {
           "language": "fr-BE",
           "value": "SDAI ou Simplified Disease Activity Index"
-        },
-        {
-          "language": "nl-BE",
-          "value": "TBD"
-        }
-      ]
-    },
-    {
-      "code": "EMIR",
-      "display": "Echelle de Mesure de l'Impact de la Polyarthrite Rhumatoïde",
-      "definition": "Echelle de Mesure de l'Impact de la Polyarthrite Rhumatoïde",
-      "designation": [
-        {
-          "language": "fr-BE",
-          "value": "Echelle de Mesure de l'Impact de la Polyarthrite Rhumatoïde"
         },
         {
           "language": "nl-BE",

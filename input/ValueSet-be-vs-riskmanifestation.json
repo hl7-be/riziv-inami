@@ -1,0 +1,1002 @@
+{
+  "resourceType": "ValueSet",
+  "id": "be-vs-riskmanifestation",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation",
+  "version": "1.0.0",
+  "name": "BeRiskManifestation",
+  "status": "draft",
+  "date": "2019-12-19T09:13:57+01:00",
+  "publisher": "eHealth Platform",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "473460002",
+            "display": "Allergic conjunctivitis (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Allergic conjunctivitis (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Allergic conjunctivitis"
+              },
+              {
+                "language": "nl-BE",
+                "value": "allergische conjunctivitis"
+              },
+              {
+                "language": "fr-BE",
+                "value": "conjonctivite allergique"
+              }
+            ]
+          },
+          {
+            "code": "39579001",
+            "display": "Anaphylaxis (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Anaphylaxis (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Anaphylaxis"
+              },
+              {
+                "language": "nl-BE",
+                "value": "anafylaxie"
+              },
+              {
+                "language": "fr-BE",
+                "value": "anaphylaxie"
+              }
+            ]
+          },
+          {
+            "code": "41291007",
+            "display": "Angioedema (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Angioedema (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Angioedema"
+              },
+              {
+                "language": "nl-BE",
+                "value": "angio-oedeem"
+              },
+              {
+                "language": "fr-BE",
+                "value": "angiœdème"
+              }
+            ]
+          },
+          {
+            "code": "195967001",
+            "display": "Asthma (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Asthma (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Asthma"
+              },
+              {
+                "language": "nl-BE",
+                "value": "astma"
+              },
+              {
+                "language": "fr-BE",
+                "value": "asthme"
+              }
+            ]
+          },
+          {
+            "code": "24079001",
+            "display": "Atopic dermatitis (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Atopic dermatitis (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Atopic dermatitis"
+              },
+              {
+                "language": "nl-BE",
+                "value": "atopische dermatitis"
+              },
+              {
+                "language": "fr-BE",
+                "value": "dermatite atopique"
+              }
+            ]
+          },
+          {
+            "code": "4386001",
+            "display": "Bronchospasm (finding)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Bronchospasm (finding)"
+              },
+              {
+                "language": "en",
+                "value": "Bronchospasm"
+              },
+              {
+                "language": "nl-BE",
+                "value": "bronchospasme"
+              },
+              {
+                "language": "fr-BE",
+                "value": "bronchospasme"
+              }
+            ]
+          },
+          {
+            "code": "271759003",
+            "display": "Bullous eruption (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Bullous eruption (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Bullous eruption"
+              },
+              {
+                "language": "nl-BE",
+                "value": "bulleuse huideruptie"
+              },
+              {
+                "language": "fr-BE",
+                "value": "éruption bulleuse"
+              }
+            ]
+          },
+          {
+            "code": "698247007",
+            "display": "Cardiac arrhythmia (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Cardiac arrhythmia (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Cardiac arrhythmia"
+              },
+              {
+                "language": "nl-BE",
+                "value": "hartritmestoornis"
+              },
+              {
+                "language": "fr-BE",
+                "value": "arythmie cardique"
+              }
+            ]
+          },
+          {
+            "code": "410430005",
+            "display": "Cardiorespiratory arrest (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Cardiorespiratory arrest (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Cardiorespiratory arrest"
+              },
+              {
+                "language": "nl-BE",
+                "value": "cardiopulmonale stilstand"
+              },
+              {
+                "language": "fr-BE",
+                "value": "arrêt cardiorespiratoire"
+              }
+            ]
+          },
+          {
+            "code": "9826008",
+            "display": "Conjunctivitis (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Conjunctivitis (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Conjunctivitis"
+              },
+              {
+                "language": "nl-BE",
+                "value": "conjunctivitis"
+              },
+              {
+                "language": "fr-BE",
+                "value": "conjonctivite"
+              }
+            ]
+          },
+          {
+            "code": "40275004",
+            "display": "Contact dermatitis (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Contact dermatitis (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Contact dermatitis"
+              },
+              {
+                "language": "nl-BE",
+                "value": "contactdermatitis"
+              },
+              {
+                "language": "fr-BE",
+                "value": "dermatite de contact"
+              }
+            ]
+          },
+          {
+            "code": "49727002",
+            "display": "Cough (finding)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Cough (finding)"
+              },
+              {
+                "language": "en",
+                "value": "Cough"
+              },
+              {
+                "language": "nl-BE",
+                "value": "hoesten"
+              },
+              {
+                "language": "fr-BE",
+                "value": "toux"
+              }
+            ]
+          },
+          {
+            "code": "62315008",
+            "display": "Diarrhea (finding)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Diarrhea (finding)"
+              },
+              {
+                "language": "en",
+                "value": "Diarrhea"
+              },
+              {
+                "language": "nl-BE",
+                "value": "diarree"
+              },
+              {
+                "language": "fr-BE",
+                "value": "diarrhée"
+              }
+            ]
+          },
+          {
+            "code": "702809001",
+            "display": "Drug reaction with eosinophilia and systemic symptoms (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Drug reaction with eosinophilia and systemic symptoms (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Drug reaction with eosinophilia and systemic symptoms"
+              },
+              {
+                "language": "nl-BE",
+                "value": "geneesmiddelexantheem met eosinofilie en systemische symptomen"
+              },
+              {
+                "language": "fr-BE",
+                "value": "réaction médicamenteuse avec éosinophilie et symptômes systémiques"
+              }
+            ]
+          },
+          {
+            "code": "297942002",
+            "display": "Drug-induced erythema multiforme (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Drug-induced erythema multiforme (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Drug-induced erythema multiforme"
+              },
+              {
+                "language": "nl-BE",
+                "value": "geneesmiddelengeïnduceerde erythema multiforme"
+              },
+              {
+                "language": "fr-BE",
+                "value": "érythème polymorphe d'origine médicamenteuse"
+              }
+            ]
+          },
+          {
+            "code": "162290004",
+            "display": "Dry eyes (finding)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Dry eyes (finding)"
+              },
+              {
+                "language": "en",
+                "value": "Dry eyes"
+              },
+              {
+                "language": "nl-BE",
+                "value": "droge ogen"
+              },
+              {
+                "language": "fr-BE",
+                "value": "sècheresse oculaire"
+              }
+            ]
+          },
+          {
+            "code": "267036007",
+            "display": "Dyspnea (finding)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Dyspnea (finding)"
+              },
+              {
+                "language": "en",
+                "value": "Dyspnea"
+              },
+              {
+                "language": "nl-BE",
+                "value": "dyspneu"
+              },
+              {
+                "language": "fr-BE",
+                "value": "dyspnée"
+              }
+            ]
+          },
+          {
+            "code": "43116000",
+            "display": "Eczema (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Eczema (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Eczema"
+              },
+              {
+                "language": "nl-BE",
+                "value": "eczeem"
+              },
+              {
+                "language": "fr-BE",
+                "value": "eczéma"
+              }
+            ]
+          },
+          {
+            "code": "51599000",
+            "display": "Edema of larynx (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Edema of larynx (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Edema of larynx"
+              },
+              {
+                "language": "nl-BE",
+                "value": "larynxoedeem"
+              },
+              {
+                "language": "fr-BE",
+                "value": "œdème du larynx"
+              }
+            ]
+          },
+          {
+            "code": "271807003",
+            "display": "Eruption of skin (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Eruption of skin (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Eruption"
+              },
+              {
+                "language": "nl-BE",
+                "value": "huideruptie"
+              },
+              {
+                "language": "fr-BE",
+                "value": "éruption cutanée"
+              }
+            ]
+          },
+          {
+            "code": "386661006",
+            "display": "Fever (finding)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Fever (finding)"
+              },
+              {
+                "language": "en",
+                "value": "Fever"
+              },
+              {
+                "language": "nl-BE",
+                "value": "koorts"
+              },
+              {
+                "language": "fr-BE",
+                "value": "fièvre"
+              }
+            ]
+          },
+          {
+            "code": "418363000",
+            "display": "Itching of skin (finding)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Itching of skin (finding)"
+              },
+              {
+                "language": "en",
+                "value": "Itching of skin"
+              },
+              {
+                "language": "nl-BE",
+                "value": "jeuk van huid"
+              },
+              {
+                "language": "fr-BE",
+                "value": "prurit de la peau"
+              }
+            ]
+          },
+          {
+            "code": "768962006",
+            "display": "Lyell syndrome (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Lyell syndrome (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Lyell syndrome"
+              },
+              {
+                "language": "nl-BE",
+                "value": "toxische epidermale necrolyse"
+              },
+              {
+                "language": "fr-BE",
+                "value": "nécrolyse épidermique toxique"
+              }
+            ]
+          },
+          {
+            "code": "422587007",
+            "display": "Nausea (finding)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Nausea (finding)"
+              },
+              {
+                "language": "en",
+                "value": "Nausea"
+              },
+              {
+                "language": "nl-BE",
+                "value": "nausea"
+              },
+              {
+                "language": "fr-BE",
+                "value": "nausées"
+              }
+            ]
+          },
+          {
+            "code": "16932000",
+            "display": "Nausea and vomiting (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Nausea and vomiting (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Nausea and vomiting"
+              },
+              {
+                "language": "nl-BE",
+                "value": "nausea en braken"
+              },
+              {
+                "language": "fr-BE",
+                "value": "nausées et vomissements"
+              }
+            ]
+          },
+          {
+            "code": "359610006",
+            "display": "Ocular hyperemia (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Ocular hyperemia (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Ocular hyperemia"
+              },
+              {
+                "language": "nl-BE",
+                "value": "oculaire hyperemie"
+              },
+              {
+                "language": "fr-BE",
+                "value": "hyperémie oculaire"
+              }
+            ]
+          },
+          {
+            "code": "271757001",
+            "display": "Papular eruption (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Papular eruption (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Papular eruption"
+              },
+              {
+                "language": "nl-BE",
+                "value": "papulaire huideruptie"
+              },
+              {
+                "language": "fr-BE",
+                "value": "éruption papuleuse"
+              }
+            ]
+          },
+          {
+            "code": "70076002",
+            "display": "Rhinitis (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Rhinitis (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Rhinitis"
+              },
+              {
+                "language": "nl-BE",
+                "value": "rinitis"
+              },
+              {
+                "language": "fr-BE",
+                "value": "rhinite"
+              }
+            ]
+          },
+          {
+            "code": "91175000",
+            "display": "Seizure (finding)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Seizure (finding)"
+              },
+              {
+                "language": "en",
+                "value": "Seizure"
+              },
+              {
+                "language": "nl-BE",
+                "value": "convulsie"
+              },
+              {
+                "language": "fr-BE",
+                "value": "convulsion"
+              }
+            ]
+          },
+          {
+            "code": "76067001",
+            "display": "Sneezing (finding)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Sneezing (finding)"
+              },
+              {
+                "language": "en",
+                "value": "Sneezing"
+              },
+              {
+                "language": "nl-BE",
+                "value": "niezen"
+              },
+              {
+                "language": "fr-BE",
+                "value": "éternuement"
+              }
+            ]
+          },
+          {
+            "code": "73442001",
+            "display": "Stevens-Johnson syndrome (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Stevens-Johnson syndrome (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Stevens-Johnson syndrome"
+              },
+              {
+                "language": "nl-BE",
+                "value": "syndroom van Stevens-Johnson"
+              },
+              {
+                "language": "fr-BE",
+                "value": "syndrome de Stevens-Johnson"
+              }
+            ]
+          },
+          {
+            "code": "23924001",
+            "display": "Tight chest (finding)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Tight chest (finding)"
+              },
+              {
+                "language": "en",
+                "value": "Tight chest"
+              },
+              {
+                "language": "nl-BE",
+                "value": "drukkend gevoel op de borst"
+              },
+              {
+                "language": "fr-BE",
+                "value": "oppression thoracique"
+              }
+            ]
+          },
+          {
+            "code": "490008",
+            "display": "Upper respiratory tract hypersensitivity reaction (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Upper respiratory tract hypersensitivity reaction (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Upper respiratory tract hypersensitivity reaction"
+              },
+              {
+                "language": "nl-BE",
+                "value": "overgevoeligheidsreactie van bovenste luchtwegen"
+              },
+              {
+                "language": "fr-BE",
+                "value": "réaction d'hypersensibilité des voies respiratoires supérieures"
+              }
+            ]
+          },
+          {
+            "code": "126485001",
+            "display": "Urticaria (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Urticaria (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Urticaria"
+              },
+              {
+                "language": "nl-BE",
+                "value": "urticaria"
+              },
+              {
+                "language": "fr-BE",
+                "value": "urticaire"
+              }
+            ]
+          },
+          {
+            "code": "31996006",
+            "display": "Vasculitis (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Vasculitis (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Vasculitis"
+              },
+              {
+                "language": "nl-BE",
+                "value": "vasculitis"
+              },
+              {
+                "language": "fr-BE",
+                "value": "vasculite"
+              }
+            ]
+          },
+          {
+            "code": "422400008",
+            "display": "Vomiting (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Vomiting (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Vomiting"
+              },
+              {
+                "language": "nl-BE",
+                "value": "braken"
+              },
+              {
+                "language": "fr-BE",
+                "value": "vomissements"
+              }
+            ]
+          },
+          {
+            "code": "247472004",
+            "display": "Weal (disorder)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Weal (disorder)"
+              },
+              {
+                "language": "en",
+                "value": "Weal"
+              },
+              {
+                "language": "nl-BE",
+                "value": "urticaire rash"
+              },
+              {
+                "language": "fr-BE",
+                "value": "éruption urticaire"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
