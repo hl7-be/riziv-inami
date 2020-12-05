@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
-  "id": "be-vs-patientwill-directive",
-  "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-directive",
+  "id": "be-vs-patientwill-code",
+  "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-code",
   "version": "0.1.0",
   "name": "BeVSScore",
   "title": "Patient Will directives Value Set",
@@ -32,7 +32,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-directive"
+        "system": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"
       }
     ]
   }

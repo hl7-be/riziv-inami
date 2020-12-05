@@ -32,9 +32,6 @@
   "compose": {
     "include": [
       {
-        "system": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"
-      },
-      {
         "system": "http://snomed.info/sct",
         "concept": [
           {
@@ -145,7 +142,7 @@
             "designation": [
               {
                 "language": "fr-BE",
-                "value": "TBD"
+                "value": "Hétéro-évaluation de la douleur chez la personne âgée non communicante"
               },
               {
                 "language": "nl-BE",
@@ -278,6 +275,9 @@
           }      
 
         ]
+      },
+      {
+        "system": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"
       }
     ]
   }

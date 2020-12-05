@@ -186,16 +186,16 @@ A set of examples demonstrates the use of the profile." />
       </resource>
       <resource>
          <reference>
-            <reference value="CodeSystem/be-cs-patientwill-directive" />
+            <reference value="CodeSystem/be-cs-patientwill-code" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Patient Will directives" />
+         <name value="Patient Will codes" />
          <description value="Patient Will directive code system" />
          <groupingId value="patientwill" />
       </resource>
       <resource>
          <reference>
-            <reference value="ValueSet/be-vs-patientwill-directive" />
+            <reference value="ValueSet/be-vs-patientwill-code" />
          </reference>
          <fhirVersion value="4.0.1" />
          <name value="Patient Will directives" />
