@@ -131,7 +131,7 @@ Title:   "Jan's second successful COVID-19 immunization"
 * patient.identifier.value = "70072376921"
 * recorded = "2020-03-24"
 * extension[immunization-location].valueReference = Reference(org-vub-brussels)
-* lotNumber = "B037453"
+* lotNumber = "B037477"
 * occurrenceDateTime = "2020-03-24"
 * manufacturer = Reference(org-pfizer)
 * doseQuantity.value = 1
