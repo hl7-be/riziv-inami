@@ -53,7 +53,7 @@ Extension: BeLaterality
 Id: be-ext-laterality
 Title: "Laterality extension"
 Description: "An explicit statement of laterality of a lesion, or a treatment, etc."
-* value[x] only code
+* value[x] only Coding
 * valueCode from BeVSLaterality
 
 
