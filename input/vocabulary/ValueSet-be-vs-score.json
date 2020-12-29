@@ -63,7 +63,6 @@
           { 
             "code": "446661009",
             "display": "Visual Analogic Scale for pain assessment",
-            "definition": "Visual analogical scale for pain assessment",
             "designation": [
               {
                 "language": "fr-BE",
@@ -78,7 +77,6 @@
           {
             "code": "73547007",
             "display": "Index of Independence in Activities of Daily Living",
-            "definition": "Index of Independence in Activities of Daily Living",
             "designation": [
               {
                 "language": "fr-BE",
@@ -93,7 +91,6 @@
           {
             "code": "447316007",
             "display": "Mini-Mental State Examination",
-            "definition": "Mini-Mental State Examination",
             "designation": [
               {
                 "language": "fr-BE",
@@ -108,7 +105,6 @@
           {
             "code": "444297006",
             "display": "Malnutrition Universal Screening",
-            "definition": "Malnutrition Universal Screening",
             "designation": [
               {
                 "language": "fr-BE",
@@ -123,7 +119,6 @@
           {
             "code": "443133008",
             "display": "Norton Pressure Sore Risk-Assessment Scale Scoring System",
-            "definition": "Norton Pressure Sore Risk-Assessment Scale Scoring System",
             "designation": [
               {
                 "language": "fr-BE",
@@ -138,7 +133,6 @@
           {
             "code": "7121000122100",
             "display": "Pain Assessment in Advanced Dementia Scale",
-            "definition": "Pain Assessment in Advanced Dementia Scale",
             "designation": [
               {
                 "language": "fr-BE",
@@ -153,7 +147,6 @@
           {
             "code": "273849003",
             "display": "Subjective Global Assessment",
-            "definition": "Subjective Global Assessment",
             "designation": [
               {
                 "language": "fr-BE",
@@ -168,7 +161,6 @@
           {
             "code": "450738001",
             "display": "Timed Chair Stand",
-            "definition": "Timed Chair Stand",
             "designation": [
               {
                 "language": "fr-BE",
@@ -183,7 +175,6 @@
           {
             "code": "444680009",
             "display": "Timed Up&Go : évalue le risque de chute chez une personne",
-            "definition": "Timed Up&Go : évalue le risque de chute chez une personne",
             "designation": [
               {
                 "language": "fr-BE",
@@ -198,7 +189,6 @@
           {
             "code": "278897004",
             "display": "Waterlow pressure ulcer risk assessment",
-            "definition": "Waterlow pressure ulcer risk assessment",
             "designation": [
               {
                 "language": "fr-BE",
@@ -213,7 +203,6 @@
           {
             "code": "763259004",
             "display": "Disease Activity Score",
-            "definition": "Disease Activity Score",
             "designation": [
               {
                 "language": "fr-BE",
@@ -228,7 +217,6 @@
           {
             "code": "273364009",
             "display": "Clinical Disease Activity Index",
-            "definition": "Clinical Disease Activity Index",
             "designation": [
               {
                 "language": "fr-BE",
@@ -243,7 +231,6 @@
           {
             "code": "443318007",
             "display": "Tinetti balance and gait scale",
-            "definition": "Tinetti balance and gait scale",
             "designation": [
               {
                 "language": "fr-BE",
@@ -261,7 +248,6 @@
           {
             "code": "719124004",
             "display": "Arthritis Impact Measurement Scales 2 (AIMS2)",
-            "definition": "Arthritis Impact Measurement Scales 2 (AIMS2)",
             "designation": [
               {
                 "language": "fr-BE",
