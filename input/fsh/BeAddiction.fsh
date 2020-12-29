@@ -1,7 +1,7 @@
 Profile:        BeAddiction
 Parent:         Condition
 Id:             be-addiction
-Title:          "BEVaccination"
+Title:          "BEAddiction"
 Description:    """ 
     A record of a patient's known,  suspected or resolved addiction. This represents the addiction condition, not an addiction-related event or observation."""
 
