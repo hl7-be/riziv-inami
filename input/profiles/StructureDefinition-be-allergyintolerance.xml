@@ -14,6 +14,30 @@
   <derivation value="constraint" />
 
   <differential>
+    <element id="AllergyIntolerance.extension">
+      <path value="AllergyIntolerance.extension" />
+      <definition value="The clinical status of the allergy or intolerance.&#xD;&#xA;&#xD;&#xA;When available, a provider SHOULD include it. When given, a consumer SHALL record this in its consuming system." />
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="AllergyIntolerance.extension:exposureRisk">
+      <path value="AllergyIntolerance.extension" />
+      <short value="The risk or consequences of a possible exposure" />
+      <definition value="The risk or consequences of a possible exposure" />
+      <sliceName value="exposureRisk"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/allergyintolerance-substanceExposureRisk"/>
+      </type>
+    </element>
     <element id="AllergyIntolerance.clinicalStatus">
       <path value="AllergyIntolerance.clinicalStatus" />
       <definition value="The clinical status of the allergy or intolerance.&#xD;&#xA;&#xD;&#xA;When available, a provider SHOULD include it. When given, a consumer SHALL record this in its consuming system." />
