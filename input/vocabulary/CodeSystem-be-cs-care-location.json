@@ -155,7 +155,7 @@
         },
         {
           "language": "nl-BE",
-          "value": "=translate="
+          "value": "prenataal consult"
         }
       ]
     },
@@ -170,7 +170,7 @@
         },
         {
           "language": "nl-BE",
-          "value": "=translate="
+          "value": "kinderopvang"
         }
       ]
     },
@@ -185,7 +185,7 @@
         },
         {
           "language": "nl-BE",
-          "value": "=translate="
+          "value": "kind consult"
         }
       ]
     },
@@ -256,11 +256,11 @@
       "designation": [
         {
           "language": "fr-BE",
-          "value": "=translate="
+          "value": "services de santé scolaire"
         },
         {
           "language": "nl-BE",
-          "value": "=translate="
+          "value": "gezondheidsdiensten op school"
         }
       ]
     },
@@ -290,13 +290,13 @@
         },
         {
           "language": "nl-BE",
-          "value": "=translate="
+          "value": "dokters van de wereld"
         }
       ]
     },
     {
-      "code": "ong",
-      "display": "ONG",
+      "code": "ngo",
+      "display": "Non-Governmental Organization",
       "definition": "",
       "designation": [
         {
@@ -305,7 +305,7 @@
         },
         {
           "language": "nl-BE",
-          "value": "=translate="
+          "value": "NGO"
         }
       ]
     },
@@ -320,7 +320,7 @@
         },
         {
           "language": "nl-BE",
-          "value": "=translate="
+          "value": "Centrum gezinsplanning"
         }
       ]
     },
@@ -335,7 +335,7 @@
         },
         {
           "language": "nl-BE",
-          "value": "=translate="
+          "value": "Buitenland"
         }
       ]
     },
