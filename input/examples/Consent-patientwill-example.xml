@@ -44,7 +44,7 @@
       <coding>
         <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code" />
         <code value="dnr1" />
-        <display value="DNR - Do not resuscitate" />
+        <display value="Dnr1" />
       </coding>
       <text value="No resuscitation" />
     </code> 

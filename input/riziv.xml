@@ -4,7 +4,7 @@
    <url value="https://www.hl7belgium.org/fhir/ImplementationGuide/riziv" />
    <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
    <version value="0.1.0" />
-   <name value="RIZIV-INAMI" />
+   <name value="RIZIV_INAMI" />
    <title value="RIZIV-INAMI Patient Record" />
    <status value="draft" />
    <experimental value="false" />

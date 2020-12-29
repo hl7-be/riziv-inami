@@ -7,16 +7,16 @@
   <status value="final"/>
   <category>
     <coding>         
-      <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-scorecategory"/>
+      <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category"/>
       <code value="risk"/>
-      <display value="RISK"/>
+      <display value="Risk score"/>
     </coding>
   </category>
   <code>
     <coding>
       <system value="http://snomed.info/sct"/>
       <code value="763117005"/>
-      <display value="FINDRISC score resultFINDRISC (Finnish Diabetes Risk Score) score"/>
+      <display value="FINDRISC (Finnish Diabetes Risk Score) score"/>
     </coding>
   </code>
   <subject>

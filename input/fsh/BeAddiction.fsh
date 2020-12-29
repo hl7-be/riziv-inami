@@ -102,7 +102,7 @@ Title:   "Pia - smoking addiction"
 
 * category.coding.system = "http://snomed.info/sct"
 * category.coding.code = #365981007
-* category.coding.display = "Tobacco smoking behavior"
+* category.coding.display = "Tobacco smoking behavior - finding"
 * code.coding.system = "http://snomed.info/sct"
 * code.coding.code = #65568007
 * code.coding.display = "Cigarette smoker"
