@@ -24,7 +24,7 @@ Description:    """
 * identifier 0..* MS
 * identifier.system 1..1 MS
 * identifier.value 1..1 MS
-* patient 1..1
+* patient 1..1 MS
 * patient only Reference(BePatient)
 * performer.actor 1..1 
 * performer.actor only Reference(BePractitioner or BeOrganization or BePractitionerRole)
