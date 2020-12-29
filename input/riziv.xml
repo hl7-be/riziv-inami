@@ -973,7 +973,7 @@ A set of examples demonstrates the use of the profile." />
             <reference value="StructureDefinition/be-scoreresult" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="Score Result Profile " />
+         <name value="Score Result Profile" />
          <description value = "Score Result Observation profile" />
          <groupingId value="scoreresults" />
       </resource>
