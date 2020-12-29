@@ -23,6 +23,7 @@ Description:    """
 * clinicalStatus ^short = "The clinical status of the addiction - whether it is active, resolved..."
 * verificationStatus ^short = "The verification status of the addiction - whether it is suspected, confirmed, etc."
 * code ^short = "The specific addiction substance"
+* category ^short = "The category of addiction, e.g.  gaming, social, or substance addiction..."
 
 * subject only Reference(BePatient)
 * subject ^short = "The person that has/had the addiction"
