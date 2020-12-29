@@ -52,6 +52,7 @@ Description:    """
 * extension contains BeImmunizationConfirmationStatus named immunization-confirmationStatus 0..1
 * extension contains BeRecorder named recorder 0..1
 * route from be-vs-vaccine-administration-route 
+* statusReason from be-vs-immunization-status-reason (required)
 
 // Add extension: recordedString
 // Add extension: type

@@ -40,14 +40,19 @@ Description:  "Vaccine Administration Route"
 * include http://terminology.hl7.org/CodeSystem/v3-NullFlavor#OTH "Other"
 
 
-
 ValueSet: BeVSImmunizationStatusReason
 Id: be-vs-immunization-status-reason
 //Usage: #definition
-Title: "Immunization status Value Set"
-Description:  "Immunization status Value Set"
+Title: "Immunization status reason Value Set"
+Description:  "Immunization status reason Value Set - the reasons for an immunization status - typically representing the reason why a immunization is not performed"
 * ^status = #draft
 * codes from system BeCSStatusReason
+* include http://terminology.hl7.org/CodeSystem/v3-ActReason#IMMUNE "Immune"
+* include http://terminology.hl7.org/CodeSystem/v3-ActReason#MEDPREC "Medical Precaution"
+* include http://terminology.hl7.org/CodeSystem/v3-ActReason#OSTOCK "Out of Stock"
+* include http://terminology.hl7.org/CodeSystem/v3-ActReason#PATOBJ "Patient Objection"
+
+
 
 /*
 CodeSystem:  BeCSImmunizationConfirmationStatus
