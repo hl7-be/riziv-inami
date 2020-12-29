@@ -100,8 +100,10 @@ Title:   "Pia - smoking addiction"
 * extension[be-ext-addiction-quantifier].valueRatio.denominator.code = #d
 * extension[be-ext-addiction-quantifier].valueRatio.denominator.system = "http://unitsofmeasure.org"
 
+* category.coding.system = "http://snomed.info/sct"
 * category.coding.code = #365981007
 * category.coding.display = "Tobacco smoking behavior"
+* code.coding.system = "http://snomed.info/sct"
 * code.coding.code = #65568007
 * code.coding.display = "Cigarette smoker"
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
