@@ -108,8 +108,8 @@
     },
     {
       "code": "HEDEN",
-      "display": "Hétéro-Evaluation de la Douleur chez l'ENfant",
-      "definition": "Hétéro-Evaluation de la Douleur chez l'ENfant",
+      "display": "HEDEN Pain Scale",
+      "definition": "HEDEN (Hétéro-Evaluation de la Douleur chez l'Enfant) Pain Scale",
       "designation": [
         {
           "language": "fr-BE",
@@ -117,7 +117,7 @@
         },
         {
           "language": "nl-BE",
-          "value": "TBD"
+          "value": "HEDEN"
         }
       ]
     },
