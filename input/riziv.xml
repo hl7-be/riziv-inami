@@ -992,13 +992,22 @@ A set of examples demonstrates the use of the profile." />
 
 
 
-         <resource>
+      <resource>
          <reference>
             <reference value="CodeSystem/be-cs-score" />
          </reference>
          <fhirVersion value="4.0.1" />
          <name value="Score Result Code system" />
-         <description value = "Score Result Observation profile" />
+         <description value = "Score Result codes" />
+         <groupingId value="scoreresults" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-score-category" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Score Result Category Code system" />
+         <description value = "Score Result Category" />
          <groupingId value="scoreresults" />
       </resource>
 
