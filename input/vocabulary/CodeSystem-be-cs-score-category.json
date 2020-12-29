@@ -1,0 +1,20 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "BeCSScoreCategory",
+  "id": "be-cs-score-category",
+  "title": "Score Category",
+  "description": "Score Category",
+  "version": "0.1.0",
+  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category",
+  "concept":
+  [
+    {"code" : "risk","display" : "Risk score","definition" : "Risk score","designation" : [{"language" : "fr-BE","value" : "Risk score"},{"language" : "nl-BE","value" : "Risk score"}]},
+    {"code" : "pain","display" : "Pain score","definition" : "Pain score","designation" : [{"language" : "fr-BE","value" : "Pain Score"},{"language" : "nl-BE","value" : "Pain Score"}]},
+    {"code" : "other","display" : "Other","definition" : "Other","designation" : [{"language" : "fr-BE","value" : "Autre"},{"language" : "nl-BE","value" : "andere"}]}
+    
+
+  ]
+
+}

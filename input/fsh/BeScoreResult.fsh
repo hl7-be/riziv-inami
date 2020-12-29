@@ -54,14 +54,20 @@ Description:    """
 
 
 
-
+/* 
+// sliced category:
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "coding.code"
 * category ^slicing.rules = #open
 * category contains ScoreCategory 0..1
 * category[ScoreCategory].coding.system = "BeVSScoreCategory"
-
 * category[ScoreCategory] from BeVSScoreCategory
+*/
+// non-sliced category
+* category from BeVSScoreCategory
+
+
+
 
 /*
 
@@ -110,4 +116,6 @@ Id: be-vs-scorecategory
 Title: "Score Category Value Set"
 Description:  "Score Category Value Set"
 * ^status = #draft
+* codes from system BeCSScoreCategory
+
 
