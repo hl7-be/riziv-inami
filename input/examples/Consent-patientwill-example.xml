@@ -42,9 +42,9 @@
     
     <code> 
       <coding>
-        <system value="http://snomed.info/sct" />
-        <code value="304253006" />
-        <display value="DNAR - Do not attempt resuscitation" />
+        <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code" />
+        <code value="dnr1" />
+        <display value="DNR - Do not resuscitate" />
       </coding>
       <text value="No resuscitation" />
     </code> 
