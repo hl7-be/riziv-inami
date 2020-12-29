@@ -15,7 +15,7 @@
     {"code" : "risk","display" : "Risk","definition" : "identification of a health problem or situation that may require ongoing monitoring or management","designation" : [{"language" : "fr-BE","value" : "Risque"},{"language" : "nl-BE","value" : "Risico"}]},
     {"code" : "antecedent","display" : "Antecedent","definition" : "information about a problem that has been resolved","designation" : [{"language" : "fr-BE","value" : "Antécédent"},{"language" : "nl-BE","value" : "Antecedent"}]},
     {"code" : "congenital","display" : "Congenital anomaly","definition" : "Congenital anomaly","designation" : [{"language" : "fr-BE","value" : "Maladie congénitale"},{"language" : "nl-BE","value" : "Aangeboren afwijking"}]},
-    {"code" : "conclusion","display" : "Conclusion","definition" : "informations sur la conclusion d’une anamnèse d’un prestataire de soin autre qu’un médecin","designation" : [{"language" : "fr-BE","value" : "Conclusion anamnèse"},{"language" : "nl-BE","value" : "Anamnesis conclusie"}]},
+    {"code" : "conclusion","display" : "Conclusion","definition" : "Informations about a conclusionfrom anamnesis performed by a professional other than a physician","designation" : [{"language" : "fr-BE","value" : "Conclusion anamnèse"},{"language" : "nl-BE","value" : "Anamnesis conclusie"}]},
     {"code" : "other","display" : "Other","definition" : "Autre","designation" : [{"language" : "fr-BE","value" : "Autre"},{"language" : "nl-BE","value" : "andere"}]}
     
 

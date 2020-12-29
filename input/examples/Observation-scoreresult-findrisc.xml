@@ -6,8 +6,8 @@
   </meta>
   <status value="final"/>
   <category>
-    <coding>
-      <system value="https://www.hl7belgium.org/fhir/ValueSet/be-cs-scorecategory"/>
+    <coding>         
+      <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-scorecategory"/>
       <code value="risk"/>
       <display value="RISK"/>
     </coding>

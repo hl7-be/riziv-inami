@@ -23,16 +23,19 @@ Description:    """
 * encounter MS
 * ^jurisdiction.coding = urn:iso:std:iso:3166#BE
 
-
+/* 
+// sliced category:
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "coding.code"
 * category ^slicing.rules = #open
 * category contains ProblemType 0..1
 * category[ProblemType].coding.system = "BeVSProblemCategory"
-
 * category[ProblemType] from BeVSProblemCategory (extensible)
-* code from BeVSProblemCode (extensible)
+*/
 
+* category from BeVSProblemCategory (extensible)
+
+* code from BeVSProblemCode (extensible)
 
 * bodySite from BeVSBodySite
 * bodySite.extension contains BeLaterality named laterality 0..1
