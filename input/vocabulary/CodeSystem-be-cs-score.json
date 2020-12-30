@@ -153,8 +153,8 @@
     },
     {
       "code": "NAP",
-      "display": "Niveau d'Activité Physique",
-      "definition": "Level of Physical Activity",
+      "display": "Level of Physical Activity",
+      "definition": "Level of Physical Activity (NAP - Niveau d'Activité Physique)",
       "designation": [
         {
           "language": "fr-BE",
