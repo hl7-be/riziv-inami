@@ -35,7 +35,7 @@
       <max value="*"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/allergyintolerance-substanceExposureRisk"/>
+        <profile value="https://www.hl7belgium.org/fhir/StructureDefinition/exposure-risk"/>
       </type>
     </element>
     <element id="AllergyIntolerance.clinicalStatus">
