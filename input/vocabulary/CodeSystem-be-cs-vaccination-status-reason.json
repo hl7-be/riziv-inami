@@ -3,11 +3,11 @@
   "status": "draft",
   "content": "complete",
   "name": "BeCSStatusReason",
-  "id": "be-cs-immunization-status-reason",
-  "title": "Immunization status reason Code System.",
-  "description": "Immunization reason status Code System.",
+  "id": "be-cs-vaccination-status-reason",
+  "title": "Vaccination status reason Code System.",
+  "description": "Vaccination reason status Code System.",
   "version": "0.1.0",
-  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-immunization-status-reason",
+  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason",
   "concept": [
     {
       "code": "OTHER",

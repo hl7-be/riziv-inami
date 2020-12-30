@@ -52,14 +52,14 @@
       <binding>
         <strength value="required" />
         <description value="Belgium codes to describe reasons considered for status of vaccination actions, e.g. reasons for not administering vaccine" />
-        <valueSet value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-immunization-status-reason" />
+        <valueSet value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason" />
       </binding>
     </element>
 	
     <element id="BEVaccination.patient">
       <path value="BEVaccination.patient" />
-      <short value="The patient that received immunization." />
-      <definition value="The patient that has received the immunization." />
+      <short value="The patient that received vaccination." />
+      <definition value="The patient that has received the vaccination." />
       <min value="1" />
       <max value="1" />
       <type>
@@ -86,7 +86,7 @@
     <element id="BEVaccination.vaccinationDate[x]">
       <path value="BEVaccination.vaccinationDate[x]" />
       <short value="The date and time when the vaccination has been administered" />
-      <definition value="The date and/or time when the immunization administration has been administered or presumed to be administered" />
+      <definition value="The date and/or time when the vaccine administration has been administered or presumed to be administered" />
       <min value="0" />
       <max value="1" />
       <type>
