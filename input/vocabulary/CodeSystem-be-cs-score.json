@@ -94,7 +94,7 @@
     {
       "code": "EDIN",
       "display": "Neonatal pain and discomfort scale",
-      "definition": "TBD",
+      "definition": "Neonatal pain and discomfort scale",
       "designation": [
         {
           "language": "fr-BE",
@@ -154,7 +154,7 @@
     {
       "code": "NAP",
       "display": "Niveau d'Activité Physique",
-      "definition": "Niveau d'Activité Physique",
+      "definition": "Level of Physical Activity",
       "designation": [
         {
           "language": "fr-BE",
@@ -231,8 +231,7 @@
     },
     {
       "code": "TUG",
-      "display": "Timed Up&Go : évalue le risque de chute chez une personne",
-      "definition": "Timed Up&Go : évalue le risque de chute chez une personne",
+      "display": "Timed Up&Go",
       "designation": [
         {
           "language": "fr-BE",
@@ -248,11 +247,11 @@
     {
       "code": "WECKX",
       "display": "SCORE INZAKE ZORGBEHOEVENDHEID",
-      "definition": "SCORE INZAKE ZORGBEHOEVENDHEID",
+      "definition": "WECKX SCORE",
       "designation": [
         {
           "language": "fr-BE",
-          "value": "mesure de degré de dépendance physique"
+          "value": "WECKX mesure de degré de dépendance physique"
         },
         {
           "language": "nl-BE",
@@ -292,7 +291,18 @@
     },
     {
       "code": "other",
-      "display": "Other"
+      "display": "Other",
+      "definition": "Other",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Autre"
+        },
+        {
+          "language": "nl-BE",
+          "value": "Andere"
+        }
+      ]
     }
   ]
 }
