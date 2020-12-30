@@ -232,6 +232,7 @@
     {
       "code": "TUG",
       "display": "Timed Up&Go",
+      "definition": "Timed Up&Go",
       "designation": [
         {
           "language": "fr-BE",
@@ -239,7 +240,7 @@
         },
         {
           "language": "nl-BE",
-          "value": "TBD"
+          "value": "Timed Up&Go"
         }
       ]
     },
