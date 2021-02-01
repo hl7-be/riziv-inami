@@ -11,8 +11,7 @@
   "concept":
   [
     {"code" : "risk","display" : "Risk score","definition" : "Risk score","designation" : [{"language" : "fr-BE","value" : "Risk score"},{"language" : "nl-BE","value" : "Risk score"}]},
-    {"code" : "pain","display" : "Pain score","definition" : "Pain score","designation" : [{"language" : "fr-BE","value" : "Pain Score"},{"language" : "nl-BE","value" : "Pain Score"}]},
-    {"code" : "other","display" : "Other","definition" : "Other","designation" : [{"language" : "fr-BE","value" : "Autre"},{"language" : "nl-BE","value" : "andere"}]}
+    {"code" : "pain","display" : "Pain score","definition" : "Pain score","designation" : [{"language" : "fr-BE","value" : "Pain Score"},{"language" : "nl-BE","value" : "Pain Score"}]}
     
 
   ]

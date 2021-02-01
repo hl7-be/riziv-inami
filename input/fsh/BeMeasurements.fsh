@@ -1,15 +1,17 @@
-Profile:        BeScoreResult
+Profile:        BeMeasure
 Parent:         Observation
-Id:             be-scoreresult
-Title:          "BEScoreResult"
+Id:             be-measure
+Title:          "BeMEasure"
 Description:    """ 
-    Defines a patient's known problem, a diagnostic or antecedent that deserves attention."""
+    A record of an observation made by the patient or a professional, with or without a measurement device. This is the preferred profile to be used in specified cases like glucose monitoring, BMI, etc.
+    The list of cases that are supported by this profile (and for which this profile is preferred) is evolving, but for those cases that are included, this profile should be used, instead of a generic Observation."""
+
+
 
 * identifier MS
 * issued MS
-* issued 1..1
-* issued ^short = "The date and time when the score was made available"
-// * performed ^short = "The date and time when the information was collected"
+//* issued 1..1
+//* issued ^short = "The date and time when the score was made available"
 * performer MS
 * performer ^short = "The care provider that took the assessment"
 * performer only Reference (BePatient or BePractitioner or BePractitionerRole or BeOrganization)
@@ -54,68 +56,20 @@ Description:    """
 
 
 
-/* 
-// sliced category:
+
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "coding.code"
 * category ^slicing.rules = #open
 * category contains ScoreCategory 0..1
 * category[ScoreCategory].coding.system = "BeVSScoreCategory"
+
 * category[ScoreCategory] from BeVSScoreCategory
-*/
-// non-sliced category
-* category from BeVSScoreCategory
-
-
-
 
 /*
-
-* bodySite from BeVSBodySite
-* bodySite.extension contains BeLaterality named laterality 0..1
-* extension contains BeExtProblemOriginType named ProblemOriginType 0..1 MS
-* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named OriginalOrder 0..1 MS
-
-
-
-
-
-Extension: BeExtProblemOriginType
-Id: be-ext-problem-origin-type
-Title: "Problem Origin Type"
-Description: "An explicit statement of laterality of a lesion, or a treatment, etc."
-* value[x] only code
-* valueCode from BeVSProblemOriginType
-
-
-Extension: BeLaterality
-Id: be-ext-laterality
-Title: "Laterality extension"
-Description: "An explicit statement of laterality of a lesion, or a treatment, etc."
-* value[x] only code
-* valueCode from BeVSLaterality
-*/
-
-/*
-CodeSystem:  BeCSScore
-Id: be-cs-score
-Title: "Score Code System"
-Description:  "Score Code System"
-* #other "Other"
-
-
-ValueSet: BeVSScore
-Id: be-vs-score
-Title: "Score Value Set"
-Description:  "Score Value Set"
-* codes from system BeCSScore
-
-*/
 ValueSet: BeVSScoreCategory
 Id: be-vs-scorecategory
 Title: "Score Category Value Set"
 Description:  "Score Category Value Set"
 * ^status = #draft
-* codes from system BeCSScoreCategory
-* include http://terminology.hl7.org/CodeSystem/v3-NullFlavor#OTH
 
+*/

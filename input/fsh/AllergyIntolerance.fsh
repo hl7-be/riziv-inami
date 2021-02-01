@@ -1,4 +1,4 @@
-/*
+
 Profile:        BeAllergyIntolerance
 Parent:         AllergyIntolerance
 Id:             be-allergyintolerance
@@ -10,9 +10,9 @@ When available, a provider SHOULD include it. When given, a consumer SHALL recor
 * clinicalStatus MS
 * verificationStatus ^definition = "Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified substance (including pharmaceutical product).\n\nWhen available, a provider SHOULD include it. When given, a consumer SHALL record this in its consuming system."
 * verificationStatus MS
-* type ^definition = "Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified substance (including pharmaceutical product).\n\nWhen available, a provider SHOULD include it. When given, a consumer SHALL record this in its consuming system."
+* type ^definition = "Identification of the underlying physiological mechanism for the reaction risk.\n\nWhen available, a provider SHOULD include it. When given, a consumer SHALL record this in its consuming system."
 * type MS
-* category ^definition = "Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified substance (including pharmaceutical product).\n\nWhen available, a provider SHOULD include it. When given, a consumer SHALL record this in its consuming system."
+* category ^definition = "Category of the identified substance.\n\nWhen available, a provider SHOULD include it in the istance. When given, a consumer SHALL record this in its consuming system."
 * category MS
 * code ^definition = """Code for an allergy or intolerance statement (either a positive or a negated/excluded statement). This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk
 (e.g., 'Latex'), an allergy or intolerance condition (e.g., 'Latex allergy'), or a negated/excluded code for a specific substance or class (e.g., 'No latex allergy') or a general or categorical negated statement 
@@ -24,7 +24,7 @@ then the receiving system should ignore AllergyIntolerance.reaction.substance.
 A provider SHALL include it in the istance and a consumer SHALL record this in its consuming system. If needed codes can be used outside the given valueset, SNOMED-CT is preferred."""
 * code 1..1
 * code MS
-* code from https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode (extensible)
+* code from https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode (required)
 * patient MS
 * patient ^definition = """
 The patient who has the allergy or intolerance.
@@ -41,14 +41,17 @@ A provider SHALL include it in the istance and a consumer SHALL record this in i
 * recorder ^definition = """Individual who recorded the record and takes responsibility for its content.
 
 A provider SHALL include it in the istance and a consumer SHALL record this in its consuming system."""
-* recorder ^type.targetProfile[0] = https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient
-* recorder ^type.targetProfile[1] = https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner
-* recorder ^type.targetProfile[2] = https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole
-* recorder ^type.targetProfile[3] = http://hl7.org/fhir/StructureDefinition/Practitioner
-* recorder ^type.targetProfile[4] = http://hl7.org/fhir/StructureDefinition/PractitionerRole
-* recorder ^type.targetProfile[5] = http://hl7.org/fhir/StructureDefinition/Patient
-* recorder ^type.targetProfile[6] = http://hl7.org/fhir/StructureDefinition/RelatedPerson
+* recorder ^type.targetProfile[+] = https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient
+* recorder ^type.targetProfile[+] = https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner
+* recorder ^type.targetProfile[+] = https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole
+//* recorder ^type.targetProfile[+] = http://hl7.org/fhir/StructureDefinition/Practitioner
+//* recorder ^type.targetProfile[+] = http://hl7.org/fhir/StructureDefinition/PractitionerRole
+//* recorder ^type.targetProfile[+] = http://hl7.org/fhir/StructureDefinition/Patient
+* recorder ^type.targetProfile[+] = http://hl7.org/fhir/StructureDefinition/RelatedPerson
 * note MS
+* asserter MS
+* asserter ^definition = "The source of the information about the allergy that is recorded.\n\nWhen available, a provider SHOULD include it in the istance. When given, a consumer SHALL record this in its consuming system."
+
 * reaction MS
 * reaction ^definition = """Details about each adverse reaction event linked to exposure to the identified substance.
 
@@ -61,13 +64,13 @@ When available, a provider SHOULD include it. When given, a consumer SHALL recor
 * reaction.manifestation from https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation (extensible)
 * reaction.exposureRoute MS
 * reaction.exposureRoute ^definition = "Identification of the route by which the subject was exposed to the substance. If needed codes can be used outside the given valueset, SNOMED-CT is preferred."
+
 * reaction.exposureRoute from https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-exposureroute (extensible)
 * reaction.note ^definition = """Additional text about the adverse reaction event not captured in other fields.
 
 A note on this level SHOULD be avoided when not absolutely necessary. Preferably use the .note one level higher."""
 
 
-*/
 
 
 Instance: example-encounter-uzgent

@@ -356,10 +356,10 @@ A set of examples demonstrates the use of the profile." />
       </resource>
       <resource>
          <reference>
-            <reference value="NamingSystem/be-ns-cnk-codes" />
+            <reference value="NamingSystem/be-ns-cnk-code" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="NamingSystem" />
+         <name value="NamingSystem - CNK Code" />
          <description value="" />
          <groupingId value="vaccination" />
       </resource>
@@ -368,8 +368,8 @@ A set of examples demonstrates the use of the profile." />
             <reference value="NamingSystem/be-ns-nihdi-organization" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="BeNSNIHDIOrganization" />
-         <description value="NamingSystem - NIHDI Organization numbers" />
+         <name value="NamingSystem - NIHDI Organization" />
+         <description value="NamingSystem - NIHDI Organization number" />
          <groupingId value="vaccination" />
       </resource>
       <resource>
@@ -377,7 +377,7 @@ A set of examples demonstrates the use of the profile." />
             <reference value="NamingSystem/be-ns-nihdi-professional" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="BeNSNIHDIProfessional" />
+         <name value="NamingSystem - NIHDI Professional" />
          <description value="NamingSystem - NIHDI Professional numbers" />
          <groupingId value="vaccination" />
       </resource>
@@ -386,8 +386,8 @@ A set of examples demonstrates the use of the profile." />
             <reference value="NamingSystem/be-ns-one-vaccination" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="BeNSONEVaccination" />
-         <description value="NamingSystem for ONE vaccination" />
+         <name value="NamingSystem - ONE Vaccination Id" />
+         <description value="NamingSystem for ONE vaccination ID" />
          <groupingId value="vaccination" />
       </resource>
       <resource>
@@ -395,7 +395,7 @@ A set of examples demonstrates the use of the profile." />
             <reference value="NamingSystem/be-ns-product-manufacturer" />
          </reference>
          <fhirVersion value="4.0.1" />
-         <name value="BeNSNIHDIProductManufacturer" />
+         <name value="NamingSystem - Product Manufacturer" />
          <description value="NamingSystem - Product Manufacturer" />
          <groupingId value="vaccination" />
       </resource>
@@ -824,7 +824,7 @@ A set of examples demonstrates the use of the profile." />
          <fhirVersion value="4.0.1" />
          <name value="Example - Suspected Allergy" />
          <description value="Suspected Allergy to Penicillin" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance" />
          <groupingId value="allergyintolerance" />
       </resource>
       <resource>
@@ -834,7 +834,7 @@ A set of examples demonstrates the use of the profile." />
          <fhirVersion value="4.0.1" />
          <name value="Example - Refuted Allergy" />
          <description value="Allergy has been refuted - confirmed as non-existent" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance" />
          <groupingId value="allergyintolerance" />
       </resource>
       <resource>
@@ -844,7 +844,7 @@ A set of examples demonstrates the use of the profile." />
          <fhirVersion value="4.0.1" />
          <name value="Example - Allergy 1 - peanut allergy" />
          <description value="Allergy to peanut" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance" />
          <groupingId value="allergyintolerance" />
       </resource>
       <resource>
@@ -854,7 +854,7 @@ A set of examples demonstrates the use of the profile." />
          <fhirVersion value="4.0.1" />
          <name value="Example - Allergy 2 - Pollen allergy" />
          <description value="Allergy to pollen" />
-         <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance" />
          <groupingId value="allergyintolerance" />
       </resource>
       <resource>

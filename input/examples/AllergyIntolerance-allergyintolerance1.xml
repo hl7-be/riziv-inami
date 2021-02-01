@@ -1,7 +1,7 @@
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
   <id value="allergyintolerance1" />
   <meta>
-    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance" />
+    <profile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance" />
   </meta>
 
   <clinicalStatus>

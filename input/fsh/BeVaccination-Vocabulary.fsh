@@ -116,7 +116,7 @@ Description:  "Care Location Value Set"
 
 
 
-Instance: be-ns-cnk-codes
+Instance: be-ns-cnk-code
 InstanceOf: NamingSystem
 Usage: #definition
 Description: "Naming System - CNK Product Codes"
@@ -126,7 +126,7 @@ Description: "Naming System - CNK Product Codes"
 * kind = #codesystem
 * description = "Naming System - CNK Product Codes"
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cnk-codes"
+* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cnk-code"
 * uniqueId[0].preferred = true
 * jurisdiction = urn:iso:std:iso:3166#BE
 
@@ -134,12 +134,12 @@ Description: "Naming System - CNK Product Codes"
 Instance: be-ns-product-manufacturer
 InstanceOf: NamingSystem
 Usage: #definition
-Description: "Naming System - Product Manufacturers"
+Description: "Naming System - Product Manufacturer"
 * status = #active
 * date = "2020-07-24"
-* name = "BeNSManufacturers"
+* name = "BeNSManufacturer"
 * kind = #codesystem
-* description = "Naming System - Product Manufacturers"
+* description = "Naming System - Product Manufacturer"
 * uniqueId[0].type = #uri
 * uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/product-manufacturer"
 * uniqueId[0].preferred = true
@@ -148,14 +148,14 @@ Description: "Naming System - Product Manufacturers"
 Instance: be-ns-one-vaccination
 InstanceOf: NamingSystem
 Usage: #definition
-Description: "Naming System - ONE Immunizations"
+Description: "Naming System - ONE Vaccination"
 * status = #active
 * date = "2020-07-24"
-* name = "BeNSONEVaccinations"
+* name = "BeNSONEVaccination"
 * kind = #identifier
 * description = "Naming System - ONE Vaccination"
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/one-vaccinations"
+* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/one-vaccination"
 * uniqueId[0].preferred = true
 * jurisdiction = urn:iso:std:iso:3166#BE
 
