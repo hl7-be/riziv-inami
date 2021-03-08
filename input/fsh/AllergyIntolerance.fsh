@@ -75,7 +75,7 @@ A note on this level SHOULD be avoided when not absolutely necessary. Preferably
 
 Instance: example-encounter-uzgent
 InstanceOf: Encounter
-Usage: #example
+Usage: #finished
 Description: ""
 * status = #completed
 * class =  http://terminology.hl7.org/CodeSystem/v3-ActCode#OBSENC
@@ -87,7 +87,7 @@ Description: ""
 
 Instance: example-encounter-uzgent-contained
 InstanceOf: Encounter
-Usage: #inline
+Usage: #finished
 Description: ""
 * status = #completed
 * class =  http://terminology.hl7.org/CodeSystem/v3-ActCode#OBSENC
