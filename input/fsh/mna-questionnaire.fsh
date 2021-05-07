@@ -37,7 +37,7 @@ Title: "Questionnaire for Mini Nutritional Assessment"
 * item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
 * item[=].extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
 * insert Question(,stress,Le patient a-t-il souffert de stress psychologique ou d'une maladie aigüe au cours des trois derniers mois?,choice,false)
-* item[=].answerValueSet = "#vs--mna-stress"
+* item[=].answerValueSet = "#vs-mna-stress"
 * item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
 * item[=].extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
 * insert Question(,neuropsych,Le patient présente-t-il des problèmes neuropsychologiques ?,choice,false)

@@ -75,9 +75,9 @@ A note on this level SHOULD be avoided when not absolutely necessary. Preferably
 
 Instance: example-encounter-uzgent
 InstanceOf: Encounter
-Usage: #finished
+Usage: #example
 Description: ""
-* status = #completed
+* status = #finished
 * class =  http://terminology.hl7.org/CodeSystem/v3-ActCode#OBSENC
 * location.location.reference = "Location/uz-gent"
 * period.start = "2020-10-12"
@@ -87,9 +87,9 @@ Description: ""
 
 Instance: example-encounter-uzgent-contained
 InstanceOf: Encounter
-Usage: #finished
+Usage: #example
 Description: ""
-* status = #completed
+* status = #finished
 * class =  http://terminology.hl7.org/CodeSystem/v3-ActCode#OBSENC
 * location.location.reference = "Location/uz-gent"
 * period.start = "2020-10-12"
@@ -103,11 +103,11 @@ InstanceOf: BeAllergyIntolerance
 Usage: #example
 Description: ""
 Title:    ""
-* clinicalStatus = #active
-* verificationStatus = #confirmed
+* clinicalStatus = http://hl7.org/fhir/ValueSet/allergyintolerance-clinical#active
+* verificationStatus = http://hl7.org/fhir/ValueSet/allergyintolerance-verification#confirmed
 * type = #allergy
 * category = #food
-* criticality = #higher
+* criticality = #high
 * code = http://snomed.info/sct#762952008
 * patient.reference = "Patient/patient1"
 * onsetDateTime = "2004"
@@ -130,8 +130,8 @@ Usage: #example
 Description: ""
 Title:    ""
 * contained[0] = example-encounter-uzgent-contained
-* clinicalStatus = #active
-* verificationStatus = #confirmed
+* clinicalStatus = http://hl7.org/fhir/ValueSet/allergyintolerance-clinical#active
+* verificationStatus = http://hl7.org/fhir/ValueSet/allergyintolerance-verification#confirmed
 * type = #allergy
 * category = #food
 * criticality = #higher
@@ -159,4 +159,71 @@ Description: "Exposure Risk"
 * value[x] only CodeableConcept
 * value[x] ^short = "The consequence of exposure"
 * value[x] ^definition = "How the patient may react in case of exposure - This consequence can be inferred by previous reactions or determined from other information"
+
+
+
+
+
+Instance: allergy-intolerance-questionnaire
+InstanceOf: Questionnaire
+Description: "Questionnaire for Allergy / Intolerance reporting"
+Title: "Questionnaire for Allergy / Intolerance reporting"
+* name = "AllergyIntoleranceQuestionnaire"
+* title = "Allergy / Intolerance reporting Questionnaire"
+* version = "2020"
+* status = #draft
+* subjectType = #Patient
+* language = #en
+* status = #draft
+
+
+* insert Question(,patient,Patient,group,false)
+* item[=].required = true
+* insert Question(item[=].,patient-name,Patient Name,string,false)
+* insert Question(item[=].,patient-id,Patient ID (SSIN\),string,false)
+* item[=].item[=].required = true
+
+* insert Question(,status,AllergyStatus,display,false)
+
+* insert Question(item[=].,clinical-status,Clinical Status,string,false)
+* item[=].item[=].answerOption[+].valueCoding = #active "Active"
+* item[=].item[=].answerOption[+].valueCoding = #inactive "Inactive"
+* item[=].item[=].answerOption[+].valueCoding = #resolved "Resolved"
+* insert Question(item[=].,patient-id,Verification Status,string,false)
+* item[=].item[=].answerOption[+].valueCoding = #unconfirmed "Unconfirmed"
+* item[=].item[=].answerOption[+].valueCoding = #confirmed "Confirmed"
+* item[=].item[=].answerOption[+].valueCoding = #refuted "Refuted"
+* item[=].item[=].answerOption[+].valueCoding = #entered-in-error "entered-in-error"
+
+* insert Question(,allergyintolerance,Allergy or Intolerance?,choice,false)
+* item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
+* item[=].extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
+* item[=].answerOption[+].valueCoding = #allergy
+* item[=].answerOption[+].valueCoding = #intolerance
+
+* insert Question(,type,Type (food\, medication\, environment\, biologic\)?,choice,false)
+* item[=].answerOption[+].valueCoding = #food "Food allergy"
+* item[=].answerOption[+].valueCoding = #medication "Medication allergy or intolerance"
+* item[=].answerOption[+].valueCoding = #environment "Environmental allergy or intolerance"
+* item[=].answerOption[+].valueCoding = #biologic "Biologic allergy or intolerance"
+
+* insert Question(,code,Code of the allergen or substance?,choice,false)
+* item[=].answerValueSet = "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode"
+
+
+* insert Question(,recorded,Recorded,group,false)
+* item[=].required = true
+* insert Question(item[=].,recorded-date,Date of Record,date,false)
+* insert Question(item[=].,recorder,Recorder,string,false)
+* insert Question(item[=].,asserter,Asserter,string,false)
+
+* insert Question(,note,Note,text,true)
+
+* insert Question(,reactions,Reactions,group,true)
+* insert Question(item[=].,manifestation,Manifestation,choice,false)
+* item[=].answerValueSet = "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation"
+* insert Question(item[=].,exposure-route,Exposure Route,choice,false)
+* item[=].answerValueSet = "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-exposureroute"
+* insert Question(item[=].,note,Note,choice,false)
+
 

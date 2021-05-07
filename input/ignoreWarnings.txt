@@ -1,7 +1,6 @@
-// Add warning and/or information messages here after you've confirmed that they aren't really a problem
-// (And include comments like this justifying why)
+# Add warning and/or information messages here after you've confirmed that they aren't really a problem
+# (And include comments like this justifying why)
+# We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present
 
-// We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present
+# # Reason
 
-
-// If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...
