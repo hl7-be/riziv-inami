@@ -36,6 +36,21 @@
           "value" : "Allergie"
         }
       ]
+    },
+    {
+      "code": "OSTOCK",
+      "display": "Out of stock or no vaccine available",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "Hors Stock"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Geen voorraad"
+        }
+      ]
     }
+
   ]
 }
