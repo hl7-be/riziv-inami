@@ -84,6 +84,10 @@ The vocabulary resources help ensure conformity and data consistency.
 The profile defines the technical specifications.  
 A set of examples demonstrates the use of the profile." />
       </grouping>
+      <grouping id="referral">
+         <name value="Referral Prescription" />
+         <description value="The Referral Prescription defines the exchange when ordering services such as nursing care, physiotherapy, or diagnostic procedures such as lab, imaging" />
+      </grouping>
       <!-- Addiction -->
       <resource>
          <reference>
@@ -936,6 +940,29 @@ A set of examples demonstrates the use of the profile." />
          <description value = "Score Category value set" />
          <groupingId value="scoreresults" />
       </resource>      
+
+
+
+      <!-- Problem -->
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-model-referralprescription" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Logical Model Referral Prescription" />
+         <description value="Referral Prescription logical model" />
+         <groupingId value="referral" />
+      </resource>
+
+
+
+
+
+
+
+
+
+
 
       <page>
          <!-- The root will always be toc.html - the template will force it if you don't do it -->
