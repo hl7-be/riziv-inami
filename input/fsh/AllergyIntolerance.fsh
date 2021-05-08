@@ -198,8 +198,8 @@ Title: "Questionnaire for Allergy / Intolerance reporting"
 * insert Question(,allergyintolerance,Allergy or Intolerance?,choice,false)
 * item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
 * item[=].extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
-* item[=].answerOption[+].valueCoding = #allergy
-* item[=].answerOption[+].valueCoding = #intolerance
+* item[=].answerOption[+].valueCoding = #allergy "Allergy"
+* item[=].answerOption[+].valueCoding = #intolerance "Intolerance"
 
 * insert Question(,type,Type (food\, medication\, environment\, biologic\)?,choice,false)
 * item[=].answerOption[+].valueCoding = #food "Food allergy"
@@ -219,7 +219,7 @@ Title: "Questionnaire for Allergy / Intolerance reporting"
 
 * insert Question(,note,Note,text,true)
 
-* insert Question(,reactions,Reactions,group,true)
+* insert Question(,reactions,Reaction,group,true)
 * insert Question(item[=].,manifestation,Manifestation,choice,false)
 * item[=].answerValueSet = "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation"
 * insert Question(item[=].,exposure-route,Exposure Route,choice,false)
