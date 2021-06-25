@@ -1,134 +1,134 @@
 <?xml version='1.0' encoding='utf-8'?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="Questionnaire-allergy-intolerance-questionnaire.xml" source-language="en-us" target-language="fr-be" datatype="x-application/x-tmx+xml">
+  <file original="Questionnaire-allergy-intolerance-questionnaire.xml" source-language="en-us" target-language="nl-be" datatype="x-application/x-tmx+xml">
     <body>
       <trans-unit id="allergy-intolerance-questionnaire.title" xml:space="preserve">
         <source xml:lang="en-us">Allergy / Intolerance reporting Questionnaire</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Questionnaire de notification d'allergie ou intolérance</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.patient" xml:space="preserve">
         <source xml:lang="en-us">Patient</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Patient</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.patient.patient-name" xml:space="preserve">
         <source xml:lang="en-us">Patient Name</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Nom du Patient</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.patient.patient-id" xml:space="preserve">
         <source xml:lang="en-us">Patient ID (SSIN)</source>
-        <target state="needs-review-translation" xml:lang="fr-be">ID du Patient</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.status" xml:space="preserve">
         <source xml:lang="en-us">AllergyStatus</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Status de l'allergie</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.status.clinical-status" xml:space="preserve">
         <source xml:lang="en-us">Clinical Status</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Status Clinique</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.status.clinical-status.answerOption[active]" xml:space="preserve" approved="yes">
         <source xml:lang="en-us">Active</source>
-        <target state="signed-off" xml:lang="fr-be">Active</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.status.clinical-status.answerOption[inactive]" xml:space="preserve">
         <source xml:lang="en-us">Inactive</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Inactive</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.status.clinical-status.answerOption[resolved]" xml:space="preserve">
         <source xml:lang="en-us">Resolved</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Résolue</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.status.verification-status" xml:space="preserve" approved="yes">
         <source xml:lang="en-us">Verification Status</source>
-        <target state="final" state-qualifier="exact-match" xml:lang="fr-be">Status de Vérification</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.status.verification-status.answerOption[unconfirmed]" xml:space="preserve">
         <source xml:lang="en-us">Unconfirmed</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Non confirmée</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.status.verification-status.answerOption[confirmed]" xml:space="preserve">
         <source xml:lang="en-us">Confirmed</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Confirmée</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.status.verification-status.answerOption[refuted]" xml:space="preserve">
         <source xml:lang="en-us">Refuted</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Refutée</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.status.verification-status.answerOption[entered-in-error]" xml:space="preserve">
         <source xml:lang="en-us">entered-in-error</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Entrée en erreur</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.allergyintolerance" xml:space="preserve">
         <source xml:lang="en-us">Allergy or Intolerance?</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Allergie ou Intolérance</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.allergyintolerance.answerOption[allergy]" xml:space="preserve">
         <source xml:lang="en-us">Allergy</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Allergie</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.allergyintolerance.answerOption[intolerance]" xml:space="preserve">
         <source xml:lang="en-us">Intolerance</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Intolérance</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.type" xml:space="preserve">
         <source xml:lang="en-us">Type (food, medication, environment, biologic)?</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Type (alimentaire, médicamenteuse, environmentale, biologique)</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.type.answerOption[food]" xml:space="preserve">
         <source xml:lang="en-us">Food allergy</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Allergie alimentaire</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.type.answerOption[medication]" xml:space="preserve">
         <source xml:lang="en-us">Medication allergy or intolerance</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Allergie ou intolérance médicamenteuse</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.type.answerOption[environment]" xml:space="preserve">
         <source xml:lang="en-us">Environmental allergy or intolerance</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Allergie ou intolérance environmentale</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.type.answerOption[biologic]" xml:space="preserve">
         <source xml:lang="en-us">Biologic allergy or intolerance</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Allergie ou intolérance biologique</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.code" xml:space="preserve">
         <source xml:lang="en-us">Code of the allergen or substance?</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Code de la substance ou allergène</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.recorded" xml:space="preserve">
         <source xml:lang="en-us">Recorded</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Enregistrée<mrk mid="0" mtype="seg"/></target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.recorded.date" xml:space="preserve">
         <source xml:lang="en-us">Date of Record</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Date d'enregistrement</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.recorded.recorder" xml:space="preserve">
         <source xml:lang="en-us">Recorder</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Enregistreur</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.recorded.asserter" xml:space="preserve">
         <source xml:lang="en-us">Asserter</source>
-        <target state="needs-review-translation" xml:lang="fr-be"><mrk mid="0" mtype="seg"/></target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.note" xml:space="preserve" approved="yes">
         <source xml:lang="en-us">Note</source>
-        <target state="final" state-qualifier="exact-match" xml:lang="fr-be">Note</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.reactions" xml:space="preserve">
         <source xml:lang="en-us">Reaction</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Réaction</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.reactions.manifestation" xml:space="preserve">
         <source xml:lang="en-us">Manifestation</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Maniféstation</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.reactions.exposure" xml:space="preserve">
         <source xml:lang="en-us">Exposure Route</source>
-        <target state="needs-review-translation" xml:lang="fr-be">Route d'exposition</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
       <trans-unit id="allergy-intolerance-questionnaire.reactions.note" xml:space="preserve" approved="yes">
         <source xml:lang="en-us">Note</source>
-        <target state="final" state-qualifier="exact-match" xml:lang="fr-be">Note</target>
+        <target state="needs-translation" xml:lang="nl-be"></target>
       </trans-unit>
     </body>
   </file>
