@@ -1,8 +1,12 @@
 Alias: $translation = http://hl7.org/fhir/StructureDefinition/translation
 
 RuleSet: AddTranslation(context, language, content)
-* {context}.extension[$translation].extension[lang].valueCode = #{language}
-* {context}.extension[$translation].extension[content].valueString = "{content}"
+* {context}.extension[+].url = $translation
+* {context}.extension[=].extension[0].url = "lang"
+* {context}.extension[=].extension[0].valueCode = #{language}
+* {context}.extension[=].extension[1].url = "content"
+* {context}.extension[=].extension[1].valueString = {content}
+
 
 
 
@@ -110,8 +114,8 @@ InstanceOf: BeAllergyIntolerance
 Usage: #example
 Description: ""
 Title:    ""
-* clinicalStatus = http://hl7.org/fhir/ValueSet/allergyintolerance-clinical#active
-* verificationStatus = http://hl7.org/fhir/ValueSet/allergyintolerance-verification#confirmed
+* clinicalStatus = http://hl7.org/fhir/CodeSystem/allergyintolerance-clinical#active
+* verificationStatus = http://hl7.org/fhir/CodeSystem/allergyintolerance-verification#confirmed
 * type = #allergy
 * category = #food
 * criticality = #high
@@ -137,8 +141,8 @@ Usage: #example
 Description: ""
 Title:    ""
 * contained[0] = example-encounter-uzgent-contained
-* clinicalStatus = http://hl7.org/fhir/ValueSet/allergyintolerance-clinical#active
-* verificationStatus = http://hl7.org/fhir/ValueSet/allergyintolerance-verification#confirmed
+* clinicalStatus = http://hl7.org/fhir/CodeSystem/allergyintolerance-clinical#active
+* verificationStatus = http://hl7.org/fhir/CodeSystem/allergyintolerance-verification#confirmed
 * type = #allergy
 * category = #food
 * criticality = #higher
@@ -177,8 +181,8 @@ Description: "Questionnaire for Allergy / Intolerance reporting"
 Title: "Questionnaire for Allergy / Intolerance reporting"
 * name = "AllergyIntoleranceQuestionnaire"
 * title = "Allergy / Intolerance reporting Questionnaire"
-* insert AddTranslation(title,fr-BE,.)
-* insert AddTranslation(title,nl-BE,.)
+* insert AddTranslation(title,fr-BE,".")
+* insert AddTranslation(title,nl-BE,".")
 
 * version = "2020"
 * status = #draft
@@ -190,84 +194,84 @@ Title: "Questionnaire for Allergy / Intolerance reporting"
 //* contained[+] = Canonical("https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation")
 
 * insert Question(,patient,Patient,group,false)
-* insert AddTranslation(item[=].text,fr-BE,.)
-* insert AddTranslation(item[=].text,nl-BE,.)
+* insert AddTranslation(item[=].text,fr-BE,".")
+* insert AddTranslation(item[=].text,nl-BE,".")
 
 * item[=].required = true
 * insert Question(item[=].,patient-name,Patient Name,string,false)
-* insert AddTranslation(item[=].item[=].text,fr-BE,.)
-* insert AddTranslation(item[=].item[=].text,nl-BE,.)
+* insert AddTranslation(item[=].item[=].text,fr-BE,".")
+* insert AddTranslation(item[=].item[=].text,nl-BE,".")
 * insert Question(item[=].,patient-id,Patient ID (SSIN\),string,false)
-* insert AddTranslation(item[=].item[=].text,fr-BE,.)
-* insert AddTranslation(item[=].item[=].text,nl-BE,.)
+* insert AddTranslation(item[=].item[=].text,fr-BE,".")
+* insert AddTranslation(item[=].item[=].text,nl-BE,".")
 * item[=].item[=].required = true
 
 * insert Question(,status,AllergyStatus,display,false)
 
 * insert Question(item[=].,clinical-status,Clinical Status,string,false)
-* insert AddTranslation(item[=].item[=].text,fr-BE,.)
-* insert AddTranslation(item[=].item[=].text,nl-BE,.)
+* insert AddTranslation(item[=].item[=].text,fr-BE,".")
+* insert AddTranslation(item[=].item[=].text,nl-BE,".")
 
 * item[=].item[=].answerOption[+].valueCoding = #active "Active"
-* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,.)
-* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,.)
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,".")
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,".")
 
 * item[=].item[=].answerOption[+].valueCoding = #inactive "Inactive"
-* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,.)
-* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,.)
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,".")
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,".")
 
 * item[=].item[=].answerOption[+].valueCoding = #resolved "Resolved"
-* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,.)
-* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,.)
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,".")
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,".")
 
 * insert Question(item[=].,patient-id,Verification Status,string,false)
-* insert AddTranslation(item[=].item[=].text,fr-BE,.)
-* insert AddTranslation(item[=].item[=].text,nl-BE,.)
+* insert AddTranslation(item[=].item[=].text,fr-BE,".")
+* insert AddTranslation(item[=].item[=].text,nl-BE,".")
 
 * item[=].item[=].answerOption[+].valueCoding = #unconfirmed "Unconfirmed"
-* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,.)
-* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,.)
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,".")
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,".")
 
 * item[=].item[=].answerOption[+].valueCoding = #confirmed "Confirmed"
-* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,.)
-* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,.)
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,".")
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,".")
 
 * item[=].item[=].answerOption[+].valueCoding = #refuted "Refuted"
-* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,.)
-* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,.)
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,".")
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,".")
 
 * item[=].item[=].answerOption[+].valueCoding = #entered-in-error "entered-in-error"
-* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,.)
-* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,.)
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,".")
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,".")
 
 * insert Question(,allergyintolerance,Allergy or Intolerance?,choice,false)
-* insert AddTranslation(item[=].text,fr-BE,.)
-* insert AddTranslation(item[=].text,nl-BE,.)
+* insert AddTranslation(item[=].text,fr-BE,".")
+* insert AddTranslation(item[=].text,nl-BE,".")
 * item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
 * item[=].extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
 * item[=].answerOption[+].valueCoding = #allergy "Allergy"
-* insert AddTranslation(item[=].answerOption[=].valueCoding.display,fr-BE,.)
-* insert AddTranslation(item[=].answerOption[=].valueCoding.display,nl-BE,.)
+* insert AddTranslation(item[=].answerOption[=].valueCoding.display,fr-BE,".")
+* insert AddTranslation(item[=].answerOption[=].valueCoding.display,nl-BE,".")
 
 * item[=].answerOption[+].valueCoding = #intolerance "Intolerance"
-* insert AddTranslation(item[=].answerOption[=].valueCoding.display,fr-BE,.)
-* insert AddTranslation(item[=].answerOption[=].valueCoding.display,nl-BE,.)
+* insert AddTranslation(item[=].answerOption[=].valueCoding.display,fr-BE,".")
+* insert AddTranslation(item[=].answerOption[=].valueCoding.display,nl-BE,".")
 
 * insert Question(,type,Type (food\, medication\, environment\, biologic\)?,choice,false)
-* insert AddTranslation(item[=].text,fr-BE,.)
-* insert AddTranslation(item[=].text,nl-BE,.)
+* insert AddTranslation(item[=].text,fr-BE,".")
+* insert AddTranslation(item[=].text,nl-BE,".")
 * item[=].answerOption[+].valueCoding = #food "Food allergy"
-* insert AddTranslation(item[=].answerOption[=].valueCoding.display,fr-BE,.)
-* insert AddTranslation(item[=].answerOption[=].valueCoding.display,nl-BE,.)
+* insert AddTranslation(item[=].answerOption[=].valueCoding.display,fr-BE,".")
+* insert AddTranslation(item[=].answerOption[=].valueCoding.display,nl-BE,".")
 * item[=].answerOption[+].valueCoding = #medication "Medication allergy or intolerance"
-* insert AddTranslation(item[=].answerOption[=].valueCoding.display,fr-BE,.)
-* insert AddTranslation(item[=].answerOption[=].valueCoding.display,nl-BE,.)
+* insert AddTranslation(item[=].answerOption[=].valueCoding.display,fr-BE,".")
+* insert AddTranslation(item[=].answerOption[=].valueCoding.display,nl-BE,".")
 * item[=].answerOption[+].valueCoding = #environment "Environmental allergy or intolerance"
-* insert AddTranslation(item[=].answerOption[=].valueCoding.display,fr-BE,.)
-* insert AddTranslation(item[=].answerOption[=].valueCoding.display,nl-BE,.)
+* insert AddTranslation(item[=].answerOption[=].valueCoding.display,fr-BE,".")
+* insert AddTranslation(item[=].answerOption[=].valueCoding.display,nl-BE,".")
 * item[=].answerOption[+].valueCoding = #biologic "Biologic allergy or intolerance"
-* insert AddTranslation(item[=].answerOption[=].valueCoding.display,fr-BE,.)
-* insert AddTranslation(item[=].answerOption[=].valueCoding.display,nl-BE,.)
+* insert AddTranslation(item[=].answerOption[=].valueCoding.display,fr-BE,".")
+* insert AddTranslation(item[=].answerOption[=].valueCoding.display,nl-BE,".")
 
 * insert Question(,code,Code of the allergen or substance?,choice,false)
 * item[=].answerValueSet = "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode"
@@ -277,38 +281,38 @@ Title: "Questionnaire for Allergy / Intolerance reporting"
 
 
 * insert Question(,recorded,Recorded,group,false)
-* insert AddTranslation(item[=].text,fr-BE,.)
-* insert AddTranslation(item[=].text,nl-BE,.)
+* insert AddTranslation(item[=].text,fr-BE,".")
+* insert AddTranslation(item[=].text,nl-BE,".")
 * item[=].required = true
 * insert Question(item[=].,recorded-date,Date of Record,date,false)
-* insert AddTranslation(item[=].text,fr-BE,.)
-* insert AddTranslation(item[=].text,nl-BE,.)
+* insert AddTranslation(item[=].text,fr-BE,".")
+* insert AddTranslation(item[=].text,nl-BE,".")
 * insert Question(item[=].,recorder,Recorder,string,false)
-* insert AddTranslation(item[=].text,fr-BE,.)
-* insert AddTranslation(item[=].text,nl-BE,.)
+* insert AddTranslation(item[=].text,fr-BE,".")
+* insert AddTranslation(item[=].text,nl-BE,".")
 * insert Question(item[=].,asserter,Asserter,string,false)
-* insert AddTranslation(item[=].text,fr-BE,.)
-* insert AddTranslation(item[=].text,nl-BE,.)
+* insert AddTranslation(item[=].text,fr-BE,".")
+* insert AddTranslation(item[=].text,nl-BE,".")
 
 * insert Question(,note,Note,text,true)
-* insert AddTranslation(item[=].text,fr-BE,.)
-* insert AddTranslation(item[=].text,nl-BE,.)
+* insert AddTranslation(item[=].text,fr-BE,".")
+* insert AddTranslation(item[=].text,nl-BE,".")
 
 * insert Question(,reactions,Reaction,group,true)
-* insert AddTranslation(item[=].text,fr-BE,.)
-* insert AddTranslation(item[=].text,nl-BE,.)
+* insert AddTranslation(item[=].text,fr-BE,".")
+* insert AddTranslation(item[=].text,nl-BE,".")
 * insert Question(item[=].,manifestation,Manifestation,choice,false)
-* insert AddTranslation(item[=].item[=].text,fr-BE,.)
-* insert AddTranslation(item[=].item[=].text,nl-BE,.)
+* insert AddTranslation(item[=].item[=].text,fr-BE,".")
+* insert AddTranslation(item[=].item[=].text,nl-BE,".")
 
 * item[=].item[=].answerValueSet = "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation"
 * insert Question(item[=].,exposure-route,Exposure Route,choice,false)
-* insert AddTranslation(item[=].item[=].text,fr-BE,.)
-* insert AddTranslation(item[=].item[=].text,nl-BE,.)
+* insert AddTranslation(item[=].item[=].text,fr-BE,".")
+* insert AddTranslation(item[=].item[=].text,nl-BE,".")
 
 * item[=].item[=].answerValueSet = "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-exposureroute"
 * insert Question(item[=].,note,Note,choice,false)
-* insert AddTranslation(item[=].text,fr-BE,.)
-* insert AddTranslation(item[=].text,nl-BE,.)
+* insert AddTranslation(item[=].text,fr-BE,".")
+* insert AddTranslation(item[=].text,nl-BE,".")
 
 
