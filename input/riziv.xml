@@ -755,6 +755,15 @@ A set of examples demonstrates the use of the profile." />
       <!-- AllergyIntolerance -->
     <resource>
       <reference>
+        <reference value="StructureDefinition/be-model-allergyintolerance"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="AllergyIntolerance Logical Model"/>
+      <description value="Allergy Intolerance Logical Model"/>
+      <groupingId value="allergyintolerance"/>
+    </resource>	
+    <resource>
+      <reference>
         <reference value="StructureDefinition/be-allergyintolerance"/>
       </reference>
       <fhirVersion value="4.0.1"/>
@@ -762,6 +771,9 @@ A set of examples demonstrates the use of the profile." />
       <description value="Allergy Intolerance profile"/>
       <groupingId value="allergyintolerance"/>
     </resource>	
+
+
+
 <!--
       <resource>
          <reference>
