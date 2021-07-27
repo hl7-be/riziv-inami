@@ -25,7 +25,7 @@ Description:    "Allergy / Intolerance information model"
   * manifestation 0..1 CodeableConcept "How the reaction manifested itself"  "How the reaction manifested itself, e.g. rash, breathing difficulty..."
 //  * certitude 0..1 CodeableConcept "How certain we are that the cause of the reaction was the allergen indicated" "How certain we are that the cause of the reaction was the allergen indicated"
   * exposure 0..1 CodeableConcept "The exposure route to the substance" "The exposure route to the substance"
-  * exposure from be-exposureroute
+  * exposure from https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-exposureroute
   * note 0..1 string "Additional text note about the allergic reaction" "Additional text note about the allergic reaction"
 
 
