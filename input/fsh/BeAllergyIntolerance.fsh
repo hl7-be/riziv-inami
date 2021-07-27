@@ -10,6 +10,7 @@ Description:    "Allergy / Intolerance information model"
 * code 1..1 CodeableConcept "The substance that the person is allergic to" "The substance - from a lst of substances - that the person is allergic to. It is possible to use free text but for the products indicated, a code must be used"
 * code from https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode
 * type 0..1 code "The Type - whether it is an allergy or intolerance" "The yype - whether it is an allergy or intolerance"
+* type from http://hl7.org/fhir/ValueSet/allergy-intolerance-type
 * status 0..1 BackboneElement "The status of the allergy" "The status of the allergy"
   * clinicalStatus 1..1 CodeableConcept "The status of the allergy - if it is active or resolved" "The status of the allergy - if it is active or resolved"
   * clinicalStatus from http://hl7.org/fhir/ValueSet/allergyintolerance-clinical
