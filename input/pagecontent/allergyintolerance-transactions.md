@@ -12,6 +12,7 @@ The Read AllergyIntolerance transaction allows an AllergyIntolerance Consumer to
 
 #### Actors and Roles
 
+{:class="table table-bordered table-condensed table-striped"}
 |Actor|Role|
 |---|---|
 |AllergyIntolerance<br/>Consumer|Asks for a identified AllergyIntolerance|
@@ -35,7 +36,7 @@ This transaction is initiated when an identified and authorized user (practition
 
 ##### Request
 * The request is in the form 
-` GET <hostname>/AllergyIntolerance/<id> `, where `<id>` (mandatory) is the identifier of the AllergyIntolerance entry
+` GET <hostname>/AllergyIntolerance/\<id\> `, where `\<id\>` (mandatory) is the identifier of the AllergyIntolerance entry
 * The modifier `_history` SHALL NOT be present
 * The modifier `_summary` is supported but the only supported value is `data`, i.e. `GET <hostname>/AllergyIntolerance/<id>?_summary=data` 
   
@@ -62,6 +63,7 @@ The Search AllergyIntolerance transaction allows an AllergyIntolerance Consumer 
 
 #### Actors and Roles
 
+{:class="table table-bordered table-condensed table-striped"}
 |Actor|Role|
 |---|---|
 |AllergyIntolerance<br/>Consumer|Searches for AllergyIntolerance resources|
@@ -87,6 +89,7 @@ This transaction is initiated when an identified and authorized user (practition
 * The request is in the form ` POST <hostname>/AllergyIntolerance/_search `. The body of the request is an application/x-www-form-urlencoded content. The following are the parameters that can be used:
 
 
+{:class="table table-bordered table-condensed table-striped"}
 |parameter|cardinality|remarks|
 |---|---|---|
 patient|1..1| The **REQUIRED** SSIN of the patient - searches on more than one patient are not supported
@@ -127,6 +130,7 @@ The Create AllergyIntolerance transaction allows an AllergyIntolerance Reporter 
 
 #### Actors and Roles
 
+{:class="table table-bordered table-condensed table-striped"}
 |Actor|Role|
 |---|---|
 |AllergyIntolerance<br/>Reporter|Creates an AllergyIntolerance resource|
@@ -180,6 +184,7 @@ The Update AllergyIntolerance transaction allows an AllergyIntolerance Reporter 
 
 #### Actors and Roles
 
+{:class="table table-bordered table-condensed table-striped"}
 |Actor|Role|
 |---|---|
 |AllergyIntolerance<br/>Reporter|Creates an AllergyIntolerance resource|
@@ -234,6 +239,7 @@ The DELETE AllergyIntolerance transaction allows an AllergyIntolerance Reporter 
 
 #### Actors and Roles
 
+{:class="table table-bordered table-condensed table-striped"}
 |Actor|Role|
 |---|---|
 |AllergyIntolerance<br/>Reporter|Requests deletion of an AllergyIntolerance resource|
