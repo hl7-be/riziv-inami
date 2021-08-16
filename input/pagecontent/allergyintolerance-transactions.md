@@ -37,6 +37,7 @@ This transaction is initiated when an identified and authorized user (practition
 ##### Request
 * The request is in the form `GET <hostname>/AllergyIntolerance/<id>`, where `<id>` (mandatory) is the identifier of the AllergyIntolerance entry.
 * The following parameter constraints apply:
+
 {:class="table table-bordered table-condensed table-striped"}
 |Parameter|Cardinality|Remarks|
 |---|---|---|
@@ -91,7 +92,6 @@ This transaction is initiated when an identified and authorized user (practition
 
 ##### Request
 * The request is in the form `POST <hostname>/AllergyIntolerance/_search`. The body of the request is an application/x-www-form-urlencoded content. The following are the parameters that can be used:
-
 
 {:class="table table-bordered table-condensed table-striped"}
 |parameter|cardinality|remarks|
