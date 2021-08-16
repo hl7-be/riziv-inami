@@ -36,9 +36,9 @@ This transaction is initiated when an identified and authorized user (practition
 
 ##### Request
 * The request is in the form 
-` GET <hostname>/AllergyIntolerance/\<id\> `, where `\<id\>` (mandatory) is the identifier of the AllergyIntolerance entry
+` GET {hostname}/AllergyIntolerance/{id} `, where `{id}` (mandatory) is the identifier of the AllergyIntolerance entry
 * The modifier `_history` SHALL NOT be present
-* The modifier `_summary` is supported but the only supported value is `data`, i.e. `GET <hostname>/AllergyIntolerance/<id>?_summary=data` 
+* The modifier `_summary` is supported but the only supported value is `data`, i.e. `GET {hostname}/AllergyIntolerance/{id}?_summary=data` 
   
 <br>
 
@@ -86,7 +86,7 @@ This transaction is initiated when an identified and authorized user (practition
 <br>
 
 ##### Request
-* The request is in the form ` POST <hostname>/AllergyIntolerance/_search `. The body of the request is an application/x-www-form-urlencoded content. The following are the parameters that can be used:
+* The request is in the form ` POST {hostname}/AllergyIntolerance/_search `. The body of the request is an application/x-www-form-urlencoded content. The following are the parameters that can be used:
 
 
 {:class="table table-bordered table-condensed table-striped"}
@@ -153,7 +153,7 @@ This transaction is initiated when an identified and authorized user (practition
 <br>
 
 ##### Request
-* The request is in the form ` POST <hostname>/AllergyIntolerance`. The body of the request is a FHIR resource, compatible with the be-allergyintolerance profile:
+* The request is in the form ` POST {hostname}/AllergyIntolerance`. The body of the request is a FHIR resource, compatible with the be-allergyintolerance profile:
 
  
 <br>
@@ -207,7 +207,7 @@ This transaction is initiated when an identified and authorized user (practition
 <br>
 
 ##### Request
-* The request is in the form ` POST <hostname>/AllergyIntolerance/<id>` where <id> is the server-assigned resource id that identifies the resource to be updated. The body of the request is a FHIR resource, compatible with the be-allergyintolerance profile:
+* The request is in the form ` POST {hostname}/AllergyIntolerance/{id}` where `{id}` is the server-assigned resource id that identifies the resource to be updated. The body of the request is a FHIR resource, compatible with the be-allergyintolerance profile:
 
  
 <br>
@@ -262,7 +262,7 @@ This transaction is initiated when an identified and authorized user (practition
 <br>
 
 ##### Request
-* The request is in the form ` DELETE <hostname>/AllergyIntolerance/<id>` where <id> is the server-assigned resource id that identifies the resource to be deleted.
+* The request is in the form ` DELETE {hostname}/AllergyIntolerance/{id}` where `{id}` is the server-assigned resource id that identifies the resource to be deleted.
 
  
 <br>
