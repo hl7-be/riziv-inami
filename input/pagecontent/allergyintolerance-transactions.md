@@ -35,11 +35,15 @@ This transaction is initiated when an identified and authorized user (practition
 <br>
 
 ##### Request
-* The request is in the form 
-`GET <hostname>/AllergyIntolerance/<id>`, where `<id>` (mandatory) is the identifier of the AllergyIntolerance entry
-* The modifier `_history` SHALL NOT be present
-* The modifier `_summary` is supported but the only supported value is `data`, i.e. `GET <hostname>/AllergyIntolerance/<id>?_summary=data` 
-  
+* The request is in the form `GET <hostname>/AllergyIntolerance/<id>`, where `<id>` (mandatory) is the identifier of the AllergyIntolerance entry.
+* The following parameter constraints apply:
+{:class="table table-bordered table-condensed table-striped"}
+|Parameter|Cardinality|Remarks|
+|---|---|---|
+_history |0..0| SHALL NOT be present
+_summary |0..1| Only supported value is `data` i.e. `GET <hostname>/AllergyIntolerance/<id>?_summary=data` 
+
+
 <br>
 
 ##### Response
@@ -153,7 +157,7 @@ This transaction is initiated when an identified and authorized user (practition
 <br>
 
 ##### Request
-* The request is in the form ` POST <hostname>/AllergyIntolerance`. The body of the request is a FHIR resource, compatible with the be-allergyintolerance profile:
+* The request is in the form `POST <hostname>/AllergyIntolerance`. The body of the request is a FHIR resource, compatible with the be-allergyintolerance profile:
 
  
 <br>
@@ -207,7 +211,7 @@ This transaction is initiated when an identified and authorized user (practition
 <br>
 
 ##### Request
-* The request is in the form ` POST <hostname>/AllergyIntolerance/<id>` where `<id>` is the server-assigned resource id that identifies the resource to be updated. The body of the request is a FHIR resource, compatible with the be-allergyintolerance profile:
+* The request is in the form `POST <hostname>/AllergyIntolerance/<id>` where `<id>` is the server-assigned resource id that identifies the resource to be updated. The body of the request is a FHIR resource, compatible with the be-allergyintolerance profile:
 
  
 <br>
