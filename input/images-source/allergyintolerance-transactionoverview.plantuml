@@ -1,0 +1,41 @@
+@startuml
+hide footbox 
+
+box "Client" #F7FFFA
+Participant "AllergyIntolerance Reporter" as R
+Participant "AllergyIntolerance Consumer" as C
+end box
+Participant "AllergyIntolerance Registry" as V
+
+V -[hidden]-> C: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+C -> V: [[#be-al-srch ~[BE-AL-READ~]]]\nRead allergy/intolerance
+V -> C: [Response]
+
+...
+...
+
+C -> V: [[#be-al-srch ~[BE-AL-SEARCH~]]]\nSearch allergy/intolerances
+V -> C: [Response]
+
+...
+...
+
+R -> V: [[#be-al-subm ~[BE-AL-CREATE~]]]\nCreate new allergy/intolerance
+V -> R: [Response]
+
+...
+...
+
+R -> V: [[#be-al-updt ~[BE-AL-UPDATE~]]]\nUpdate existing allergy/intolerance
+V -> R: [Response]
+
+...
+...
+
+R -> V: [[#be-al-del ~[BE-AL-DELETE~]]]\nDelete existing allergy/intolerance
+V -> R: [Response]
+
+...
+
+
+@enduml

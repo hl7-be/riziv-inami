@@ -992,6 +992,14 @@ A set of examples demonstrates the use of the profile." />
             <generation value="html" />
          </page>
          <page>
+            <nameUrl value="allergyintolerance-transactions.html" />
+            <title value="AllergyIntolerance - Transactions" />
+            <generation value="markdown" />
+         </page>
+
+
+
+         <page>
             <nameUrl value="usecases.html" />
             <title value="Use Cases" />
             <generation value="html" />

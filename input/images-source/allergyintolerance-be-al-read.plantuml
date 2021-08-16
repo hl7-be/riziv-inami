@@ -1,0 +1,15 @@
+@startuml
+
+hide footbox 
+
+'box "Client" #F7FFFA
+'Participant "AllergyIntolerance Reporter" as R
+Participant "AllergyIntolerance Consumer" as C
+'end box
+Participant "AllergyIntolerance Registry" as V
+
+C -> V: [[#be-al-read-1 ~[Read Allergy/Intolerance~]]]
+V -> C:  [[#be-al-read-2 ~[Response~]]]
+
+
+@enduml
