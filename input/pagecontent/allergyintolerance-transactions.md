@@ -36,9 +36,9 @@ This transaction is initiated when an identified and authorized user (practition
 
 ##### Request
 * The request is in the form 
-`GET {hostname}/AllergyIntolerance/{id}`, where `{id}` (mandatory) is the identifier of the AllergyIntolerance entry
+`GET <hostname>/AllergyIntolerance/<id>`, where `<id>` (mandatory) is the identifier of the AllergyIntolerance entry
 * The modifier `_history` SHALL NOT be present
-* The modifier `_summary` is supported but the only supported value is `data`, i.e. `GET {hostname}/AllergyIntolerance/{id}?_summary=data` 
+* The modifier `_summary` is supported but the only supported value is `data`, i.e. `GET <hostname>/AllergyIntolerance/<id>?_summary=data` 
   
 <br>
 
