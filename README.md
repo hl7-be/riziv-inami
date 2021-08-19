@@ -16,4 +16,4 @@ Issues and change requests are managed here:
 Issues:  __https://github.com/hl7-be/riziv-inami/issues__  
 Kanban board:  __https://github.com/orgs/hl7-be/projects/4__  
 
- 
+
