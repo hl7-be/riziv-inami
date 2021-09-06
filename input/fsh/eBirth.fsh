@@ -58,18 +58,21 @@ Title: "Questionnaire for eBirth"
 * item[=]
   * insert Question(home,At home?,boolean,false)
   * insert Question(home_address,Home Address,group,false)
-  * insert Question(home_street,Home address,string,false)
-  * insert Question(home_postal_code,Postal code,string,false)
-  * insert Question(home_city,City,string,false)
-
-* insert Question(institution,Institution,group,false)
-* item[=]
-  * insert Question(institution_identifier_COBRHA,Institution,string,false)
-  * insert Question(institution_address,Identifier (COBRHA\),group,false)
   * item[=]
-    * insert Question(institution_street,Address,string,false)
-    * insert Question(institution_postal_code,Postal Code,string,false)
-    * insert Question(institution_city,City,string,false)
+    * insert Question(home_street,Home address,string,false)
+    * insert Question(home_postal_code,Postal code,string,false)
+    * insert Question(home_city,City,string,false)
+
+* item[=]
+  * insert Question(institution,Institution,group,false)
+  * item[=]
+    * insert Question(institution_name,Institution Name,string,false)
+    * insert Question(institution_identifier_COBRHA,Institution Identifier COBHRA,string,false)
+    * insert Question(institution_address,Institution address,group,false)
+    * item[=]
+      * insert Question(institution_street,Address,string,false)
+      * insert Question(institution_postal_code,Postal Code,string,false)
+      * insert Question(institution_city,City,string,false)
 
 
 * insert Question(parent1,Parent 1,group,false)
@@ -77,6 +80,9 @@ Title: "Questionnaire for eBirth"
   * insert Question(parent1_niss,NISS,string,false)
   * insert Question(parent1_name,Family name,string,false)
   * insert Question(parent1_given_name,Given name,string,false)
+  * repeats = true
+  * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs"
+  * extension[=].valueInteger = 2
 
 
 * insert Question(parent2,Parent 2,group,false)
@@ -86,7 +92,8 @@ Title: "Questionnaire for eBirth"
   * insert Question(parent2_given_name,Given name,string,false)
 
 * insert Question(food_regimen,Food regimen,choice,false)
-* insert Question(medication,Medications,string,true)
+* insert Question(medication,Medications,string,false)
+* item[=].repeats = #true
 
 * insert Question(lab_tests,Tests,group,false)
 * item[=]
