@@ -28,14 +28,14 @@ RuleSet: ValuedAnswerOption(code, display, value)
 //* item[=].answerOption[=].extension[=].valueString = "0"
 
 
-Instance: findrisc-questionnaire
+Instance: ebirth-questionnaire
 InstanceOf: Questionnaire
-Description: "Questionnaire for FINDRISC"
-Title: "Questionnaire for FINDRISC"
+Description: "Questionnaire for eBirth"
+Title: "Questionnaire for eBirth"
 
 
-* name = "FINDRISCQuestionnaire"
-* title = "FINDRISC Test Questionnaire"
+* name = "EBirthQuestionnaire"
+* title = "eBirth Questionnaire"
 * version = "2021"
 * status = #draft
 * subjectType = #Patient
