@@ -1,10 +1,4 @@
 
-RuleSet: Question(context, linkId, text, type, repeats)
-* {context}item[+].linkId = "{linkId}"
-* {context}item[=].text = "{text}"
-* {context}item[=].type = #{type}
-* {context}item[=].repeats = {repeats}
-
 
 /*
 Instance: cs-mkatz
@@ -157,34 +151,42 @@ Title: "Questionnaire for modified Katz scale evaluation"
 
 
 
-* insert Question(,bathing,Se laver,choice,false)
-* item[=].answerValueSet = "#vs-mkatz-bathing-dep"
-* item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
-* item[=].extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
+* insert Question(bathing,Se laver,choice,false)
+* item[=]
+  * answerValueSet = "#vs-mkatz-bathing-dep"
+  * extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
+  * extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
 
 
-* insert Question(,dressing,S'habiller,choice,false)
-* item[=].answerValueSet = "#vs-mkatz-dressing-dep"
-* item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
-* item[=].extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
+* insert Question(dressing,S'habiller,choice,false)
+* item[=] 
+  * answerValueSet = "#vs-mkatz-dressing-dep"
+  * extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
+  * extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
 
-* insert Question(,transferring,Se déplacer,choice,false)
-* item[=].answerValueSet = "#vs-mkatz-transferring-dep"
-* item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
-* item[=].extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
+* insert Question(transferring,Se déplacer,choice,false)
+* item[=]
+  * answerValueSet = "#vs-mkatz-transferring-dep"
+  * extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
+  * extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
 
-* insert Question(,toileting,Aller à la toilette,choice,false)
-* item[=].answerValueSet = "#vs-mkatz-toileting-dep"
-* item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
-* item[=].extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
+* insert Question(toileting,Aller à la toilette,choice,false)
+* item[=]
+  * answerValueSet = "#vs-mkatz-toileting-dep"
+  * extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
+  * extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
 
-* insert Question(,continence,La continence,choice,false)
-* item[=].answerValueSet = "#vs-mkatz-continence-dep"
-* item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
-* item[=].extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
 
-* insert Question(,feeding,Manger,choice,false)
-* item[=].answerValueSet = "#vs-mkatz-feeding-dep"
-* item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
-* item[=].extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
+
+* insert Question(continence,La continence,choice,false)
+* item[=]
+  * answerValueSet = "#vs-mkatz-continence-dep"
+  * extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
+  * extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
+
+* insert Question(feeding,Manger,choice,false)
+* item[=]
+  * answerValueSet = "#vs-mkatz-feeding-dep"
+  * extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
+  * extension[0].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
 
