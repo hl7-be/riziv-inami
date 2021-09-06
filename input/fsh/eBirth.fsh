@@ -76,13 +76,15 @@ Title: "Questionnaire for eBirth"
 
 
 * insert Question(parent1,Parent 1,group,false)
+* item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs"
+* item[=].extension[=].valueInteger = 2
 * item[=]
+//  * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs"
+//  * extension[=].valueInteger = 2
   * insert Question(parent1_niss,NISS,string,false)
   * insert Question(parent1_name,Family name,string,false)
   * insert Question(parent1_given_name,Given name,string,false)
   * repeats = true
-  * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs"
-  * extension[=].valueInteger = 2
 
 
 * insert Question(parent2,Parent 2,group,false)
@@ -93,7 +95,7 @@ Title: "Questionnaire for eBirth"
 
 * insert Question(food_regimen,Food regimen,choice,false)
 * insert Question(medication,Medications,string,false)
-* item[=].repeats = #true
+* item[=].repeats = true
 
 * insert Question(lab_tests,Tests,group,false)
 * item[=]
