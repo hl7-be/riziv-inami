@@ -79,8 +79,8 @@ Title: "Questionnaire for eBirth"
     * insert Question(home_city,City,string,false)
     * enableWhen[+]
       * question = "home"
-      * operator = "="
-      * answerBoolean = "true"
+      * operator = #=
+      * answerBoolean = true
 
 
 * item[=]
@@ -88,8 +88,8 @@ Title: "Questionnaire for eBirth"
   * item[=]
     * enableWhen[+]
       * question = "home"
-      * operator = "="
-      * answerBoolean = "false"
+      * operator = #=
+      * answerBoolean = false
     * insert Question(institution_name,Institution Name,string,false)
     * insert Question(institution_identifier_COBRHA,Institution Identifier COBHRA,string,false)
     * insert Question(institution_address,Institution address,group,false)
