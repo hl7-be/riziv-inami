@@ -57,15 +57,39 @@ Title: "Questionnaire for eBirth"
 * insert Question(birth_place,Birth place,group,false)
 * item[=]
   * insert Question(home,At home?,boolean,false)
+
+
+
   * insert Question(home_address,Home Address,group,false)
+/*
+               "enableWhen": [
+                  {
+                    "question": "4.2.b.1",
+                    "operator": "=",
+                    "answerCoding": {
+                      "system": "http://hl7.org/fhir/administrative-gender",
+                      "code": "female"
+                    }
+                  }
+                ],
+*/
   * item[=]
     * insert Question(home_street,Home address,string,false)
     * insert Question(home_postal_code,Postal code,string,false)
     * insert Question(home_city,City,string,false)
+    * enableWhen[+]
+      * question = "home"
+      * operator = "="
+      * answerBoolean = "true"
+
 
 * item[=]
   * insert Question(institution,Institution,group,false)
   * item[=]
+    * enableWhen[+]
+      * question = "home"
+      * operator = "="
+      * answerBoolean = "false"
     * insert Question(institution_name,Institution Name,string,false)
     * insert Question(institution_identifier_COBRHA,Institution Identifier COBHRA,string,false)
     * insert Question(institution_address,Institution address,group,false)
