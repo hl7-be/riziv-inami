@@ -84,7 +84,7 @@ Title: "Questionnaire for eBirth"
   * insert Question(parent1_niss,NISS,string,false)
   * insert Question(parent1_name,Family name,string,false)
   * insert Question(parent1_given_name,Given name,string,false)
-  * repeats = true
+//  * repeats = true
 
 
 * insert Question(parent2,Parent 2,group,false)
