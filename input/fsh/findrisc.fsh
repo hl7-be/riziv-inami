@@ -43,7 +43,7 @@ Title: "Questionnaire for FINDRISC"
 * language = #en
 * status = #draft
 * meta.profile = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
-* meta.tag.code = #"lformsVersion: 29.2.1"
+//* meta.tag.code = #"lformsVersion: 29.2.1"
 
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
@@ -98,9 +98,8 @@ Title: "Questionnaire for FINDRISC"
   * insert ValuedAnswerOption(second-degree, 2nd degree family history, 3)
   * insert ValuedAnswerOption(first-degree, 1st degree family history, 5)
 
-* item[+].linkId = "findRiscScore"
-* item[=].text = "Patient FINDRISC total score"
-* item[=].type = #decimal
+* insert Question(findriscScore, Patient FINDRISC total score, decimal, false)
+
 * insert AddQRVariable(age)
 * insert AddQRVariable(bmi)
 * insert AddQRVariable(waistcircumference)
@@ -109,21 +108,18 @@ Title: "Questionnaire for FINDRISC"
 * insert AddQRVariable(BPmeds)
 * insert AddQRVariable(histHyperglicemia)
 * insert AddQRVariable(familyHistDiabetes)
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
+* extension[=].valueExpression.name = "allQuestionsAnswered"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "%ageValue.exists() and %bmiValue.exists() and %waistcircumferenceValue.exists() and %physicalActivityValue.exists() and %fruitsvegsValue.exists() and %BPmedsValue.exists() and %histHyperglicemiaValue.exists() and %familyHistDiabetesValue.exists()"
 
-
-* item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
-* item[=].extension[=].valueExpression.name = "allQuestionsAnswered"
-* item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].extension[=].valueExpression.expression = "%ageValue.exists() and %bmiValue.exists() and %waistcircumferenceValue.exists() and %physicalActivityValue.exists() and %fruitsvegsValue.exists() and %BPmedsValue.exists() and %histHyperglicemiaValue.exists() and %familyHistDiabetesValue.exists()"
-
-* item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
-* item[=].extension[=].valueExpression.name = "finalScore"
-* item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].extension[=].valueExpression.expression = "iif(%allQuestionsAnswered, iif(%ageValue.exists(), %ageValue, 0) + iif(%bmiValue.exists(), %bmiValue, 0) + iif(%waistcircumferenceValue.exists(), %waistcircumferenceValue, 0) + iif(%physicalActivityValue.exists(), %physicalActivityValue, 0) + iif(%fruitsvegsValue.exists(), %fruitsvegsValue, 0) + iif(%BPmedsValue.exists(), %BPmedsValue, 0) + iif(%histHyperglicemiaValue.exists(), %histHyperglicemiaValue, 0) + iif(%familyHistDiabetesValue.exists(), %familyHistDiabetesValue, 0), {})"
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
+* extension[=].valueExpression.name = "finalScore"
+* extension[=].valueExpression.language = #text/fhirpath
+* extension[=].valueExpression.expression = "iif(%allQuestionsAnswered, iif(%ageValue.exists(), %ageValue, 0) + iif(%bmiValue.exists(), %bmiValue, 0) + iif(%waistcircumferenceValue.exists(), %waistcircumferenceValue, 0) + iif(%physicalActivityValue.exists(), %physicalActivityValue, 0) + iif(%fruitsvegsValue.exists(), %fruitsvegsValue, 0) + iif(%BPmedsValue.exists(), %BPmedsValue, 0) + iif(%histHyperglicemiaValue.exists(), %histHyperglicemiaValue, 0) + iif(%familyHistDiabetesValue.exists(), %familyHistDiabetesValue, 0), {})"
 
 
 
-//* insert Question(findriscScore, Patient FINDRISC total score, decimal, false)
 
 
 
@@ -134,9 +130,56 @@ Title: "Questionnaire for FINDRISC"
 * item[=].extension[=].valueExpression.expression = "iif(%allQuestionsAnswered, iif(%finalScore.exists(), %finalScore, 0), {})"
 
 
-
+/*
 * insert Question(resulttext, Result Description:, display, false)
 * item[=].required = false
 * item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression"
 * item[=].extension[=].valueExpression.language = #text/fhirpath
-* item[=].extension[=].valueExpression.expression = "iif(%ageValue.exists(), %ageValue, 0) + iif(%bmiValue.exists(), %bmiValue, 0) + iif(%waistcircumferenceValue.exists(), %waistcircumferenceValue, 0) + iif(%physicalActivityValue.exists(), %physicalActivityValue, 0) + iif(%fruitsvegsValue.exists(), %fruitsvegsValue, 0) + iif(%BPmedsValue.exists(), %BPmedsValue, 0) + iif(%histHyperglicemiaValue.exists(), %histHyperglicemiaValue, 0) + iif(%familyHistDiabetesValue.exists(), %familyHistDiabetesValue, 0) > 1"
+* item[=].extension[=].valueExpression.expression = "%allQuestionsAnswered"
+*/
+
+* insert Question(resultriskLow, 10-year Risk:, text, false)
+* item[=].readOnly = true
+* item[=].text = "10-year diabetes risk: Low"
+* item[=].required = false
+* item[=].initial.valueString = "The probability of developing type 2 diabetes in 10 years is estimated to be 1 in 100"
+* item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression"
+* item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].extension[=].valueExpression.expression = "%finalScore.exists() and (%finalScore <7)"
+
+* insert Question(resultriskElevated, 10-year Risk:, text, false)
+* item[=].readOnly = true
+* item[=].text = "10-year diabetes risk: Slightly Elevated"
+* item[=].initial.valueString = "The probability of developing type 2 diabetes in 10 years is estimated to be 1 in 25"
+* item[=].required = false
+* item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression"
+* item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].extension[=].valueExpression.expression = "%finalScore.exists() and (%finalScore > 6) and (%finalScore <12)"
+
+* insert Question(resultriskModerate, 10-year Risk:, text, false)
+* item[=].readOnly = true
+* item[=].text = "10-year diabetes risk: Moderate"
+* item[=].initial.valueString = "The probability of developing type 2 diabetes in 10 years is estimated to be 1 in 6"
+* item[=].required = false
+* item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression"
+* item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].extension[=].valueExpression.expression = "%finalScore.exists() and (%finalScore > 11) and (%finalScore <15)"
+
+* insert Question(resultriskHight, 10-year Risk:, text, false)
+* item[=].readOnly = true
+* item[=].text = "10-year diabetes risk: High"
+* item[=].initial.valueString = "The probability of developing type 2 diabetes in 10 years is estimated to be 1 in 3"
+* item[=].required = false
+* item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression"
+* item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].extension[=].valueExpression.expression = "%finalScore.exists() and (%finalScore > 14) and (%finalScore <21)"
+
+* insert Question(resultriskVeryHigh, 10-year Risk:, text, false)
+* item[=].readOnly = true
+* item[=].text = "10-year diabetes risk: Very High"
+* item[=].initial.valueString = "The probability of developing type 2 diabetes in 10 years is estimated to be 1 in 2"
+* item[=].required = false
+* item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression"
+* item[=].extension[=].valueExpression.language = #text/fhirpath
+* item[=].extension[=].valueExpression.expression = "%finalScore.exists() and (%finalScore > 20)"
+
