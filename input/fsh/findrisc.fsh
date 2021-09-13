@@ -42,7 +42,7 @@ Title: "Questionnaire for FINDRISC"
 * subjectType = #Patient
 * language = #en
 * status = #draft
-* meta.profile = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
+//* meta.profile = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
 //* meta.tag.code = #"lformsVersion: 29.2.1"
 
 
